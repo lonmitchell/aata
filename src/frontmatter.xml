@@ -3,15 +3,15 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2025  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2025  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2026  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2026  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
 <!-- See the file COPYING for copying conditions.     -->
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="aata">
-  <titlepage>
-    <author>
+  <bibinfo>
+      <author>
       <personname>Thomas W. Judson</personname>
       <department>Department of Mathematics and Statistics</department>
       <institution>Stephen F. Austin State University</institution>
@@ -46,15 +46,27 @@
     <!-- READ COMMENT ABOVE BEFORE EDITING -->
     <!-- ********************************* -->
     <!--                                   -->
-    <date>August 1, 2025</date>
+    <date>June 9, 2026</date>
     <!--                                   -->
     <!-- ********************************* -->
     <!-- READ COMMENT ABOVE BEFORE EDITING -->
     <!-- ********************************* -->
     <!--                                   -->
-  </titlepage>
+    <copyright>
+      <year>1997<ndash/>2025</year>
+      <holder>Thomas W. Judson, Robert A. Beezer</holder>
+      <minilicense>GFDL License</minilicense>
+      <shortlicense>
+        Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.2 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license is included in the appendix entitled <q>GNU Free Documentation License.</q>
+      </shortlicense>
 
-  <colophon>
+    </copyright>
+
+    <website>
+      <url href="https://judsonbooks.org/aata/" visual="judsonbooks.org/aata/"/>
+    </website>
+
+    <colophon>
     <!--                                   -->
     <!-- ********************************* -->
     <!-- READ COMMENT ABOVE BEFORE EDITING -->
@@ -66,106 +78,21 @@
     <!-- READ COMMENT ABOVE BEFORE EDITING -->
     <!-- ********************************* -->
     <!--                                   -->
-    <website>
-      <url href="https://judsonbooks.org/aata/" visual="judsonbooks.org/aata/"/>
-    </website>
-
-    <copyright>
-      <year>1997<ndash/>2025</year>
-      <holder>Thomas W. Judson, Robert A. Beezer</holder>
-      <minilicense>GFDL License</minilicense>
-      <shortlicense>
-        Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.2 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license is included in the appendix entitled <q>GNU Free Documentation License.</q>
-      </shortlicense>
-
-    </copyright>
   </colophon>
-    <!-- Accepted order: acknowledgements, forewords, prefaces -->
-  <acknowledgement>
-    <p>
-      I would like to acknowledge the following reviewers for their helpful comments and suggestions.
 
-      <ul>
-        <li>
-          <p>
-            David Anderson, University of Tennessee, Knoxville
-          </p>
-        </li>
+  </bibinfo>
 
-        <li>
-          <p>
-            Robert Beezer, University of Puget Sound
-          </p>
-        </li>
 
-        <li>
-          <p>
-            Myron Hood, California Polytechnic State University
-          </p>
-        </li>
 
-        <li>
-          <p>
-            Herbert Kasube, Bradley University
-          </p>
-        </li>
+  <titlepage>
+    <titlepage-items/>
+  </titlepage>
 
-        <li>
-          <p>
-            John Kurtzke, University of Portland
-          </p>
-        </li>
+  <colophon>
+    <colophon-items/>
+  </colophon>
 
-        <li>
-          <p>
-            Inessa Levi, University of Louisville
-          </p>
-        </li>
 
-        <li>
-          <p>
-            Geoffrey Mason, University of California, Santa Cruz
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Bruce Mericle, Mankato State University
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Kimmo Rosenthal, Union College
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Mark Teply, University of Wisconsin
-          </p>
-        </li>
-      </ul>
-    </p>
-
-    <p>
-      I would also like to thank Steve Quigley, Marnie Pommett, Cathie Griffin, Kelle Karshick,
-      and the rest of the staff at PWS Publishing for their guidance throughout this project.
-      It has been a pleasure to work with them.
-    </p>
-        <!-- Added NSF support statement.  TWJ 8/9/2012 -->
-    <p>
-      Robert Beezer encouraged me to make
-      <em>Abstract Algebra: Theory and Applications</em>
-      available as an open source textbook,
-      a decision that I have never regretted.
-      With his assistance, the book has been rewritten in PreTeXt
-      (<url href="https://pretextbook.org" visual="pretextbook.org"><c>pretextbook.org</c></url>),
-      making it possible to quickly output print, web,
-      <acro>PDF</acro> versions and more from the same source.
-      The open source version of this book has received support from the National Science Foundation (Awards #DUE-1020957, #DUE–1625223, and #DUE–1821329).
-    </p>
-  </acknowledgement>
 
   <preface>
     <p>
@@ -276,7 +203,95 @@
         </sage>
     <attribution>
     <line>Thomas W. Judson</line>
-    <line>Massat, France 2025</line></attribution>
+    <line>Massat, France 2026</line></attribution>
   </preface>
+
+      <!-- Accepted order: acknowledgements, forewords, prefaces -->
+  <acknowledgement>
+    <p>
+      I would like to acknowledge the following reviewers for their helpful comments and suggestions.
+
+      <ul>
+        <li>
+          <p>
+            David Anderson, University of Tennessee, Knoxville
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Robert Beezer, University of Puget Sound
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Myron Hood, California Polytechnic State University
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Herbert Kasube, Bradley University
+          </p>
+        </li>
+
+        <li>
+          <p>
+            John Kurtzke, University of Portland
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Inessa Levi, University of Louisville
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Geoffrey Mason, University of California, Santa Cruz
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Bruce Mericle, Mankato State University
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Kimmo Rosenthal, Union College
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Mark Teply, University of Wisconsin
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      I would also like to thank Steve Quigley, Marnie Pommett, Cathie Griffin, Kelle Karshick,
+      and the rest of the staff at PWS Publishing for their guidance throughout this project.
+      It has been a pleasure to work with them.
+    </p>
+        <!-- Added NSF support statement.  TWJ 8/9/2012 -->
+    <p>
+      Robert Beezer encouraged me to make
+      <em>Abstract Algebra: Theory and Applications</em>
+      available as an open source textbook,
+      a decision that I have never regretted.
+      With his assistance, the book has been rewritten in PreTeXt
+      (<url href="https://pretextbook.org" visual="pretextbook.org"><c>pretextbook.org</c></url>),
+      making it possible to quickly output print, web,
+      <acro>PDF</acro> versions and more from the same source.
+      The open source version of this book has received support from the National Science Foundation (Awards #DUE-1020957, #DUE–1625223, and #DUE–1821329).
+    </p>
+  </acknowledgement>
+
 </frontmatter>
 

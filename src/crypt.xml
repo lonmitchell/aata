@@ -840,7 +840,7 @@
         </ol>
 
         <program>
-            <input>
+            <code>
                 x := ceiling(sqrt(n))
                 y := 1
 
@@ -855,7 +855,7 @@
                     a := x - y
                     b := x + y
                     write n = a * b
-            </input>
+            </code>
         </program>
       </statement>
     </exercise>
