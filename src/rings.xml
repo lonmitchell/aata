@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2025  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2025  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2026  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2026  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -183,7 +183,7 @@
     <example xml:id="rings-example-noncommutative">
       <p>
         For an example of a noncommutative division ring, let
-        <me>
+        <md>
           1 = 
           \begin{pmatrix}
           1 &amp; 0 \\
@@ -208,7 +208,7 @@
           i &amp; 0 \\
           0 &amp; -i
           \end{pmatrix}
-        </me>,
+        </md>,
         where <m>i^2 = -1</m>.
         These elements satisfy the following relations:
         <md>
@@ -230,12 +230,12 @@
           <description>the ring of quaternions</description>
         </notation>
 
-        <me>
+        <md>
           \begin{pmatrix}
           \alpha &amp; \beta \\
           -\overline{\beta} &amp; \overline{\alpha }
           \end{pmatrix}
-        </me>,
+        </md>,
         where <m>\alpha = a + di</m> and <m>\beta = b + ci</m> are complex numbers.
         We can define addition and multiplication on
         <m>{\mathbb H}</m> either by the usual matrix operations or in terms of the generators <m>1</m>,
@@ -245,9 +245,9 @@
           <mrow>= (a_1 + a_2) + ( b_1 + b_2) {\mathbf i}  + ( c_1 + c_2) \mathbf j + (d_1 + d_2) \mathbf k</mrow>
         </md>
         and
-        <me>
+        <md>
           (a_1 + b_1 {\mathbf i}  + c_1 {\mathbf j} +d_1 {\mathbf k} ) ( a_2 + b_2 {\mathbf i}  + c_2 {\mathbf j} +d_2 {\mathbf k} ) = \alpha + \beta {\mathbf i}  + \gamma {\mathbf j} + \delta {\mathbf k}
-        </me>,
+        </md>,
         where
         <md>
           <mrow>\alpha &amp; =  a_1 a_2 - b_1 b_2 - c_1 c_2 -d_1 d_2</mrow>
@@ -267,15 +267,15 @@
         To show that the quaternions are a division ring,
         we must be able to find an inverse for each nonzero element.
         Notice that
-        <me>
+        <md>
           ( a + b {\mathbf i} + c {\mathbf j} + d {\mathbf k} )( a - b {\mathbf i} - c {\mathbf j} - d {\mathbf k} ) = a^2 + b^2 + c^2 + d^2
-        </me>.
+        </md>.
         This element can be zero only if <m>a</m>, <m>b</m>,
         <m>c</m>, and <m>d</m> are all zero.
         So if <m>a + b {\mathbf i} + c {\mathbf j} +d {\mathbf k} \neq 0</m>,
-        <me>
+        <md>
           (a + b {\mathbf i} + c {\mathbf j} + d {\mathbf k})\left( \frac{a - b {\mathbf i} - c {\mathbf j} - d {\mathbf k} }{a^2 + b^2 + c^2 + d^2} \right) = 1
-        </me>.
+        </md>.
       </p>
     </example>
 
@@ -310,9 +310,9 @@
       <proof>
         <p>
           To prove (1), observe that
-          <me>
+          <md>
             a0 = a(0+0)= a0+ a0;
-          </me>
+          </md>
           hence, <m>a0=0</m>.
           Similarly, <m>0a = 0</m>.
           For (2), we have <m>ab + a(-b) = a(b-b) = a0 = 0</m>;
@@ -336,9 +336,9 @@
         Notice that even though the original ring may have an identity,
         we do not require that its subring have an identity.
         We have the following chain of subrings:
-        <me>
+        <md>
           {\mathbb Z} \subset {\mathbb Q} \subset {\mathbb R} \subset {\mathbb C}
-        </me>.
+        </md>.
       </p>
     </example>
 
@@ -381,7 +381,7 @@
         Let  <m>R ={\mathbb M}_2( {\mathbb R} )</m> be the ring of
         <m>2 \times 2</m> matrices with entries in <m>{\mathbb R}</m>.
         If <m>T</m> is the set of upper triangular matrices in <m>R</m>; i.e.,
-        <me>
+        <md>
           T =
           \left\{
           \begin{pmatrix}
@@ -390,10 +390,10 @@
           \end{pmatrix}
           : a, b, c \in {\mathbb R}
           \right\}
-        </me>,
+        </md>,
         then <m>T</m> is a subring of <m>R</m>.
         If
-        <me>
+        <md>
           A =
           \begin{pmatrix}
           a &amp; b \\
@@ -405,16 +405,16 @@
           a' &amp; b' \\
           0 &amp; c'
           \end{pmatrix}
-        </me>
+        </md>
         are in <m>T</m>, then clearly <m>A-B</m> is also in <m>T</m>.
         Also,
-        <me>
+        <md>
           AB =
           \begin{pmatrix}
           a a' &amp; ab' + bc' \\
           0 &amp; cc'
           \end{pmatrix}
-        </me>
+        </md>
         is in <m>T</m>.
       </p>
     </example>
@@ -450,9 +450,9 @@
         Then <m>\overline{\alpha} = a - bi</m> is also a unit since if <m>\alpha \beta = 1</m>,
         then <m>\overline{\alpha} \overline{\beta} = 1</m>.
         If <m>\beta = c + di</m>, then
-        <me>
+        <md>
           1 = \alpha \beta \overline{\alpha} \overline{\beta} = (a^2 + b^2 )(c^2 + d^2)
-        </me>.
+        </md>.
         Therefore, <m>a^2 + b^2</m> must either be <m>1</m> or <m>-1</m>;
         or, equivalently, <m>a + bi = \pm 1</m> or <m>a + bi = \pm i</m>.
         Therefore, units of this ring are <m>\pm 1</m> and <m>\pm i</m>;
@@ -464,7 +464,7 @@
     <example xml:id="rings-example-matrix-z2">
       <p>
         The set of matrices
-        <me>
+        <md>
           F =
           \left\{
           \begin{pmatrix}
@@ -484,7 +484,7 @@
           0 &amp; 0
           \end{pmatrix}
           \right\}
-        </me>
+        </md>
         with entries in <m>{\mathbb Z}_2</m> forms a field.
       </p>
     </example>
@@ -493,9 +493,9 @@
       <p>
         The set <m>{\mathbb Q}( \sqrt{2}\, ) = \{ a + b \sqrt{2} : a, b \in {\mathbb Q} \}</m> is a field.
         The inverse of an element <m>a + b \sqrt{2}</m> in <m>{\mathbb Q}( \sqrt{2}\, )</m> is
-        <me>
+        <md>
           \frac{a}{a^2 - 2 b^2} +\frac{- b}{ a^2 - 2 b^2} \sqrt{2}
-        </me>.
+        </md>.
       </p>
     </example>
 
@@ -557,9 +557,9 @@
           <m>d \neq 0</m>, then <m>ad \neq 0</m>.
           The map <m>\lambda_a</m> is one-to-one,
           since for <m>d_1, d_2 \in D^*</m>,
-          <me>
+          <md>
             ad_1 = \lambda_a(d_1) = \lambda_a(d_2) = ad_2
-          </me>
+          </md>
           implies <m>d_1 = d_2</m> by left cancellation.
           Since <m>D^\ast</m> is a finite set,
           the map <m>\lambda_a</m> must also be onto;
@@ -614,9 +614,9 @@
           If <m>1</m> has order <m>n</m>,
           then <m>n</m> is the least positive integer such that <m>n 1 = 0</m>.
           Thus, for all <m>r \in R</m>,
-          <me>
+          <md>
             nr = n(1r) = (n 1) r = 0r = 0
-          </me>.
+          </md>.
           On the other hand,
           if no positive <m>n</m> exists such that <m>n1 = 0</m>,
           then the characteristic of <m>R</m> is zero.
@@ -670,9 +670,9 @@
       The set of elements that a ring homomorphism maps to <m>0</m> plays a fundamental role in the theory of rings.
       For any ring homomorphism <m>\phi : R \rightarrow S</m>,
       we define the <term>kernel</term><idx><h>Homomorphism</h><h>kernel of a ring</h></idx><idx><h>Kernel</h><h>of a ring homomorphism</h></idx> of a ring homomorphism to be the set
-      <me>
+      <md>
         \ker \phi = \{ r \in R : \phi( r ) = 0 \}
-      </me>.
+      </md>.
     </p>
 
     <example xml:id="rings-example-homo">
@@ -784,9 +784,9 @@
       <p>
         If <m>a</m> is any element in a commutative ring <m>R</m> with identity,
         then the set
-        <me>
+        <md>
           \langle a \rangle = \{ ar : r \in R \}
-        </me>
+        </md>
         is an ideal in <m>R</m>.
         Certainly, <m>\langle a \rangle</m> is nonempty since both <m>0 = a0</m> and <m>a = a1</m> are in <m>\langle a \rangle</m>.
         The sum of two elements in <m>\langle a \rangle</m> is again in
@@ -822,9 +822,9 @@
           Now let <m>a</m> be any element in <m>I</m>.
           Using the division algorithm,
           we know that there exist integers <m>q</m> and <m>r</m> such that
-          <me>
+          <md>
             a = nq + r
-          </me>
+          </md>
           where <m>0 \leq r \lt n</m>.
           This equation tells us that <m>r = a - nq \in I</m>,
           but <m>r</m> must be <m>0</m> since <m>n</m> is the least positive element in <m>I</m>.
@@ -858,13 +858,13 @@
           Suppose that <m>r \in R</m> and <m>a \in \ker \phi</m>.
           Then we must show that <m>ar</m> and <m>ra</m> are in <m>\ker \phi</m>.
           However,
-          <me>
+          <md>
             \phi(ar) = \phi(a) \phi(r) = 0 \phi(r) = 0
-          </me>
+          </md>
           and
-          <me>
+          <md>
             \phi(ra) = \phi(r) \phi(a) =  \phi(r)0 = 0
-          </me>.
+          </md>.
         </p>
       </proof>
     </proposition>
@@ -890,9 +890,9 @@
         <p>
           Let <m>I</m> be an ideal of <m>R</m>.
           The factor group <m>R/I</m> is a ring with multiplication defined by
-          <me>
+          <md>
             (r + I)(s + I) = rs + I
-          </me>.
+          </md>.
         </p>
       </statement>
 
@@ -908,9 +908,9 @@
           there exists an element <m>a</m>  in <m>I</m> such that <m>r' = r + a</m>.
           Similarly, there exists a <m>b \in I</m> such that <m>s' = s + b</m>.
           Notice that
-          <me>
+          <md>
             r' s' = (r+a)(s+b) = rs + as + rb + ab
-          </me>
+          </md>
           and <m>as + rb + ab \in I</m> since <m>I</m> is an ideal;
           consequently, <m>r' s' \in rs + I</m>.
           We will leave as an exercise the verification of the  associative law for multiplication and the distributive laws.
@@ -940,9 +940,9 @@
           It remains to show that <m>\phi</m> works correctly under ring multiplication.
           Let <m>r</m> and <m>s</m> be in <m>R</m>.
           Then
-          <me>
+          <md>
             \phi(r) \phi(s) = (r + I)(s+I) = rs + I = \phi(rs)
-          </me>,
+          </md>,
           which completes the proof of the theorem.
         </p>
       </proof>
@@ -1002,9 +1002,9 @@
         <p>
           Let <m>I</m> be a subring of a ring <m>R</m>  and  <m>J</m> an ideal of <m>R</m>.
           Then <m>I \cap J</m> is an ideal of <m>I</m> and
-          <me>
+          <md>
             I / I \cap J \cong (I+ J) /J
-          </me>.
+          </md>.
         </p>
       </statement>
     </theorem>
@@ -1019,9 +1019,9 @@
         <p>
           Let <m>R</m> be a ring and <m>I</m> and <m>J</m> be ideals of <m>R</m> where <m>J \subset I</m>.
           Then
-          <me>
+          <md>
             R/I \cong \frac{R/J}{I/J}
-          </me>.
+          </md>.
         </p>
       </statement>
     </theorem>
@@ -1082,9 +1082,9 @@
             We will show that <m>I</m> is an ideal in <m>R</m>.
             The set <m>I</m> is nonempty since <m>0a+0=0</m> is in <m>I</m>.
             If <m>r_1 a + m_1</m> and <m>r_2 a + m_2</m> are two elements in <m>I</m>, then
-            <me>
+            <md>
               (r_1 a + m_1) - ( r_2 a + m_2) = (r_1 - r_2)a + (m_1 - m_2)
-            </me>
+            </md>
             is in <m>I</m>.
             Also, for any <m>r \in R</m> it is true that <m>rI \subset I</m>;
             hence, <m>I</m> is closed under multiplication and satisfies the necessary conditions to be an ideal.
@@ -1094,9 +1094,9 @@
             consequently,
             by the definition of <m>I</m> there must be an <m>m</m> in <m>M</m> and an element <m>b</m> in <m>R</m> such that <m>1=ab+m</m>.
             Therefore,
-            <me>
+            <md>
               1 + M = ab + M = ba + M = (a+M)(b+M)
-            </me>.
+            </md>.
           </p>
             <!-- Label repaired.  Suggested by R. Beezer. -->
             <!-- TWJ - 12/19/2011 -->
@@ -1166,9 +1166,9 @@
 
           <p>
             Conversely, suppose that <m>P</m> is prime and
-            <me>
+            <md>
               (a + P)(b + P) = ab + P = 0 + P = P
-            </me>.
+            </md>.
             Then <m>ab \in P</m>.
             If <m>a \notin P</m>,
             then <m>b</m> must be in <m>P</m> by the definition of a prime ideal;
@@ -1292,24 +1292,24 @@
         <p>
           The equation <m>x \equiv a \pmod{m}</m> has a solution since <m>a + km</m> satisfies the equation for all <m>k \in {\mathbb Z}</m>.
           We must show that there exists an integer <m>k_1</m> such that
-          <me>
+          <md>
             a + k_1 m \equiv b \pmod{n}
-          </me>.
+          </md>.
           This is equivalent to showing that
-          <me>
+          <md>
             k_1 m \equiv (b-a) \pmod{n}
-          </me>
+          </md>
           has a solution for <m>k_1</m>.
           Since <m>m</m> and <m>n</m> are relatively prime,
           there exist integers <m>s</m> and <m>t</m> such that <m>ms + nt = 1</m>.
           Consequently,
-          <me>
+          <md>
             (b-a) ms = (b-a) -(b-a) nt
-          </me>,
+          </md>,
           or
-          <me>
+          <md>
             [(b-a)s]m \equiv (b-a) \pmod{n}
-          </me>.
+          </md>.
           Now let <m>k_1 = (b-a)s</m>.
         </p>
 
@@ -1344,9 +1344,9 @@
         we can find integers <m>s</m> and <m>t</m> such that <m>4s + 5t = 1</m>.
         Two such integers are <m>s = 4</m> and <m>t = -3</m>.
         Consequently,
-        <me>
+        <md>
           x = a + k_1 m = 3 + 4k_1 = 3 + 4[(5 - 4)4] = 19
-        </me>.
+        </md>.
       </p>
     </example>
         <!-- changed the values of s and t to fit the proof of the previous theorem.  Suggested by K. Halasz. -->
@@ -1433,9 +1433,9 @@
       which is usually a 32 or 64-bit processor chip.
       For example,
       the largest integer available on a computer with a 64-bit processor chip is
-      <me>
+      <md>
         2^{63} - 1 = 9{,}223{,}372{,}036{,}854{,}775{,}807
-      </me>.
+      </md>.
       Larger processors such as 128 or 256-bit have been proposed or are under development.
       There is even talk of a 512-bit processor chip.
       The largest integer that such a chip could store with be <m>2^{511} - 1</m>,
@@ -1641,12 +1641,12 @@
       <statement>
         <p>
           Let <m>R</m> be the ring of <m>2 \times 2</m> matrices of the form
-          <me>
+          <md>
             \begin{pmatrix}
             a &amp; b \\
             0 &amp; 0
             \end{pmatrix}
-          </me>,
+          </md>,
           where <m>a, b \in {\mathbb R}</m>.
           Show that although <m>R</m> is a ring that has no identity,
           we can find a subring <m>S</m> of <m>R</m> with an identity.
@@ -1697,7 +1697,7 @@
       <hint>
         <p>
           (a) <m>\{1, 3, 7, 9 \}</m>; (c) <m>\{ 1, 2, 3, 4, 5, 6 \}</m>; (e)
-          <me>
+          <md>
             \left\{
             \begin{pmatrix}
             1 &amp; 0 \\
@@ -1724,7 +1724,7 @@
             1 &amp; 1
             \end{pmatrix},
             \right\}
-          </me>.
+          </md>.
         </p>
       </hint>
     </exercise>
@@ -1846,7 +1846,7 @@
       <statement>
         <p>
           What is the characteristic of the field formed by the set of matrices
-          <me>
+          <md>
             F =
             \left\{
             \begin{pmatrix}
@@ -1866,7 +1866,7 @@
             0 &amp; 0
             \end{pmatrix}
             \right\}
-          </me>
+          </md>
           with entries in <m>{\mathbb Z}_2</m>?
         </p>
       </statement>
@@ -1876,13 +1876,13 @@
       <statement>
         <p>
           Define a map <m>\phi : {\mathbb C} \rightarrow {\mathbb M}_2 ({\mathbb R})</m> by
-          <me>
+          <md>
             \phi( a + bi) =
             \begin{pmatrix}
             a &amp; b \\
             -b &amp; a
             \end{pmatrix}
-          </me>.
+          </md>.
           Show that <m>\phi</m> is an isomorphism of
           <m>{\mathbb C}</m> with its image in <m>{\mathbb M}_2 ({\mathbb R})</m>.
         </p>
@@ -2065,9 +2065,9 @@
         <p>
           Prove the Second Isomorphism Theorem for rings: Let <m>I</m> be a subring of a ring <m>R</m>  and  <m>J</m> an ideal in <m>R</m>.
           Then <m>I \cap J</m> is an ideal in <m>I</m> and
-          <me>
+          <md>
             I / I \cap J \cong I + J /J
-          </me>.
+          </md>.
         </p>
       </statement>
     </exercise>
@@ -2080,9 +2080,9 @@
           Prove the Third Isomorphism Theorem for rings: Let <m>R</m> be a ring and <m>I</m> and <m>J</m> be ideals of <m>R</m>,
           where <m>J \subset I</m>.
           Then
-          <me>
+          <md>
             R/I \cong \frac{R/J}{I/J}
-          </me>.
+          </md>.
         </p>
       </statement>
     </exercise>
@@ -2243,9 +2243,9 @@
         <p>
           Let <m>R</m> be a ring.
           Define the <term>center</term> of <m>R</m> to be
-          <me>
+          <md>
             Z(R) = \{ a \in R : ar = ra \text{ for all } r \in R \}
-          </me>.
+          </md>.
           Prove that <m>Z(R)</m> is a commutative subring of <m>R</m>.
         </p>
       </statement>
@@ -2256,9 +2256,9 @@
         <p>
           Let <m>p</m> be prime.
           Prove that
-          <me>
+          <md>
             {\mathbb Z}_{(p)} = \{ a / b :  a, b \in {\mathbb Z} \text{ and } \gcd( b,p) =  1 \}
-          </me>
+          </md>
           is a ring.
           The ring <m>{\mathbb Z}_{(p)}</m> is called the
           <term>ring of integers localized at</term> <m>p</m>.
@@ -2319,9 +2319,9 @@
               <p>
                 Let <m>U(R)</m> be the group of units in <m>R</m>.
                 Prove that the map
-                <me>
+                <md>
                   \phi : U(R) \rightarrow \inn(R)
-                </me>
+                </md>
                 defined by <m>u \mapsto i_u</m> is a homomorphism.
                 Determine the kernel of <m>\phi</m>.
               </p>
@@ -2424,9 +2424,9 @@
               <p>
                 Let <m>I</m> and <m>J</m> be ideals in a ring <m>R</m> such that <m>I + J = R</m>.
                 Show that there exists a ring isomorphism
-                <me>
+                <md>
                   R/(I \cap J) \cong R/I \times R/J
-                </me>.
+                </md>.
               </p>
             </li>
           </ol>

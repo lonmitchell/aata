@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2025  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2025  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2026  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2026  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -85,23 +85,23 @@
         One of the first and most famous private key cryptosystems was the shift code used by Julius Caesar.
         We first digitize the alphabet by letting <m>\text{A}  = 00, \text{B}  = 01, \ldots, \text{Z} = 25</m>.
         The encoding function will be
-        <me>
+        <md>
           f(p) = p + 3 \bmod 26;
-        </me>
+        </md>
         that is, <m>A \mapsto D, B \mapsto E, \ldots, Z \mapsto C</m>.
         The decoding function is then
-        <me>
+        <md>
           f^{-1}(p) = p - 3 \bmod 26 = p + 23 \bmod 26
-        </me>.
+        </md>.
         Suppose we receive the encoded message <c>DOJHEUD</c>. To decode this message,
         we first digitize it:
-        <me>
+        <md>
           3, 14, 9, 7, 4, 20, 3
-        </me>.
+        </md>.
         Next we apply the inverse transformation to get
-        <me>
+        <md>
           0, 11, 6, 4, 1, 17, 0
-        </me>,
+        </md>,
         or <c>ALGEBRA</c>. Notice here that there is nothing special about either of the numbers <m>3</m> or <m>26</m>.
         We could have used a larger alphabet or a different shift.
       </p>
@@ -126,13 +126,13 @@
         Then we have good reason to suspect that  <m>18 = 4 + b \bmod 26</m>,
         or <m>b= 14</m>.
         Therefore, the most likely encrypting function is
-        <me>
+        <md>
           f(p) = p + 14 \bmod 26
-        </me>.
+        </md>.
         The corresponding decrypting function is
-        <me>
+        <md>
           f^{-1}(p) = p + 12 \bmod 26
-        </me>.
+        </md>.
         It is now easy to determine whether or not our guess is correct.
       </p>
     </example>
@@ -149,22 +149,22 @@
     <p>
       Let us investigate a slightly more sophisticated cryptosystem.
       Suppose that the encoding function is given by
-      <me>
+      <md>
         f(p) = ap + b \bmod 26
-      </me>.
+      </md>.
       We first need to find out when a decoding function <m>f^{-1}</m> exists.
       Such a decoding function exists when we can solve the equation
-      <me>
+      <md>
         c = ap + b \bmod 26
-      </me>
+      </md>
       for <m>p</m>.
       By <xref ref="groups-proposition-zn-equiv-classes"/>,
       this is possible exactly when <m>a</m> has an inverse or,
       equivalently, when <m>\gcd( a, 26) =1</m>.
       In this case
-      <me>
+      <md>
         f^{-1}(p) = a^{-1} p - a^{-1} b \bmod 26
-      </me>.
+      </md>.
       Such a cryptosystem is called an
       <idx><h>Cryptosystem</h><h>affine</h></idx><term>affine cryptosystem</term>.  
     </p>
@@ -180,9 +180,9 @@
         Therefore, we can take our encryption function to be <m>f(p) = 5p + 3 \bmod 26</m>.
         Thus, <c>ALGEBRA</c> is encoded as <m>3, 6, 7, 23, 8, 10, 3</m>,
         or <c>DGHXIKD</c>. The decryption function will be
-        <me>
+        <md>
           f^{-1}(p) = 21 p - 21 \cdot 3 \bmod 26 = 21 p + 15 \bmod 26
-        </me>.
+        </md>.
       </p>
     </example>
 
@@ -193,44 +193,44 @@
       The idea works roughly the same as before;
       however, instead of encrypting one letter at a time we will encrypt pairs of letters.
       We can store a pair of letters <m>p_1</m> and <m>p_2</m> in a vector
-      <me>
+      <md>
         {\mathbf p} = 
         \begin{pmatrix}
         p_1 \\ p_2
         \end{pmatrix}
-      </me>.
+      </md>.
       Let <m>A</m> be a <m>2 \times 2</m> invertible matrix with entries in <m>{\mathbb Z}_{26}</m>.
       We can define an encoding function by
-      <me>
+      <md>
         f({\mathbf p}) = A {\mathbf p} + {\mathbf b}
-      </me>,
+      </md>,
       where <m>{\mathbf b}</m> is a fixed column vector and matrix operations are performed in <m>{\mathbb Z}_{26}</m>.
       The decoding function must be
-      <me>
+      <md>
         f^{-1}({\mathbf p}) = A^{-1} {\mathbf p} - A^{-1} {\mathbf b}
-      </me>.
+      </md>.
     </p>
 
     <example xml:id="crypt-example-help">
       <p>
         Suppose that we wish to encode the word HELP. The corresponding digit string is <m>7, 4, 11, 15</m>.
         If
-        <me>
+        <md>
           A =
           \begin{pmatrix}
           3 &amp; 5 \\
           1 &amp; 2
           \end{pmatrix}
-        </me>,
+        </md>,
         then
-        <me>
+        <md>
           A^{-1} 
           =
           \begin{pmatrix}
           2 &amp; 21 \\
           25 &amp; 3
           \end{pmatrix}
-        </me>.
+        </md>.
         If <m>{\mathbf b} = ( 2, 2)^\transpose</m>,
         then our message is encrypted as RRGR. The encrypted letter R represents more than one plaintext letter.
       </p>
@@ -317,26 +317,26 @@
           which when digitized is <m>25</m>.
           Let <m>p = 23</m> and <m>q = 29</m>.
           Then
-          <me>
+          <md>
             n = pq = 667
-          </me>
+          </md>
           and
-          <me>
+          <md>
             \phi(n) = m = (p - 1)(q - 1) = 616
-          </me>.
+          </md>.
           We can let <m>E = 487</m>, since <m>\gcd(616, 487) = 1</m>.
           The encoded message is computed to be
-          <me>
+          <md>
             25^{487} \bmod 667 = 169
-          </me>.
+          </md>.
           This computation can be reasonably done by using the method of repeated squares as described in <xref ref="cyclic"/>.
           Using the Euclidean algorithm,
           we determine that <m>191 E = 1 + 151 m</m>;
           therefore, the decrypting key is <m>(n, D) = ( 667, 191)</m>.
           We can recover the original message by calculating
-          <me>
+          <md>
             169^{191} \bmod 667 = 25
-          </me>.
+          </md>.
         </p>
       </example>
             <!-- Message changed from 23 to 25 so that it does not match p.  Suggested by R. Beezer. -->
@@ -345,15 +345,15 @@
         Now let us examine why the <acro>RSA</acro> cryptosystem works.
         We know that <m>DE \equiv 1 \pmod{ m}</m>;
         hence, there exists a <m>k</m> such that
-        <me>
+        <md>
           DE = km + 1 = k \phi(n) + 1
-        </me>.
+        </md>.
         There are two cases to consider.
         In the first case assume that <m>\gcd(x, n) = 1</m>.
         Then by <xref ref="cosets-theorem-eulers_theorem"/>,
-        <me>
+        <md>
           y^D = (x^E)^D = x^{DE} = x^{km + 1} = (x^{\phi(n)})^k x = (1)^k x = x \bmod n
-        </me>.
+        </md>.
         So we see that Alice recovers the original message <m>x</m> when she computes <m>y^D \bmod n</m>.
       </p>
 
@@ -368,14 +368,14 @@
         with <m>r \lt q</m> and <m>x = rp</m>.
         Note that we have <m>\gcd(x, q) = 1</m> and that <m>m=\phi(n)=(p - 1)(q - 1)=\phi(p)\phi(q)</m>.
         Then, using <xref ref="cosets-theorem-eulers_theorem"/>, but now mod <m>q</m>,
-        <me>
+        <md>
           x^{km} = x^{k\phi(p)\phi(q)} = (x^{\phi(q)})^{k\phi(p)} = (1)^{k\phi(p)} = 1 \bmod q
-        </me>.
+        </md>.
         So there is an integer <m>t</m> such that <m>x^{km}=1 + tq</m>.
         Thus, Alice also recovers the message in this case,
-        <me>
+        <md>
           y^D = x^{km + 1} = x^{km} x = (1 + tq) x = x + tq(rp) = x + trn = x \bmod n
-        </me>.
+        </md>.
       </p>
             <!-- Demonstration expanded to two cases.  Suggested by Kevin Halasz. -->
             <!-- RAB - 12/30/2011 -->
@@ -403,15 +403,15 @@
         Bob wishes to assure Alice that the message he is sending is authentic.
         Before Bob sends the message <m>x</m> to Alice,
         he decrypts  <m>x</m> with his own key:
-        <me>
+        <md>
           x' = x ^{D'} \bmod n'
-        </me>.
+        </md>.
         Anyone can change <m>x'</m> back to <m>x</m> just by encryption,
         but only Bob has the ability to form <m>x'</m>.
         Now Bob encrypts <m>x'</m> with Alice's encryption key to form
-        <me>
+        <md>
           y' = {x'}^E  \bmod n
-        </me>,
+        </md>,
         a message that only Alice can decode.
         Alice decodes the message and then encodes the result with Bob's key to read the original message,
         a message that could have only been sent by Bob.
@@ -618,13 +618,13 @@
       <statement>
         <p>
           Given the matrix
-          <me>
+          <md>
             A =
             \begin{pmatrix}
             3 &amp; 4 \\
             2 &amp; 3
             \end{pmatrix}
-          </me>,
+          </md>,
           use the encryption function
           <m>f({\mathbf p}) = A {\mathbf p} + {\mathbf b}</m> to encode the message <c>CRYPTOLOGY</c>,
           where <m>{\mathbf b} = ( 2, 5)^\transpose</m>.
@@ -775,9 +775,9 @@
       <statement>
         <p>
           Find integers <m>n</m>, <m>E</m>, and <m>X</m> such that
-          <me>
+          <md>
             X^E \equiv X \pmod{n}
-          </me>.
+          </md>.
           Is this a potential problem in the <acro>RSA</acro> cryptosystem?
         </p>
       </statement>
@@ -821,9 +821,9 @@
             <p>
               Let <m>n= ab</m> be an odd composite number.
               Prove that <m>n</m> can be written as the difference of two perfect squares:
-              <me>
+              <md>
                 n = x^2 - y^2 = (x - y)(x + y)
-              </me>.
+              </md>.
               Consequently,
               a positive odd integer can be factored exactly when we can find integers <m>x</m> and <m>y</m> such that <m>n = x^2 - y^2</m>.
             </p>
@@ -869,18 +869,18 @@
           Then <m>a^{p-1} \equiv 1 \pmod{p}</m>.
           We can use Fermat's Little Theorem as a screening test for primes.
           For example, <m>15</m> cannot be prime since
-          <me>
+          <md>
             2^{15-1} \equiv 2^{14} \equiv 4 \pmod{15}
-          </me>.
+          </md>.
           However, <m>17</m> is a potential prime since
-          <me>
+          <md>
             2^{17-1} \equiv 2^{16} \equiv 1 \pmod{17}
-          </me>.
+          </md>.
           We say that an odd composite number <m>n</m> is a <term>pseudoprime</term><idx><h>Pseudoprime</h></idx>
           if
-          <me>
+          <md>
             2^{n-1} \equiv 1 \pmod{n}
-          </me>.
+          </md>.
           Which of the following numbers are primes and which are pseudoprimes?
 
           <ol cols="3">
@@ -970,7 +970,7 @@
 <!-- was [2] -->
       Diffie, W. and Hellman, M. E. <q>New Directions in Cryptography,</q>
       <title>IEEE Trans. Inform. Theory</title>
-      <volume>22</volume>
+      <volumd>22</volumd>
       (1976), 644<ndash/>54.
     </biblio>
         <!-- Title corrected.  Suggested by R. Beezer.  TWJ - 12/20/2011 -->
@@ -978,7 +978,7 @@
 <!-- was [3] -->
       Gardner, M. <q>Mathematical games: A new kind of cipher that would take millions of years to break,</q>
       <title>Scientific American</title>
-      <volume>237</volume>
+      <volumd>237</volumd>
       (1977), 120<ndash/>24.
     </biblio>
 
@@ -986,7 +986,7 @@
 <!-- was [4] -->
       Granville, A. <q>Primality Testing and Carmichael Numbers,</q>
       <title>Notices of the American Mathematical Society</title>
-      <volume>39</volume>
+      <volumd>39</volumd>
       (1992), 696<ndash/>700.
     </biblio>
 
@@ -994,7 +994,7 @@
 <!-- was [5] -->
       Hellman, M. E. <q>The Mathematics of Public Key Cryptography,</q>
       <title>Scientific American</title>
-      <volume>241</volume>
+      <volumd>241</volumd>
       (1979), 130<ndash/>39.
     </biblio>
         <!-- reference updated - TWJ 5/10/2010 -->
@@ -1008,7 +1008,7 @@
 <!-- was [7] -->
       Pomerance, C., ed. <q>Cryptology and Computational Number Theory</q>,
       <title>Proceedings of Symposia in Applied Mathematics</title>
-      <volume>42</volume>
+      <volumd>42</volumd>
       (1990) American Mathematical Society, Providence, RI.
     </biblio>
 
@@ -1016,7 +1016,7 @@
 <!-- was [8] -->
       Rivest, R. L., Shamir, A., and Adleman, L., <q>A Method for Obtaining Signatures and Public-key Cryptosystems,</q>
       <title>Comm. ACM</title>
-      <volume>21</volume>
+      <volumd>21</volumd>
       (1978), 120<ndash/>26.
     </biblio>
   </references>

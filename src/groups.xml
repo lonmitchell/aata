@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2025  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2025  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2026  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2026  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -107,7 +107,7 @@
             <!-- math table -->
           <caption>Multiplication table for <m>{\mathbb Z_8}</m></caption>
           <p>
-            <me>
+            <md>
               \begin{array}{c|cccccccc}
               \cdot &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7 \\
               \hline
@@ -120,7 +120,7 @@
               6       &amp; 0 &amp; 6 &amp; 4 &amp; 2 &amp; 0 &amp; 6 &amp; 4 &amp; 2 \\
               7       &amp; 0 &amp; 7 &amp; 6 &amp; 5 &amp; 4 &amp; 3 &amp; 2 &amp; 1 
               \end{array}
-            </me>
+            </md>
           </p>
         </figure>
       </example>
@@ -166,18 +166,18 @@
               <li>
                 <p>
                   Multiplication distributes over addition:
-                  <me>
+                  <md>
                     a  (b  + c)  \equiv a  b + a  c  \pmod{ n}
-                  </me>.
+                  </md>.
                 </p>
               </li>
 
               <li>
                 <p>
                   For every integer <m>a</m> there is an additive inverse <m>-a</m>:
-                  <me>
+                  <md>
                     a + (-a)  \equiv 0 \pmod{ n}
-                  </me>.
+                  </md>.
                 </p>
               </li>
 
@@ -186,9 +186,9 @@
                   Let <m>a</m> be a nonzero integer.
                   Then <m>\gcd(a,n) = 1</m> if and only if there exists a multiplicative inverse <m>b</m> for <m>a \pmod{n}</m>;
                   that is, a nonzero integer <m>b</m> such that
-                  <me>
+                  <md>
                     a  b  \equiv 1 \pmod{ n}
-                  </me>.
+                  </md>.
                 </p>
               </li>
             </ol>
@@ -284,12 +284,12 @@
         So we have <m>3 \cdot 2 \cdot 1 = 3! = 6</m> different arrangements.
         To denote the permutation of the vertices of an equilateral triangle that sends <m>A</m> to <m>B</m>,
         <m>B</m> to <m>C</m>, and <m>C</m> to <m>A</m>, we write the array
-        <me>
+        <md>
           \begin{pmatrix}
           A &amp; B &amp; C \\
           B &amp; C &amp; A
           \end{pmatrix}
-        </me>.
+        </md>.
         Notice that this particular permutation corresponds to the rigid motion of rotating the triangle by
         <m>120^{\circ}</m> in a clockwise direction.
         In fact, every permutation gives rise to a symmetry of the triangle.
@@ -328,7 +328,7 @@
             <!-- math table -->
         <caption>Symmetries of an equilateral triangle</caption>
         <p>
-          <me>
+          <md>
             \begin{array}{c|cccccc}
             \circ  &amp; \identity     &amp; \rho_1 &amp; \rho_2 &amp; \mu_1 &amp; \mu_2 &amp; \mu_3 \\
             \hline
@@ -339,7 +339,7 @@
             \mu_2  &amp; \mu_2  &amp; \mu_3  &amp; \mu_1  &amp; \rho_2 &amp; \identity    &amp; \rho_1\\
             \mu_3  &amp; \mu_3  &amp; \mu_1  &amp; \mu_2  &amp; \rho_1 &amp; \rho_2&amp; \identity
             \end{array}
-          </me>
+          </md>
         </p>
       </figure>
     </subsection>
@@ -368,9 +368,9 @@
             <p>
               The law of composition is <term>associative</term>.
               That is,
-              <me>
+              <md>
                 (a \circ b) \circ c = a \circ (b \circ c)
-              </me>
+              </md>
               for <m>a, b, c \in G</m>.
             </p>
           </li>
@@ -380,9 +380,9 @@
               There exists an element <m>e \in G</m>,
               called the <term>identity element</term>,<idx><h>Element</h><h>identity</h></idx>
               such that for any element <m>a \in G</m>
-              <me>
+              <md>
                 e \circ a = a \circ e = a
-              </me>.
+              </md>.
             </p>
           </li>
 
@@ -391,9 +391,9 @@
               For each element <m>a \in G</m>,
               there exists an <term>inverse element</term><idx><h>Element</h><h>inverse</h></idx>
               in G, denoted by <m>a^{-1}</m>, such that
-              <me>
+              <md>
                 a \circ a^{-1} = a^{-1} \circ a = e
-              </me>.
+              </md>.
             </p>
           </li>
         </ul>
@@ -459,7 +459,7 @@
             <!-- math table -->
           <caption>Cayley table for <m>({\mathbb Z_5}, +)</m></caption>
           <p>
-            <me>
+            <md>
               \begin{array}{c|ccccc}
               + &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 \\
               \hline
@@ -469,7 +469,7 @@
               3 &amp; 3 &amp; 4 &amp; 0 &amp; 1 &amp; 2 \\
               4 &amp; 4 &amp; 0 &amp; 1 &amp; 2 &amp; 3
               \end{array}
-            </me>
+            </md>
           </p>
         </figure>
       </example>
@@ -513,7 +513,7 @@
             <!-- math table -->
           <caption>Multiplication table for <m>U(8)</m></caption>
           <p>
-            <me>
+            <md>
               \begin{array}{c|cccc}
               \cdot &amp; 1 &amp; 3 &amp; 5 &amp; 7 \\
               \hline
@@ -522,7 +522,7 @@
               5       &amp; 5 &amp; 7 &amp; 1 &amp; 3 \\
               7       &amp; 7 &amp; 5 &amp; 3 &amp; 1
               \end{array}
-            </me>
+            </md>
           </p>
         </figure>
       </example>
@@ -551,13 +551,13 @@
             <description>the <m>n \times n</m> matrices with entries in <m>\mathbb R</m></description>
           </notation>
 
-          <me>
+          <md>
             A =
             \begin{pmatrix}
             a &amp; b \\
             c &amp; d
             \end{pmatrix}
-          </me>
+          </md>
           is in  <m>GL_2( {\mathbb R})</m> if there exists a matrix <m>A^{-1}</m> such that <m>A A^{-1} = A^{-1} A = I</m>,
           where <m>I</m> is the <m>2 \times 2</m> identity matrix.
           For <m>A</m> to have an inverse is equivalent to requiring that the determinant of <m>A</m> be nonzero;
@@ -573,22 +573,22 @@
             <description>the general linear group</description>
           </notation>
           The identity of the group is the identity matrix
-          <me>
+          <md>
             I =
             \begin{pmatrix}
             1 &amp; 0 \\
             0 &amp; 1
             \end{pmatrix}
-          </me>.
+          </md>.
           The inverse of <m>A \in GL_2( {\mathbb R})</m> is
-          <me>
+          <md>
             A^{-1} =
             \frac{1}{ad-bc}
             \begin{pmatrix}
             d &amp; -b \\
             -c &amp; a
             \end{pmatrix}
-          </me>.
+          </md>.
           The product of two invertible matrices is again invertible.
           Matrix multiplication is associative,
           satisfying the other group axiom.
@@ -652,9 +652,9 @@
           Under the operation of multiplication <m>{\mathbb C}^\ast</m> forms a group.
           The identity is <m>1</m>.
           If <m>z = a+bi</m> is a nonzero complex number, then
-          <me>
+          <md>
             z^{-1} = \frac{a -bi}{a^2 +b^2}
-          </me>
+          </md>
           is the inverse of <m>z</m>.
           It is easy to see that the remaining group axioms hold.
         </p>
@@ -755,9 +755,9 @@
             Observe that <m>a^{-1} (a^{-1})^{-1} = e</m>.
             Consequently,
             multiplying both sides of this equation by <m>a</m>, we have
-            <me>
+            <md>
               (a^{-1})^{-1} = e (a^{-1})^{-1} = a a^{-1} (a^{-1})^{-1} = ae = a
-            </me>.
+            </md>.
           </p>
         </proof>
       </proposition>
@@ -815,13 +815,13 @@
         If <m>G</m> is a group and <m>g \in G</m>,
         then we define <m>g^0 = e</m>.
         For <m>n \in {\mathbb N}</m>, we define
-        <me>
+        <md>
           g^n = \underbrace{g \cdot g \cdots g}_{n \; \text{times}}
-        </me>
+        </md>
         and
-        <me>
+        <md>
           g^{-n} = \underbrace{g^{-1} \cdot g^{-1} \cdots g^{-1}}_{n \; \text{times}}
-        </me>.
+        </md>.
       </p>
 
       <theorem xml:id="groups-theorem-exponent-laws">
@@ -952,9 +952,9 @@
 
           The identity of this group is <m>1</m> and the inverse of any element <m>a \in {\mathbb R}^*</m> is just <m>1/a</m>.
           We will show that
-          <me>
+          <md>
             {\mathbb Q}^* = \{ p/q : p \, \text{and}\, q\, \text{are nonzero integers} \}
-          </me>
+          </md>
           is a subgroup of <m>{\mathbb R}^*</m>.
 
           <notation>
@@ -995,25 +995,25 @@
             <description>the special linear group</description>
           </notation>
 
-          <me>
+          <md>
             A =
             \begin{pmatrix}
             a &amp; b \\
             c &amp; d
             \end{pmatrix}
-          </me>
+          </md>
           is in <m>SL_2( {\mathbb R})</m> exactly when <m>ad - bc = 1</m>.
           To show that <m>SL_2( {\mathbb R})</m> is a subgroup of the general linear group,
           we must show that it is a group under matrix multiplication.
           The <m>2 \times 2</m> identity matrix is in <m>SL_2( {\mathbb R})</m>,
           as is the inverse of the matrix <m>A</m>:
-          <me>
+          <md>
             A^{-1} =
             \begin{pmatrix}
             d  &amp; -b \\
             -c &amp;  a
             \end{pmatrix}
-          </me>.
+          </md>.
           It remains to show that multiplication is closed;
           that is, that the product of two matrices of determinant one also has determinant one.
           We will leave this task as an exercise.
@@ -1035,7 +1035,7 @@
           If we add two invertible matrices,
           we do not necessarily obtain another invertible matrix.
           Observe that
-          <me>
+          <md>
             \begin{pmatrix}
             1 &amp; 0 \\
             0 &amp; 1
@@ -1050,7 +1050,7 @@
             0 &amp; 0 \\
             0 &amp; 0
             \end{pmatrix}
-          </me>,
+          </md>,
           but the zero matrix is not in <m>GL_2( {\mathbb R })</m>.
         </p>
       </example>
@@ -1077,7 +1077,7 @@
             <!-- math table -->
           <caption>Addition table for <m>{\mathbb Z}_2 \times {\mathbb Z}_2</m></caption>
           <p>
-            <me>
+            <md>
               \begin{array}{c|cccc}
               +     &amp; (0,0) &amp; (0,1) &amp; (1,0) &amp; (1,1) \\
               \hline
@@ -1086,7 +1086,7 @@
               (1,0) &amp; (1,0) &amp; (1,1) &amp; (0,0) &amp; (0,1) \\
               (1,1) &amp; (1,1) &amp; (1,0) &amp; (0,1) &amp; (0,0)
               \end{array}
-            </me>
+            </md>
           </p>
         </figure>
       </example>
@@ -1328,7 +1328,7 @@
           <ol cols="2">
             <li>
               <p>
-                <me>
+                <md>
                   \begin{array}{c|cccc}
                   \circ &amp; a &amp; b &amp; c &amp; d \\
                   \hline
@@ -1337,13 +1337,13 @@
                   c &amp; c &amp; d &amp; a &amp; b \\
                   d &amp; d &amp; a &amp; b &amp; c
                   \end{array}
-                </me>
+                </md>
               </p>
             </li>
 
             <li>
               <p>
-                <me>
+                <md>
                   \begin{array}{c|cccc}
                   \circ &amp; a &amp; b &amp; c &amp; d \\
                   \hline
@@ -1352,13 +1352,13 @@
                   c &amp; c &amp; d &amp; a &amp; b \\
                   d &amp; d &amp; c &amp; b &amp; a
                   \end{array}
-                </me>
+                </md>
               </p>
             </li>
 
             <li>
               <p>
-                <me>
+                <md>
                   \begin{array}{c|cccc}
                   \circ &amp; a &amp; b &amp; c &amp; d \\
                   \hline
@@ -1367,13 +1367,13 @@
                   c &amp; c &amp; d &amp; a &amp; b \\
                   d &amp; d &amp; a &amp; b &amp; c
                   \end{array}
-                </me>
+                </md>
               </p>
             </li>
 
             <li>
               <p>
-                <me>
+                <md>
                   \begin{array}{c|cccc}
                   \circ &amp; a &amp; b &amp; c &amp; d \\
                   \hline
@@ -1382,7 +1382,7 @@
                   c &amp; c &amp; b &amp; a &amp; d \\
                   d &amp; d &amp; d &amp; b &amp; c
                   \end{array}
-                </me>
+                </md>
               </p>
             </li>
           </ol>
@@ -1436,14 +1436,14 @@
       </statement>
       <hint>
         <p>
-          <me>
+          <md>
             \begin{array}{c|cccc}
             \cdot &amp; 1  &amp; 5  &amp; 7  &amp; 11 \\
             \hline
             1 &amp; 1 &amp; 5 &amp; 7 &amp; 11 \\ 5 &amp; 5 &amp; 1 &amp; 11 &amp; 7 \\
             7 &amp; 7 &amp; 11 &amp; 1 &amp; 5 \\ 11 &amp; 11 &amp; 7 &amp; 5 &amp; 1
             \end{array}
-          </me>
+          </md>
         </p>
       </hint>
     </exercise>
@@ -1486,19 +1486,19 @@
       <statement>
         <p>
           Prove that the set of matrices of the form
-          <me>
+          <md>
             \begin{pmatrix}
             1 &amp; x &amp; y \\
             0 &amp; 1 &amp; z \\
             0 &amp; 0 &amp; 1
             \end{pmatrix}
-          </me>
+          </md>
           is a group under matrix multiplication.
           This group, known as the
           <term>Heisenberg group</term>,
           is important in quantum physics.
           Matrix multiplication in the Heisenberg group is defined by
-          <me>
+          <md>
             \begin{pmatrix}
             1 &amp; x &amp; y \\
             0 &amp; 1 &amp; z \\
@@ -1515,7 +1515,7 @@
             0 &amp; 1 &amp; z+z' \\
             0 &amp; 0 &amp; 1
             \end{pmatrix}
-          </me>.
+          </md>.
         </p>
       </statement>
     </exercise>
@@ -1537,9 +1537,9 @@
           Let <m>{\mathbb Z}_2^n = \{ (a_1, a_2, \ldots,
           a_n) : a_i \in {\mathbb Z}_2 \}</m>.
           Define a binary operation on <m>{\mathbb Z}_2^n</m> by
-          <me>
+          <md>
             (a_1, a_2, \ldots, a_n) + (b_1, b_2, \ldots, b_n) = (a_1 + b_1, a_2 + b_2, \ldots, a_n + b_n)
-          </me>.
+          </md>.
           Prove that <m>{\mathbb Z}_2^n</m> is a group under this operation.
           This group is important in algebraic coding theory.
         </p>
@@ -1617,12 +1617,12 @@
       <hint>
         <p>
           Let
-          <me>
+          <md>
             \sigma =
             \begin{pmatrix}
             1 &amp; 2 &amp; \cdots &amp; n \\ a_1 &amp; a_2 &amp; \cdots &amp; a_n
             \end{pmatrix}
-          </me>
+          </md>
           be in <m>S_n</m>.
           All of the <m>a_i</m>s must be distinct.
           There are <m>n</m> ways to choose <m>a_1</m>,
@@ -1637,9 +1637,9 @@
       <statement>
         <p>
           Show that
-          <me>
+          <md>
             0 + a  \equiv a + 0  \equiv a \pmod{ n }
-          </me>
+          </md>
           for all <m>a \in {\mathbb Z}_n</m>.
         </p>
       </statement>
@@ -1649,9 +1649,9 @@
       <statement>
         <p>
           Prove that there is a multiplicative identity for the integers modulo <m>n</m>:
-          <me>
+          <md>
             a \cdot  1   \equiv  a \pmod{n}
-          </me>.
+          </md>.
         </p>
       </statement>
     </exercise>
@@ -1660,9 +1660,9 @@
       <statement>
         <p>
           For each <m>a \in {\mathbb Z}_n</m> find an element <m>b \in {\mathbb Z}_n</m> such that
-          <me>
+          <md>
             a + b \equiv b + a  \equiv 0 \pmod{ n}
-          </me>.
+          </md>.
         </p>
       </statement>
     </exercise>
@@ -1688,9 +1688,9 @@
       <statement>
         <p>
           Show that multiplication distributes over addition modulo <m>n</m>:
-          <me>
+          <md>
             a(b  + c)  \equiv ab + ac  \pmod{n}
-          </me>.
+          </md>.
         </p>
       </statement>
     </exercise>
@@ -1862,12 +1862,12 @@
       <statement>
         <p>
           Let <m>G</m> consist of the <m>2 \times 2</m> matrices of the form
-          <me>
+          <md>
             \begin{pmatrix}
             \cos \theta &amp; -\sin \theta \\
             \sin \theta &amp; \cos \theta
             \end{pmatrix}
-          </me>,
+          </md>,
           where <m>\theta \in {\mathbb R}</m>.
           Prove that <m>G</m> is a subgroup of <m>SL_2({\mathbb R})</m>.
         </p>
@@ -1878,9 +1878,9 @@
       <statement>
         <p>
           Prove that
-          <me>
+          <md>
             G = \{ a + b \sqrt{2} : a, b \in {\mathbb Q} \text{ and } a \text{ and } b \text{ are not both zero} \}
-          </me>
+          </md>
           is a subgroup of <m>{\mathbb R}^{\ast}</m> under the group operation of multiplication.
         </p>
       </statement>
@@ -1899,7 +1899,7 @@
         <p>
           Let <m>G</m> be the group of
           <m>2 \times 2</m> matrices under addition and
-          <me>
+          <md>
             H =
             \left\{
             \begin{pmatrix}
@@ -1908,7 +1908,7 @@
             \end{pmatrix} :
             a + d = 0
             \right\}
-          </me>.
+          </md>.
           Prove that <m>H</m> is a subgroup of <m>G</m>.
         </p>
       </statement>
@@ -1969,9 +1969,9 @@
         <p>
           Let <m>G</m> be a group and <m>g \in G</m>.
           Show that
-          <me>
+          <md>
             Z(G) = \{ x \in G : gx = xg \text{ for all } g \in G \}
-          </me>
+          </md>
           is a subgroup of <m>G</m>.
           This subgroup is called the <term>center</term> of <m>G</m>.
 
@@ -2042,9 +2042,9 @@
       <statement>
         <p>
           Let <m>H</m> be a subgroup of <m>G</m> and
-          <me>
+          <md>
             C(H) = \{ g \in G : gh = hg \text{ for all } h \in H \}
-          </me>.
+          </md>.
           Prove <m>C(H)</m> is a subgroup of <m>G</m>.
           This subgroup is called the <term>centralizer</term> of <m>H</m> in <m>G</m>.
         </p>
@@ -2085,9 +2085,9 @@
           The first 11 digits contain information about the product;
           the twelfth digit is used for error detection.
           If <m>d_1 d_2 \cdots d_{12}</m> is a valid <acro>UPC</acro> number, then
-          <me>
+          <md>
             3 \cdot d_1 + 1 \cdot d_2 + 3 \cdot d_3 + \cdots + 3 \cdot d_{11} + 1 \cdot d_{12} \equiv 0 \pmod{10}
-          </me>.
+          </md>.
           <ol>
             <li>
               <p>
@@ -2140,13 +2140,13 @@
         <p>
           It is often useful to use an inner product notation for this type of error detection scheme;
           hence, we will use the notion
-          <me>
+          <md>
             (d_1, d_2, \ldots, d_k ) \cdot (w_1, w_2, \ldots, w_k ) \equiv 0 \pmod{ n }
-          </me>
+          </md>
           to mean
-          <me>
+          <md>
             d_1 w_1 +  d_2 w_2 + \cdots +  d_k w_k  \equiv 0  \pmod{ n}
-          </me>.
+          </md>.
         </p>
 
         <p>
@@ -2179,9 +2179,9 @@
           Every book has an International Standard Book Number<idx><h>International standard book number</h></idx> (<acro>ISBN</acro>) code.
           This is a 10-digit code indicating the book's publisher and title.
           The tenth digit is a check digit satisfying
-          <me>
+          <md>
             (d_1, d_2, \ldots, d_{10} ) \cdot (10, 9, \ldots, 1 )  \equiv 0 \pmod{11}
-          </me>.
+          </md>.
           One problem is that <m>d_{10}</m> might have to be a 10 to make the inner product zero;
           in this case, 11 digits would be  needed to make this scheme work.
           Therefore, the character X is used for the eleventh digit.
@@ -2250,7 +2250,7 @@
     <biblio type="raw">
       Gallian, J. A. and Winters, S. <q>Modular Arithmetic in the Marketplace,</q>
       <title>The American Mathematical Monthly</title>
-      <volume>95</volume>
+      <volumd>95</volumd>
       (1988): 548<ndash/>51.
     </biblio>
         <!-- %Reference updated - TWJ 6/22/2010 -->
@@ -2450,7 +2450,7 @@
         followed by outputting the element in cycle notation.
         Then we create just the <em>bottom row</em>
         of the notation we are using for permutations.
-        <me>
+        <md>
           \rho_2=
           \begin{pmatrix}
           A &amp; B &amp; C\\
@@ -2461,7 +2461,7 @@
           1 &amp; 2 &amp; 3\\
           3 &amp; 1 &amp; 2
           \end{pmatrix}
-        </me>
+        </md>
       </p>
 
             <sage>

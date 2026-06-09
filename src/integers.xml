@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2025  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2025  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2026  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2026  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -24,9 +24,9 @@
     <title>Mathematical Induction</title>
     <p>
       Suppose we wish to show that
-      <me>
+      <md>
         1 + 2 + \cdots + n = \frac{n(n + 1)}{2}
-      </me>
+      </md>
       for any natural number <m>n</m>.
       This formula is easily  verified for small numbers such as <m>n = 1</m>,
       <m>2</m>, <m>3</m>, or <m>4</m>,
@@ -39,9 +39,9 @@
       Suppose we have verified the equation for the first <m>n</m> cases.
       We will attempt to show that we can generate the formula for the <m>(n + 1)</m>th case from this knowledge.
       The formula is true for <m>n = 1</m> since
-      <me>
+      <md>
         1 = \frac{1(1 + 1)}{2}
-      </me>.
+      </md>.
       If we have verified the first <m>n</m> cases, then
       <md>
         <mrow>1 + 2 + \cdots + n + (n + 1) &amp; = \frac{n(n + 1)}{2} + n + 1</mrow>
@@ -84,16 +84,16 @@
       <p>
         For all integers <m>n \geq 3</m>, <m>2^n \gt n + 4</m>.
         Since
-        <me>
+        <md>
           8 = 2^3 \gt 3 + 4 = 7
-        </me>,
+        </md>,
         the statement is true for <m>n_0 = 3</m>.
         Assume that <m>2^k \gt k + 4</m> for <m>k \geq 3</m>.
         Then <m>2^{k + 1} = 2 \cdot 2^{k} \gt 2(k + 4)</m>.
         But
-        <me>
+        <md>
           2(k + 4) = 2k + 8 \gt k + 5 = (k + 1) + 4
-        </me>
+        </md>
         since <m>k</m> is positive.
         Hence, by induction,
         the statement holds for all integers <m>n \geq 3</m>.
@@ -104,9 +104,9 @@
       <p>
         Every integer <m>10^{n + 1} + 3 \cdot 10^n + 5</m> is divisible by <m>9</m> for <m>n \in {\mathbb N}</m>.
         For <m>n = 1</m>,
-        <me>
+        <md>
           10^{1 + 1} + 3 \cdot 10 + 5 = 135 = 9 \cdot 15
-        </me>
+        </md>
         is divisible by <m>9</m>.
         Suppose that <m>10^{k + 1} + 3 \cdot 10^k + 5</m> is divisible by <m>9</m> for <m>k \geq 1</m>.
         Then
@@ -121,14 +121,14 @@
     <example xml:id="integers-example-binomial-theorem">
       <p>
         We will prove the binomial theorem using mathematical induction; that is,
-        <me>
+        <md>
           (a + b)^n = \sum_{k = 0}^{n} \binom{n}{k} a^k b^{n - k}
-        </me>,
+        </md>,
         where <m>a</m> and <m>b</m> are real numbers,
         <m>n \in \mathbb{N}</m>, and
-        <me>
+        <md>
           \binom{n}{k} = \frac{n!}{k! (n - k)!}
-        </me>
+        </md>
         is the binomial coefficient.
 
         <notation>
@@ -142,9 +142,9 @@
         </notation>
 
         We first show that
-        <me>
+        <md>
           \binom{n + 1}{k} = \binom{n}{k} + \binom{n}{k - 1}
-        </me>.
+        </md>.
         This result follows from
         <md>
           <mrow>\binom{n}{k} + \binom{n}{k - 1} &amp; = \frac{n!}{k!(n - k)!} +\frac{n!}{(k-1)!(n - k + 1)!}</mrow>
@@ -301,9 +301,9 @@
           <p>
             Let <m>a</m> and <m>b</m> be integers, with <m>b \gt 0</m>.
             Then there exist unique integers <m>q</m> and <m>r</m> such that
-            <me>
+            <md>
               a = bq + r
-            </me>
+            </md>
             where <m>0 \leq r \lt b</m>.
           </p>
         </statement>
@@ -320,9 +320,9 @@
             <title>Existence of <m>q</m> and <m>r</m></title>
             <p>
               Let
-              <me>
+              <md>
                 S = \{ a - bk : k \in {\mathbb Z} \text{ and } a - bk \geq 0 \}
-              </me>.
+              </md>.
               If <m>0 \in S</m>, then <m>b</m> divides <m>a</m>,
               and  we can let <m>q = a/b</m> and <m>r = 0</m>.
               If <m>0 \notin S</m>, we can use the Well-Ordering Principle.
@@ -336,9 +336,9 @@
               We now show that <m>r \lt b</m>.
               Suppose that <m>r \gt b</m>.
               Then
-              <me>
+              <md>
                 a - b(q + 1)= a - bq - b = r - b \gt 0
-              </me>.
+              </md>.
               In this case we would have <m>a - b(q + 1)</m> in the set <m>S</m>.
               But then <m>a - b(q + 1) \lt a - bq</m>,
               which would contradict the fact that
@@ -354,9 +354,9 @@
               <em>Uniqueness of <m>q</m> and <m>r</m>.</em>
               Suppose there exist integers <m>r</m>, <m>r'</m>,
               <m>q</m>, and <m>q'</m> such that
-              <me>
+              <md>
                 a = bq + r, 0 \leq r \lt b \quad \text{and}\quad a = bq' + r', 0 \leq r' \lt b
-              </me>.
+              </md>.
               Then <m> bq + r =  bq' + r'</m>.
               Assume that <m>r' \geq r</m>.
               From the last equation we have <m>b(q - q') = r' - r</m>;
@@ -400,9 +400,9 @@
           <p>
             Let <m>a</m> and <m>b</m> be nonzero integers.
             Then there exist integers <m>r</m> and <m>s</m> such that
-            <me>
+            <md>
               \gcd( a, b) = ar + bs
-            </me>.
+            </md>.
             Furthermore,
             the greatest common divisor of <m>a</m> and <m>b</m> is unique.
           </p>
@@ -411,9 +411,9 @@
         <proof>
           <p>
             Let
-            <me>
+            <md>
               S = \{ am + bn : m, n \in {\mathbb Z} \text{ and } am + bn \gt 0 \}
-            </me>.
+            </md>.
             Clearly, the set <m>S</m> is nonempty;
             hence, by the Well-Ordering Principle <m>S</m> must have a smallest member,
             say <m>d = ar + bs</m>.
@@ -438,9 +438,9 @@
             Suppose that <m>d'</m> is another common divisor of <m>a</m> and <m>b</m>,
             and we want to show that <m>d' \mid d</m>.
             If we let <m>a = d'h</m> and <m>b = d'k</m>, then
-            <me>
+            <md>
               d = ar + bs = d'hr + d'ks = d'(hr + ks)
-            </me>.
+            </md>.
             So <m>d'</m> must divide <m>d</m>.
             Hence, <m>d</m> must be the unique greatest common divisor of <m>a</m> and <m>b</m>.
           </p>
@@ -553,9 +553,9 @@
             Since <m>\gcd( a, p ) = 1</m>,
             there exist integers <m>r</m> and <m>s</m> such that <m>ar + ps = 1</m>.
             So
-            <me>
+            <md>
               b = b(ar + ps) = (ab)r + p(bs)
-            </me>.
+            </md>.
             Since <m>p</m> divides both <m>ab</m> and itself,
             <m>p</m> must divide <m>b = (ab)r + p(bs)</m>.
           </p>
@@ -595,15 +595,15 @@
           <p>
             Let <m>n</m> be an integer such that <m>n \gt 1</m>.
             Then
-            <me>
+            <md>
               n = p_1 p_2 \cdots p_k
-            </me>,
+            </md>,
             where <m>p_1, \ldots, p_k</m> are  primes
             (not necessarily distinct).
             Furthermore, this factorization is unique; that is, if
-            <me>
+            <md>
               n = q_1 q_2 \cdots q_l
-            </me>,
+            </md>,
             then <m>k = l</m> and the <m>q_i</m>'s are just the <m>p_i</m>'s rearranged.
           </p>
         </statement>
@@ -615,9 +615,9 @@
               To show uniqueness we will use induction on <m>n</m>.
               The theorem is certainly true for <m>n = 2</m> since in this case <m>n</m> is prime.
               Now assume that the result holds for all integers <m>m</m> such that <m>1 \leq m \lt n</m>, and
-              <me>
+              <md>
                 n = p_1 p_2 \cdots p_k = q_1 q_2 \cdots q_l
-              </me>,
+              </md>,
               where <m>p_1 \leq p_2 \leq \cdots \leq p_k</m> and <m>q_1 \leq q_2 \leq \cdots \leq q_l</m>.
               By <xref ref="integers-theorem-prime-divisor"/>, <m>p_1  \mid  q_i</m> for some
               <m>i = 1, \ldots,
@@ -626,9 +626,9 @@
               <m>p_1 = q_i</m> and  <m>q_1 = p_j</m>.
               Hence, <m>p_1 = q_1</m> since <m>p_1 \leq p_j = q_1 \leq q_i = p_1</m>.
               By the induction hypothesis,
-              <me>
+              <md>
                 n' = p_2 \cdots p_k = q_2 \cdots q_l
-              </me>
+              </md>
               has a unique factorization.
               Hence, <m>k = l</m> and <m>q_i = p_i</m> for <m>i = 1, \ldots, k</m>.
             </p>
@@ -654,9 +654,9 @@
                 <mrow>a_2 &amp; = q_1 \cdots q_s</mrow>
               </md>.
               Therefore,
-              <me>
+              <md>
                 a = a_1 a_2 = p_1 \cdots p_r q_1 \cdots q_s
-              </me>.
+              </md>.
               So <m>a \notin S</m>, which is a contradiction.
             </p>
           </case>
@@ -674,9 +674,9 @@
         Pierre Fermat (1601?<ndash/>1665) conjectured that
         <m>2^{2^n} + 1</m> was prime for all <m>n</m>,
         but later it was shown by Leonhard Euler (1707<ndash/>1783) that
-        <me>
+        <md>
           2^{2^5} + 1 = 4{,}294{,}967{,}297
-        </me>
+        </md>
         is a composite number.
         One of the many unproven conjectures about prime numbers is Goldbach's Conjecture.
         In a letter to Euler in 1742, Christian Goldbach stated the conjecture that every even integer with the exception of <m>2</m> seemed to be the sum of two primes:
@@ -758,9 +758,9 @@
       <statement>
         <p>
           Prove that
-          <me>
+          <md>
             1^2 + 2^2 + \cdots + n^2 = \frac{n(n + 1)(2n + 1)}{6}
-          </me>
+          </md>
           for <m>n \in {\mathbb N}</m>.
         </p>
       </statement>
@@ -784,9 +784,9 @@
       <statement>
         <p>
           Prove that
-          <me>
+          <md>
             1^3 + 2^3 + \cdots + n^3 = \frac{n^2(n + 1)^2}{4}
-          </me>
+          </md>
           for <m>n \in {\mathbb N}</m>.
         </p>
       </statement>
@@ -813,9 +813,9 @@
       <statement>
         <p>
           Prove that
-          <me>
+          <md>
             x + 4x + 7x + \cdots + (3n - 2)x = \frac{n(3n - 1)x}{2}
-          </me>
+          </md>
           for <m>n \in {\mathbb N}</m>.
         </p>
       </statement>
@@ -841,9 +841,9 @@
       <statement>
         <p>
           Show that
-          <me>
+          <md>
             \sqrt[n]{a_1 a_2 \cdots a_n} \leq \frac{1}{n} \sum_{k = 1}^{n} a_k
-          </me>.
+          </md>.
         </p>
       </statement>
     </exercise>
@@ -854,9 +854,9 @@
           Prove the Leibniz rule for <m>f^{(n)} (x)</m>,
           where <m>f^{(n)}</m> is the <m>n</m>th derivative of <m>f</m>; that is,
           show that
-          <me>
+          <md>
             (fg)^{(n)}(x) = \sum_{k = 0}^{n} \binom{n}{k} f^{(k)}(x) g^{(n - k)}(x)
-          </me>.
+          </md>.
         </p>
       </statement>
       <hint>
@@ -879,9 +879,9 @@
       <statement>
         <p>
           Prove that
-          <me>
+          <md>
             \frac{1}{2}+ \frac{1}{6} + \cdots + \frac{1}{n(n + 1)} = \frac{n}{n + 1}
-          </me>
+          </md>
           for <m>n \in {\mathbb N}</m>.
         </p>
       </statement>
@@ -928,9 +928,9 @@
           </notation>
 
           For example,
-          <me>
+          <md>
             {\mathcal P}( \{a, b\} ) = \{ \emptyset, \{a\}, \{b\}, \{a, b\} \}
-          </me>.
+          </md>.
           For every positive integer <m>n</m>,
           show that a set with exactly <m>n</m> elements has a power set with exactly <m>2^n</m> elements.
         </p>
@@ -1021,9 +1021,9 @@
       <statement>
         <p>
           The Fibonacci numbers are
-          <me>
+          <md>
             1, 1, 2, 3, 5, 8, 13, 21, \ldots
-          </me>.
+          </md>.
           We can define them inductively by <m>f_1 = 1</m>, <m>f_2 = 1</m>,
           and <m>f_{n + 2} = f_{n + 1} + f_n</m> for <m>n \in {\mathbb N}</m>.
 
@@ -1076,9 +1076,9 @@
           Let <m>a</m> and <m>b</m> be integers such that <m>\gcd(a,b) = 1</m>.
           Let <m>r</m> and <m>s</m> be integers such that <m>ar + bs = 1</m>.
           Prove that
-          <me>
+          <md>
             \gcd(a,s) = \gcd(r,b) = \gcd(r,s) =  1
-          </me>.
+          </md>.
         </p>
       </statement>
     </exercise>
@@ -1307,9 +1307,9 @@
           Write a computer program that will implement the Euclidean algorithm.
           The program should accept two positive integers <m>a</m> and <m>b</m> as input and should output
           <m>\gcd( a,b)</m> as well as integers <m>r</m> and <m>s</m> such that
-          <me>
+          <md>
             \gcd( a,b) = ra + sb
-          </me>.
+          </md>.
         </p>
       </statement>
     </exercise>

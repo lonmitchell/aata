@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2025  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2025  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2026  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2026  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -73,9 +73,9 @@
           Suppose that the message to be encoded is a binary <m>n</m>-tuple <m>(x_{1}, x_{2}, \ldots,
           x_{n})</m>.
           The message is encoded into a binary <m>3n</m>-tuple by simply repeating the message three times:
-          <me>
+          <md>
             (x_{1}, x_{2}, \ldots, x_{n}) \mapsto (x_{1}, x_{2}, \ldots, x_{n}, x_{1}, x_{2}, \ldots, x_{n}, x_{1}, x_{2}, \ldots, x_{n})
-          </me>.
+          </md>.
           To decode the message,
           we choose as the <m>i</m>th digit the one that appears in the <m>i</m>th place in at least two of the three transmissions.
           For example, if the original message is <m>(0110)</m>,
@@ -290,9 +290,9 @@
         For example,
         if <m>p=0.999</m> and a message consisting of 10,000 bits is sent,
         then the probability of a perfect transmission is
-        <me>
+        <md>
           (0.999)^{10,000} \approx 0.00005
-        </me>.
+        </md>.
       </p>
 
       <theorem>
@@ -302,9 +302,9 @@
             <m>(x_{1}, \ldots,
             x_{n})</m> is transmitted across a binary symmetric channel with probability <m>p</m> that no error will occur in each coordinate,
             then the probability that there are errors in exactly <m>k</m> coordinates is
-            <me>
+            <md>
               \binom{n}{k} q^kp^{n - k}
-            </me>.
+            </md>.
           </p>
         </statement>
 
@@ -316,15 +316,15 @@
             the probability that an error will not occur in any of the remaining <m>n-k</m> coordinates is <m>p</m>.
             The probability of each of these <m>n</m> independent events is <m>q^{k}p^{n-k}</m>.
             The number of possible error patterns with exactly <m>k</m> errors occurring is equal to
-            <me>
+            <md>
               \binom{n}{k}  = \frac{n!}{k!(n - k)!}
-            </me>,
+            </md>,
             the number of combinations of <m>n</m> things taken <m>k</m> at a time.
             Each of these error patterns has probability <m>q^{k}p^{n-k}</m> of occurring;
             hence, the probability of all of these error patterns is
-            <me>
+            <md>
               \binom{n}{k}  q^{k}p^{n - k}
-            </me>.
+            </md>.
           </p>
         </proof>
       </theorem>
@@ -333,21 +333,21 @@
         <p>
           Suppose that <m>p = 0.995</m> and a <m>500</m>-bit message is sent.
           The probability that the message was sent error-free is
-          <me>
+          <md>
             p^{n} = (0.995)^{500} \approx 0.082
-          </me>.
+          </md>.
           The probability of exactly one error occurring is
-          <me>
+          <md>
             \binom{n}{1}  qp^{n - 1}= 500(0.005)(0.995)^{499} \approx 0.204
-          </me>.
+          </md>.
           The probability of exactly two errors is
-          <me>
+          <md>
             \binom{n}{2} q^{2}p^{n - 2}= \frac{500 \cdot 499}{2}(0.005)^{2}(0.995)^{498} \approx 0.257
-          </me>.
+          </md>.
           The probability of more than two errors is approximately
-          <me>
+          <md>
             1 - 0.082 - 0.204 - 0.257 = 0.457
-          </me>.
+          </md>.
         </p>
       </example>
     </subsection>
@@ -363,13 +363,13 @@
         each of which can be encoded into <m>n</m> binary digits.
         More specifically, an <m>(n, m)</m>-block code consists of an
         <term>encoding function</term>
-        <me>
+        <md>
           E:{\mathbb Z}^{m}_{2} \rightarrow {\mathbb Z}^{n}_{2}
-        </me>
+        </md>
         and a <term>decoding function</term>
-        <me>
+        <md>
           D:{\mathbb Z}^{n}_{2} \rightarrow {\mathbb Z}^{m}_{2}
-        </me>.
+        </md>.
         A <term>codeword</term> is any element in the image of <m>E</m>.
         We also require that <m>E</m> be one-to-one so that two information blocks will not be encoded into the same codeword.
         If our code is to be error-correcting,
@@ -380,9 +380,9 @@
         <p>
           The even-parity coding system developed to detect single errors in <acro>ASCII</acro> characters is an <m>(8,7)</m>-block code.
           The encoding function is
-          <me>
+          <md>
             E(x_7, x_6, \ldots, x_1) = (x_8, x_7,  \ldots, x_1)
-          </me>,
+          </md>,
           where <m>x_8 = x_7 + x_6 + \cdots + x_1</m> with addition in <m>{\mathbb Z}_2</m>.
         </p>
       </example>
@@ -431,14 +431,14 @@
           <m>{\mathbf y} = (11010)</m>,
           and <m>{\mathbf z} = (00011)</m> be all of the codewords in some code <m>C</m>.
           Then we have the following Hamming distances:
-          <me>
+          <md>
             d({\mathbf x},{\mathbf y}) = 4, \qquad d({\mathbf x},{\mathbf z}) = 3, \qquad d({\mathbf y},{\mathbf z}) = 3
-          </me>.
+          </md>.
           The minimum distance  for this code is 3.
           We also have the following weights:
-          <me>
+          <md>
             w({\mathbf x}) = 3, \qquad w({\mathbf y}) = 3, \qquad w({\mathbf z}) = 2
-          </me>.
+          </md>.
         </p>
       </example>
 
@@ -635,9 +635,9 @@
         However, suppose that <m>d({\mathbf x}, {\mathbf y}) = 2</m>,
         <m>{\mathbf y}</m> is sent,
         and a noncodeword <m>{\mathbf z}</m> is received such that
-        <me>
+        <md>
           d({\mathbf x}, {\mathbf z}) = d({\mathbf y}, {\mathbf z}) = 1
-        </me>.
+        </md>.
         Then the decoder cannot decide between
         <m>{\mathbf x}</m> and <m>{\mathbf y}</m>.
         Even though we are aware that an error has occurred,
@@ -671,9 +671,9 @@
             <m>{\mathbf y}</m> is received with at most <m>n</m> errors.
             Then <m>d( {\mathbf x}, {\mathbf y}) \leq n</m>.
             If <m>{\mathbf z}</m> is any codeword other than <m>{\mathbf x}</m>, then
-            <me>
+            <md>
               2n+1 \leq d( {\mathbf x}, {\mathbf z}) \leq d( {\mathbf x}, {\mathbf y}) + d( {\mathbf y}, {\mathbf z}) \leq n + d( {\mathbf y}, {\mathbf z})
-            </me>.
+            </md>.
             Hence, <m>d({\mathbf y}, {\mathbf z} ) \geq n+1</m> and
             <m>{\mathbf y}</m> will be correctly decoded as <m>{\mathbf x}</m>.
             Now suppose that <m>{\mathbf x}</m> is transmitted and
@@ -785,9 +785,9 @@
         since every codeword is its own inverse,
         nor is it necessary to check that <m>{\mathbf 0}</m> is a codeword.
         For instance,
-        <me>
+        <md>
           (11000101) + (11000101) = (00000000)
-        </me>.
+        </md>.
       </p>
 
       <example xml:id="algcodes-example-weights">
@@ -845,9 +845,9 @@
             Let <m>d_{\min}</m> be the minimum distance for a group code <m>C</m>.
             Then <m>d_{\min}</m> is the minimum weight of all the nonzero codewords in <m>C</m>.
             That is,
-            <me>
+            <md>
               d_{\min} = \min\{ w({\mathbf x}) : { {\mathbf x} \neq {\mathbf 0} } \}
-            </me>.
+            </md>.
           </p>
         </statement>
 
@@ -879,9 +879,9 @@
       <p>
         Define the <term>inner product</term><idx><h>Inner product</h></idx>
         of two binary <m>n</m>-tuples to be
-        <me>
+        <md>
           {\mathbf x} \cdot {\mathbf y} = x_1 y_1 + \cdots + x_n y_n
-        </me>,
+        </md>,
         where <m>{\mathbf x} = (x_1, x_2, \ldots,
         x_n)^\transpose</m> and <m>{\mathbf y} = (y_1, y_2, \ldots,
         y_n)^\transpose</m> are column vectors.<fn>
@@ -913,7 +913,7 @@
           <m>{\mathbf x} = (x_1, x_2, \ldots,
           x_n)^\transpose</m> has an even number of <m>1</m>s exactly when <m>x_1 + x_2 + \cdots + x_n = 0</m>;
           hence, a <m>4</m>-tuple <m>{\mathbf x} = (x_1, x_2, x_3, x_4)^\transpose</m> has an even number of <m>1</m>s if <m> x_1+ x_2+ x_3+ x_4 = 0</m>, or
-          <me>
+          <md>
             {\mathbf x} \cdot {\mathbf 1} =  {\mathbf x}^\transpose {\mathbf 1} =
             \begin{pmatrix}
             x_1 &amp; x_2 &amp; x_3 &amp; x_4
@@ -921,7 +921,7 @@
             \begin{pmatrix}
             1 \\ 1 \\ 1 \\ 1
             \end{pmatrix} = 0
-          </me>.
+          </md>.
           This example leads us to hope that there is a connection between matrices and coding theory.
         </p>
       </example>
@@ -950,14 +950,14 @@
       <example xml:id="algcodes-example-group-code">
         <p>
           Suppose that
-          <me>
+          <md>
             H =
             \begin{pmatrix}
             0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
             1 &amp; 1 &amp; 1 &amp; 1 &amp; 0 \\
             0 &amp; 0 &amp; 1 &amp; 1 &amp; 1
             \end{pmatrix}
-          </me>.
+          </md>.
           For a <m>5</m>-tuple <m>{\mathbf x} = (x_1, x_2, x_3, x_4, x_5)^\transpose</m> to be in the null space of <m>H</m>,
           <m>H{\mathbf x} = {\mathbf 0}</m>.
           Equivalently,
@@ -968,9 +968,9 @@
             <mrow>x_3  + x_4  +  x_5 &amp; =  0</mrow>
           </md>.
           The set of binary <m>5</m>-tuples satisfying these equations is
-          <me>
+          <md>
             (00000) \qquad (11110) \qquad (10101) \qquad (01011)
-          </me>.
+          </md>.
           This code is easily determined to be a group code.
         </p>
       </example>
@@ -990,9 +990,9 @@
             Let <m>{\mathbf x}, {\mathbf y} \in \Null(H)</m> for some matrix <m>H</m> in <m>{\mathbb M}_{m \times n}({\mathbb Z}_2)</m>.
             Then <m>H{\mathbf x} = {\mathbf 0}</m> and <m>H{\mathbf y} = {\mathbf 0}</m>.
             So
-            <me>
+            <md>
               H({\mathbf x}+{\mathbf y}) = H{\mathbf x} + H{\mathbf y} = {\mathbf 0} + {\mathbf 0} = {\mathbf 0}
-            </me>.
+            </md>.
             Hence, <m>{\mathbf x} + {\mathbf y}</m> is in the null space of <m>H</m> and therefore must be a codeword.
           </p>
         </proof>
@@ -1007,23 +1007,23 @@
       <example xml:id="algcodes-example-linear-code">
         <p>
           Let <m>C</m> be the code given by the matrix
-          <me>
+          <md>
             H =
             \begin{pmatrix}
             0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 1 \\
             0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 1 \\
             1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1
             \end{pmatrix}
-          </me>.
+          </md>.
           Suppose that the <m>6</m>-tuple <m>{\mathbf x} = (010011)^\transpose</m> is received.
           It is a simple matter of matrix multiplication to determine whether or not <m>{\mathbf x}</m> is a codeword.
           Since
-          <me>
+          <md>
             H{\mathbf x} =
             \begin{pmatrix} 
             0 \\ 1 \\ 1
             \end{pmatrix}
-          </me>,
+          </md>,
           the received word is not a codeword.
           We must either attempt to correct the word or request that it be transmitted again.
         </p>
@@ -1051,28 +1051,28 @@
       then the matrix is a <idx><h>Matrix</h><h>parity-check</h></idx><term>canonical parity-check matrix</term>.
       More specifically, <m>H= (A \mid I_m)</m>,
       where <m>A</m> is the <m>m \times (n-m)</m> matrix
-      <me>
+      <md>
         \begin{pmatrix}
         a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1,n-m} \\
         a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2,n-m} \\
         \vdots &amp; \vdots &amp; \ddots &amp; \vdots    \\
         a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{m,n-m}
         \end{pmatrix}
-      </me>
+      </md>
       and <m>I_m</m> is the <m>m \times m</m> identity matrix
-      <me>
+      <md>
         \begin{pmatrix}
         1 &amp; 0 &amp; \cdots &amp; 0 \\
         0 &amp; 1 &amp; \cdots &amp; 0 \\
         \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
         0 &amp; 0 &amp; \cdots &amp; 1
         \end{pmatrix}
-      </me>.
+      </md>.
       With each canonical parity-check matrix we can associate an <m>n \times (n-m)</m>
       <term>standard generator matrix</term><idx><h>Matrix</h><h>generator</h></idx>
-      <me>
+      <md>
         G = \left( \frac{I_{n-m}}{A} \right)
-      </me>.
+      </md>.
       Our goal will be to show that an <m>\mathbf x</m> satisfying
       <m>G {\mathbf x} = {\mathbf y}</m> exists if and only if <m>H{\mathbf y} = {\mathbf 0}</m>.
       Given a message block <m>{\mathbf x}</m> to be encoded,
@@ -1082,20 +1082,20 @@
     <example xml:id="algcodes-example-parity-check">
       <p>
         Suppose that we have the following eight words to be encoded:
-        <me>
+        <md>
           (000), (001), (010), \ldots, (111)
-        </me>.
+        </md>.
         For
-        <me>
+        <md>
           A =
           \begin{pmatrix}
           0 &amp; 1 &amp; 1 \\
           1 &amp; 1 &amp; 0 \\
           1 &amp; 0 &amp; 1
           \end{pmatrix}
-        </me>,
+        </md>,
         the associated standard generator and canonical parity-check matrices are
-        <me>
+        <md>
           G=
           \begin{pmatrix}
           1 &amp; 0 &amp; 0 \\
@@ -1105,16 +1105,16 @@
           1 &amp; 1 &amp; 0 \\
           1 &amp; 0 &amp; 1
           \end{pmatrix}
-        </me>
+        </md>
         and
-        <me>
+        <md>
           H =
           \begin{pmatrix}
           0 &amp; 1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\
           1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
           1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1
           \end{pmatrix}
-        </me>,
+        </md>,
         respectively.
       </p>
 
@@ -1122,7 +1122,7 @@
         Observe that the rows in <m>H</m>  represent the parity checks on certain bit positions in a <m>6</m>-tuple.
         The <m>1</m>s in the identity matrix serve as parity checks for the <m>1</m>s in the same row.
         If <m>{\mathbf x} = (x_1, x_2, x_3, x_4, x_5, x_6)</m>, then
-        <me>
+        <md>
           {\mathbf 0}
           =
           H{\mathbf x}
@@ -1132,7 +1132,7 @@
           x_1 + x_2 + x_5\\
           x_1 + x_3 + x_6
           \end{pmatrix}
-        </me>,
+        </md>,
         which yields a system of equations:
         <md>
           <mrow>x_2 + x_3 + x_4 &amp; = 0</mrow>
@@ -1148,12 +1148,12 @@
         and <m>x_3</m> can be arbitrary but <m>x_4</m>,
         <m>x_5</m>, and <m>x_6</m> must be chosen to ensure parity.
         The null space of <m>H</m> is easily computed to be
-        <me>
+        <md>
           \begin{array}{cccc}
           (000000) &amp; (001101) &amp; (010110) &amp; (011011) \\
           (100011) &amp; (101110) &amp; (110101) &amp; (111000).
           \end{array}
-        </me>
+        </md>
         An even easier way to compute the null space is with the generator matrix <m>G</m> (<xref ref="algcodes-table-matrix-gen-code"/>).
       </p>
     </example>
@@ -1237,17 +1237,17 @@
         <p>
           Let <m>G {\mathbf x}_1 = {\mathbf y}_1</m> and <m>G {\mathbf x}_2 ={\mathbf y}_2</m> be two codewords.
           Then <m>{\mathbf y}_1 + {\mathbf y}_2</m> is in <m>C</m> since
-          <me>
+          <md>
             G( {\mathbf x}_1 + {\mathbf x}_2) = G {\mathbf x}_1 + G {\mathbf x}_2 = {\mathbf y}_1 + {\mathbf y}_2
-          </me>.
+          </md>.
           We must also show that two message blocks cannot be encoded into the same codeword.
           That is, we must show that if <m>G {\mathbf x} = G {\mathbf y}</m>,
           then <m>{\mathbf x} = {\mathbf y}</m>.
           Suppose that <m>G {\mathbf x} = G {\mathbf y}</m>.
           Then
-          <me>
+          <md>
             G {\mathbf x} - G {\mathbf y} = G( {\mathbf x} - {\mathbf y}) = {\mathbf 0}
-          </me>.
+          </md>.
           However, the first <m>k</m> coordinates in
           <m>G( {\mathbf x} - {\mathbf y})</m> are exactly <m>x_1 -y_1, \ldots,
           x_k - y_k</m>,
@@ -1285,13 +1285,13 @@
             <mrow>&amp; = 0</mrow>
           </md>,
           where
-          <me>
+          <md>
             \delta_{ij} =
             \begin{cases}
             1 &amp; i = j \\
             0 &amp; i \neq j
             \end{cases}
-          </me>
+          </md>
           is the <idx><h>Kronecker delta</h></idx>Kronecker delta.
           <notation>
             <usage><m>\delta_{ij}</m></usage>
@@ -1367,7 +1367,7 @@
     <example xml:id="algcodes-example-ith-column">
       <p>
         Observe that
-        <me>
+        <md>
           \begin{pmatrix}
           1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\
           1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
@@ -1380,7 +1380,7 @@
           \begin{pmatrix}
           1 \\ 0 \\ 1
           \end{pmatrix}
-        </me>.
+        </md>.
       </p>
     </example>
 
@@ -1428,23 +1428,23 @@
     <example xml:id="algcodes-example-null-space">
       <p>
         If we consider the matrices
-        <me>
+        <md>
           H_1 =
           \begin{pmatrix}
           1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\
           1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
           1 &amp; 1 &amp; 0 &amp; 0 &amp; 1
           \end{pmatrix}
-        </me>
+        </md>
         and
-        <me>
+        <md>
           H_2 =
           \begin{pmatrix}
           1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\
           1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
           1 &amp; 1 &amp; 0 &amp; 0 &amp; 1
           \end{pmatrix}
-        </me>,
+        </md>,
         then the null space of <m>H_1</m> is a single error-detecting code and the null space of <m>H_2</m> is not.
       </p>
     </example>
@@ -1458,14 +1458,14 @@
     <example xml:id="algcodes-example-check-matrix">
       <p>
         If we let
-        <me>
+        <md>
           H =
           \begin{pmatrix}
           1 &amp; 1 &amp; 1 &amp; 0 \\
           1 &amp; 0 &amp; 0 &amp; 1 \\
           1 &amp; 1 &amp; 0 &amp; 0
           \end{pmatrix}
-        </me>
+        </md>
         and want to determine whether or not <m>H</m> is the canonical parity-check matrix for an error-correcting code,
         it is necessary to make certain that
         <m>\Null(H)</m> does not contain any <m>4</m>-tuples of weight <m>2</m>.
@@ -1491,9 +1491,9 @@
           The <m>n</m>-tuple <m>{\mathbf e}_{i} +{\mathbf e}_{j}</m> has <m>1</m>s in the <m>i</m>th and <m>j</m>th entries and 0s elsewhere,
           and <m>w( {\mathbf e}_{i} +{\mathbf e}_{j}) = 2</m> for <m>i \neq j</m>.
           Since
-          <me>
+          <md>
             {\mathbf 0} = H({\mathbf e}_{i} +{\mathbf e}_{j}) = H{\mathbf e}_{i} + H{\mathbf e}_{j}
-          </me>
+          </md>
           can only occur if the <m>i</m>th and <m>j</m>th columns are identical,
           the null space of <m>H</m> is a single error-correcting code.
         </p>
@@ -1506,7 +1506,7 @@
       Since each column has three entries,
       there are <m>2^3 = 8</m> possible distinct columns.
       We cannot add the columns
-      <me>
+      <md>
         \begin{pmatrix}
         0 \\ 0 \\ 0 
         \end{pmatrix},
@@ -1519,7 +1519,7 @@
         \begin{pmatrix}
         0 \\ 0 \\ 1 
         \end{pmatrix}
-      </me>.
+      </md>.
       So we can add as many as four columns and still maintain a minimum distance of <m>3</m>.
     </p>
 
@@ -1549,17 +1549,17 @@
       <example xml:id="algcodes-example-syndrome">
         <p>
           Given the binary matrix
-          <me>
+          <md>
             H =
             \begin{pmatrix}
             1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\
             0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
             1 &amp; 0 &amp; 0 &amp; 0 &amp; 1
             \end{pmatrix}
-          </me>
+          </md>
           and the <m>5</m>-tuples <m>{\mathbf x} = (11011)^\transpose</m> and <m>{\mathbf y} = (01011)^\transpose</m>,
           we can compute
-          <me>
+          <md>
             H{\mathbf x} =
             \begin{pmatrix}
             0 \\ 0 \\ 0 
@@ -1571,7 +1571,7 @@
             \begin{pmatrix}
             1 \\ 0 \\ 1 
             \end{pmatrix}
-          </me>.
+          </md>.
           Hence, <m>{\mathbf x}</m> is a codeword and <m>{\mathbf y}</m> is not,
           since <m>{\mathbf x}</m> is in the null space and <m>{\mathbf y}</m> is not.
           Notice that <m>H{\mathbf y}</m> is identical to the first column of <m>H</m>.
@@ -1606,9 +1606,9 @@
         <proof>
           <p>
             The proof follows from the fact that
-            <me>
+            <md>
               H{\mathbf x} = H({\mathbf c} +{\mathbf e}) = H{\mathbf c} + H{\mathbf e} = {\mathbf 0} + H{\mathbf e} = H{\mathbf e}
-            </me>.
+            </md>.
           </p>
         </proof>
       </proposition>
@@ -1636,19 +1636,19 @@
       <example xml:id="algcodes-example-detecting-errors">
         <p>
           Consider the matrix
-          <me>
+          <md>
             H =
             \begin{pmatrix}
             1 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\
             0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
             1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1
             \end{pmatrix}
-          </me>
+          </md>
           and suppose that the  <m>6</m>-tuples <m>{\mathbf x} = (111110)^\transpose</m>,
           <m>{\mathbf y} = (111111)^\transpose</m>,
           and <m>{\mathbf z} = (010111)^\transpose</m> have been received.
           Then
-          <me>
+          <md>
             H{\mathbf x} =
             \begin{pmatrix}
             1 \\ 1 \\ 1 
@@ -1661,7 +1661,7 @@
             \begin{pmatrix}
             1 \\ 0 \\ 0
             \end{pmatrix}
-          </me>.
+          </md>.
           Hence, <m>{\mathbf x}</m> has an error in the third bit and
           <m>{\mathbf z}</m> has an error in the fourth bit.
           The transmitted codewords for
@@ -1691,18 +1691,18 @@
       <example xml:id="algcodes-example-coset-decoding">
         <p>
           Let <m>C</m> be the <m>(5,3)</m>-linear code given by the parity-check matrix
-          <me>
+          <md>
             H =
             \begin{pmatrix}
             0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\
             1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
             1 &amp; 1 &amp; 0 &amp; 0 &amp; 1
             \end{pmatrix}
-          </me>.
+          </md>.
           The code consists of the codewords
-          <me>
+          <md>
             (00000) \quad (01101) \quad (10011) \quad (11110)
-          </me>.
+          </md>.
           There are <m>2^{5-2} = 2^3</m> cosets of <m>C</m> in <m>{\mathbb Z}_2^5</m>,
           each with order <m>2^2 =4</m>.
           These cosets are listed in <xref ref="algcodes-table-cosets-of-c"/>.
@@ -1864,12 +1864,12 @@
           <xref ref="algcodes-table-syndrome"/> is a decoding table for the code <m>C</m> given in <xref ref="algcodes-example-coset-decoding"/>.
           If <m>{\mathbf x} = (01111)</m> is received,
           then its syndrome can be computed to be
-          <me>
+          <md>
             H {\mathbf x} =
             \begin{pmatrix}
             0 \\ 1 \\ 0
             \end{pmatrix}
-          </me>.
+          </md>.
           Examining the decoding table,
           we determine that the coset leader is <m>(00010)</m>.
           It is now easy to decode the received codeword.
@@ -1938,13 +1938,13 @@
       <statement>
         <p>
           Suppose a linear code <m>C</m> is created as the null space of the parity-check matrix
-          <me>
+          <md>
             H =\begin{bmatrix}
             0 \amp 1 \amp 0 \amp 1 \amp 0 \\
             1 \amp 1 \amp 1 \amp 1 \amp 0 \\
             0 \amp 0 \amp 1 \amp 1 \amp 1
             \end{bmatrix}
-          </me>
+          </md>
           Then <m>x=11100</m> is not a codeword.
           Describe a computation, and give the result of that computation,
           which verifies that <m>x</m> is not a codeword of the code <m>C</m>.
@@ -2011,9 +2011,9 @@
           Without doing any addition,
           explain why the following set of <m>4</m>-tuples in
           <m>{\mathbb Z}_2^4</m> cannot be a group code.
-          <me>
+          <md>
             (0110) \quad (1001) \quad (1010) \quad (1100)
-          </me>
+          </md>
         </p>
       </statement>
       <hint>
@@ -2164,50 +2164,50 @@
           <ol cols="2">
             <li>
               <p>
-                <me>
+                <md>
                   \begin{pmatrix}
                   0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
                   1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 \\
                   1 &amp; 0 &amp; 0 &amp; 1 &amp; 0
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
 
             <li>
               <p>
-                <me>
+                <md>
                   \begin{pmatrix}
                   1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
                   1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
                   0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
                   1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
 
             <li>
               <p>
-                <me>
+                <md>
                   \begin{pmatrix}
                   1 &amp; 0 &amp; 0 &amp; 1 &amp; 1 \\
                   0 &amp; 1 &amp; 0 &amp; 1 &amp; 1
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
 
             <li>
               <p>
-                <me>
+                <md>
                   \begin{pmatrix}
                   0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 1 &amp; 1 \\
                   0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 1 \\
                   1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 \\
                   0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 1
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
           </ol>
@@ -2219,7 +2219,7 @@
             <li>
               <p>
                 <m>(00000), (00101), (10011), (10110)</m>
-                <me>
+                <md>
                   G = 
                   \begin{pmatrix}
                   0 &amp; 1 \\
@@ -2228,14 +2228,14 @@
                   0 &amp; 1 \\
                   1 &amp; 1
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
 
             <li>
               <p>
                 <m>(000000), (010111), (101101), (111010)</m>
-                <me>
+                <md>
                   G = 
                   \begin{pmatrix}
                   1 &amp; 0 \\
@@ -2245,7 +2245,7 @@
                   0 &amp; 1 \\
                   1 &amp; 1
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
           </ol>
@@ -2266,18 +2266,18 @@
       <statement>
         <p>
           Let <m>C</m> be the code obtained from the null space of the matrix
-          <me>
+          <md>
             H =
             \begin{pmatrix}
             0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\
             1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 \\
             0 &amp; 0 &amp; 1 &amp; 1 &amp; 1
             \end{pmatrix}
-          </me>.
+          </md>.
           Decode the message
-          <me>
+          <md>
             01111 \quad 10101 \quad 01110 \quad 00011
-          </me>
+          </md>
           if possible.
         </p>
       </statement>
@@ -2312,51 +2312,51 @@
           <ol cols="2">
             <li>
               <p>
-                <me>
+                <md>
                   \begin{pmatrix}
                   1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
                   0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
                   0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
                   1 &amp; 0 &amp; 0 &amp; 0 &amp; 1
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
 
             <li>
               <p>
-                <me>
+                <md>
                   \begin{pmatrix}
                   0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
                   1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
                   0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
                   1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
 
             <li>
               <p>
-                <me>
+                <md>
                   \begin{pmatrix}
                   1 &amp; 1 &amp; 1 &amp; 0 \\
                   1 &amp; 0 &amp; 0 &amp; 1
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
 
             <li>
               <p>
-                <me>
+                <md>
                   \begin{pmatrix}
                   0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
                   0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
                   1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
                   0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
           </ol>
@@ -2365,17 +2365,17 @@
       <hint>
         <p>
           (a) A canonical parity-check matrix with standard generator matrix
-          <me>
+          <md>
             G = 
             \begin{pmatrix}
             1 \\ 1 \\ 0 \\ 0 \\ 1
             \end{pmatrix}
-          </me>.
+          </md>.
         </p>
 
         <p>
           (c) A canonical parity-check matrix with standard generator matrix
-          <me>
+          <md>
             G = 
             \begin{pmatrix}
             1 &amp; 0 \\
@@ -2383,7 +2383,7 @@
             1 &amp; 1 \\
             1 &amp; 0
             \end{pmatrix}
-          </me>.
+          </md>.
         </p>
       </hint>
     </exercise>
@@ -2405,14 +2405,14 @@
       <statement>
         <p>
           Let
-          <me>
+          <md>
             H =
             \begin{pmatrix}
             0 &amp; 1 &amp; 1 &amp; 1 &amp; 1 \\
             0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 \\
             1 &amp; 0 &amp; 1 &amp; 0 &amp; 1
             \end{pmatrix}
-          </me>.
+          </md>.
           Compute the syndrome caused by each of the following transmission errors.
 
           <ol>
@@ -2467,50 +2467,50 @@
           <ol cols="2">
             <li>
               <p>
-                <me>
+                <md>
                   \begin{pmatrix}
                   0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
                   1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 \\
                   1 &amp; 0 &amp; 0 &amp; 1 &amp; 0
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
 
             <li>
               <p>
-                <me>
+                <md>
                   \begin{pmatrix}
                   0 &amp; 0 &amp; 1 &amp; 0 &amp; 0  \\
                   1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
                   0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
                   1 &amp; 1 &amp; 0 &amp; 0 &amp; 1
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
 
             <li>
               <p>
-                <me>
+                <md>
                   \begin{pmatrix}
                   1 &amp; 0 &amp; 0 &amp; 1 &amp; 1 \\
                   0 &amp; 1 &amp; 0 &amp; 1 &amp; 1
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
 
             <li>
               <p>
-                <me>
+                <md>
                   \begin{pmatrix}
                   1 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 1 &amp; 1 \\
                   1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 1 \\
                   1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 \\
                   1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
           </ol>
@@ -2679,20 +2679,20 @@
           Let <m>C</m> be an <m>(n,k)</m>-linear code.
           Define the <term>dual</term> or
           <term>orthogonal code</term> of <m>C</m>  to be
-          <me>
+          <md>
             C^\perp = \{ {\mathbf x} \in {\mathbb Z}_2^n :  {\mathbf x} \cdot {\mathbf y} = 0 \text{ for all } {\mathbf y} \in C \}
-          </me>.
+          </md>.
           <ol>
             <li>
               <p>
                 Find the dual code of the linear code <m>C</m> where <m>C</m> is given by the matrix
-                <me>
+                <md>
                   \begin{pmatrix}
                   1 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\
                   0 &amp; 0 &amp; 1 &amp; 0 &amp; 1 \\
                   1 &amp; 0 &amp; 0 &amp; 1 &amp; 0
                   \end{pmatrix}
-                </me>.
+                </md>.
               </p>
             </li>
 
@@ -2726,14 +2726,14 @@
             <li>
               <p>
                 Show  that the matrix
-                <me>
+                <md>
                   H =
                   \begin{pmatrix}
                   0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 1 \\
                   0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\
                   1 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0
                   \end{pmatrix}
-                </me>
+                </md>
                 generates a Hamming code.
                 What are the error-correcting properties of a Hamming code?
               </p>
@@ -2800,7 +2800,7 @@
 <!-- was [1] -->
       Blake, I. F. <q>Codes and Designs,</q>
       <title>Mathematics Magazine</title>
-      <volume>52</volume>
+      <volumd>52</volumd>
       (1979), 81<ndash/>95.
     </biblio>
         <!-- Reference updated - TWJ 6/1/2010 -->
@@ -2814,7 +2814,7 @@
 <!-- was [3] -->
       Levinson, N. <q>Coding Theory: A Counterexample to G. H. Hardy's Conception of Applied Mathematics,</q>
       <title>American Mathematical Monthly</title>
-      <volume>77</volume>
+      <volumd>77</volumd>
       (1970), 249<ndash/>58.
     </biblio>
         <!-- Reference updated - TWJ 6/1/2010 -->
@@ -2840,7 +2840,7 @@
 <!-- was [7] -->
       Shannon, C. E. <q>A Mathematical Theory of Communication,</q>
       <title>Bell System Technical Journal</title>
-      <volume>27</volume>
+      <volumd>27</volumd>
       (1948), 379<ndash/>423, 623<ndash/>56.
     </biblio>
 
@@ -3210,9 +3210,9 @@
           then we can speak of a sphere of radius <m>r</m> around a vector (or codeword.
           For a code of length <m>n</m>,
           such a sphere will contain
-          <me>
+          <md>
             1 + {n\choose 1} + {n\choose 2} + \cdots + {n\choose r}
-          </me>
+          </md>
           vectors within in it.
           For a perfect code,
           the spheres of radius <m>d</m> centered at the codewords of the code will exactly partition the entire set of all possible vectors.
@@ -3221,9 +3221,9 @@
 
         <p>
           A consequence of a code of dimension <m>k</m> being perfect is that
-          <me>
+          <md>
             2^k\left({n\choose 0} + {n\choose 1} + {n\choose 2} + \cdots + {n\choose \frac{d-1}{2}}\right) = 2^n
-          </me>
+          </md>
           Conversely, if a code has minimum distance <m>d</m> and the condition above is true,
           then the code is perfect.
         </p>

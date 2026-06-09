@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2025  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2025  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2026  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2026  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -68,9 +68,9 @@
         Let <m>G = D_4</m> be the symmetry group of a square.
         If <m>X = \{ 1, 2, 3, 4 \}</m> is the set of vertices of the square,
         then we can consider <m>D_4</m> to consist of the following permutations:
-        <me>
+        <md>
           \{ (1), (1 \, 3), (2 \, 4), (1 \, 4 \, 3 \, 2), (1 \, 2 \, 3 \, 4), (1 \, 2)(3 \, 4), (1 \, 4)(2 \, 3), (1 \, 3)(2 \, 4) \}
-        </me>.
+        </md>.
         The elements of <m>D_4</m> act on <m>X</m> as functions.
         The permutation <m>(1 \, 3)(2 \, 4)</m> acts on vertex <m>1</m> by sending it to vertex <m>3</m>,
         on vertex <m>2</m> by sending it to vertex <m>4</m>, and so on.
@@ -82,9 +82,9 @@
       In general, if <m>X</m> is any set and <m>G</m> is a subgroup of <m>S_X</m>,
       the group of all permutations acting on <m>X</m>,
       then <m>X</m> is a <m>G</m>-set under the group action
-      <me>
+      <md>
         (\sigma, x) \mapsto \sigma(x)
-      </me>
+      </md>
       for <m>\sigma \in G</m> and <m>x \in X</m>.
     </p>
 
@@ -109,13 +109,13 @@
         If <m>H</m> is a subgroup of <m>G</m>,
         then <m>G</m> is an <m>H</m>-set under <idx><h>Conjugation</h></idx><term>conjugation</term>;
         that is, we can define an action of <m>H</m> on <m>G</m>,
-        <me>
+        <md>
           H \times G \rightarrow G
-        </me>,
+        </md>,
         via
-        <me>
+        <md>
           (h,g) \mapsto hgh^{-1}
-        </me>
+        </md>
         for <m>h \in H</m> and <m>g \in G</m>.
         Clearly, the first axiom for a group action holds.
         Observing that
@@ -133,9 +133,9 @@
         Let <m>H</m> be a subgroup of <m>G</m> and
         <m>{\mathcal L}_H</m> the set of left cosets of <m>H</m>.
         The set <m>{\mathcal L}_H</m> is a <m>G</m>-set under the action
-        <me>
+        <md>
           (g, xH) \mapsto gxH
-        </me>.
+        </md>.
         Again, it is easy to see that the first axiom is true.
         Since <m>(g g')xH = g( g'x H)</m>,
         the second axiom is  also true.
@@ -189,9 +189,9 @@
     <example xml:id="actions-example-permute">
       <p>
         Let <m>G</m> be the permutation group defined by
-        <me>
+        <md>
           G =\{(1), (1 \,  2  \, 3), (1 \, 3  \, 2), (4 \,  5), (1 \,  2  \, 3)(4  \, 5), (1 \, 3  \, 2)(4  \, 5) \}
-        </me>
+        </md>
         and <m>X = \{ 1, 2, 3, 4, 5\}</m>.
         Then <m>X</m> is a <m>G</m>-set.
         The orbits are <m>{\mathcal O}_1 = {\mathcal O}_2 = {\mathcal O}_3 =\{1, 2, 3\}</m> and <m>{\mathcal O}_4 = {\mathcal O}_5 = \{4, 5\}</m>.
@@ -233,9 +233,9 @@
     <example xml:id="actions-example-stabilizer">
       <p>
         Let <m>X = \{1, 2, 3, 4, 5, 6\}</m> and suppose that <m>G</m> is the permutation group given by the permutations
-        <me>
+        <md>
           \{ (1), (1 \, 2)(3  \, 4  \, 5  \, 6), (3 \,  5)(4  \, 6), (1  \, 2)( 3  \, 6  \, 5  \, 4) \}
-        </me>.
+        </md>.
         Then the fixed point sets  of <m>X</m> under the action of <m>G</m> are
         <md>
           <mrow>X_{(1)}  =  X,</mrow>
@@ -300,15 +300,15 @@
           To show that <m>\phi</m> is one-to-one,
           assume that <m>\phi(y_1) = \phi(y_2)</m>.
           Then
-          <me>
+          <md>
             \phi(y_1) = g_1 G_x = g_2 G_x = \phi(y_2)
-          </me>,
+          </md>,
           where <m>g_1 x = y_1</m> and <m>g_2 x = y_2</m>.
           Since <m>g_1 G_x = g_2 G_x</m>,
           there exists a <m>g \in G_x</m> such that <m>g_2 = g_1 g</m>,
-          <me>
+          <md>
             y_2 = g_2 x = g_1 g x = g_1 x = y_1;
-          </me>
+          </md>
           consequently, the map <m>\phi</m> is  one-to-one.
           Finally, we must show that the map <m>\phi</m> is onto.
           Let <m>g G_x</m> be a left coset.
@@ -323,13 +323,13 @@
     <!--NOTATION TABLE\label{noteXG}-->
     <p>
       Let <m>X</m> be a finite <m>G</m>-set and <m>X_G</m> be the set of fixed points in <m>X</m>; that is,
-      <me>
+      <md>
         X_G = \{ x \in X : gx = x \text{ for all } g \in G \}
-      </me>.
+      </md>.
       Since the orbits of the action partition <m>X</m>,
-      <me>
+      <md>
         |X| = |X_G| + \sum_{i = k}^n |{\mathcal O}_{x_i}|
-      </me>,
+      </md>,
       where <m>x_k, \ldots,
       x_n</m> are representatives from the distinct nontrivial orbits of <m>X</m>.
     </p>
@@ -339,25 +339,25 @@
       <m>(g,x) \mapsto gxg^{-1}</m>.
       The <term>center</term><idx><h>Group</h><h>center of</h></idx>
       of <m>G</m>,
-      <me>
+      <md>
         Z(G) = \{x : xg = gx \text{ for all } g \in G \}
-      </me>,
+      </md>,
       is the set of points that are fixed by conjugation.
       The nontrivial orbits of the action are called the
       <term>conjugacy classes</term><idx><h>Conjugacy classes</h></idx>
       of <m>G</m>.
       If <m>x_1, \ldots,
       x_k</m> are representatives from each of the nontrivial conjugacy classes of <m>G</m> and <m>|{\mathcal O}_{x_1}| = n_1, \ldots, |{\mathcal O}_{x_k}| = n_k</m>, then
-      <me>
+      <md>
         |G| = |Z(G)| + n_1 + \cdots + n_k
-      </me>.
+      </md>.
       The stabilizer subgroups of each of the <m>x_i</m>'s, <m>C(x_i) = \{ g \in G: g x_i = x_i g \}</m>,
       are called the <term>centralizer subgroups</term><idx><h>Subgroup</h><h>centralizer</h></idx><idx><h>Centralizer</h><h>of a subgroup</h></idx> of the <m>x_i</m>'s.
       From <xref ref="actions-theorem-orbit"/>, we obtain the
       <idx><h>Class equation</h></idx><term>class equation</term>:
-      <me>
+      <md>
         |G| = |Z(G)| + [G: C(x_1) ] + \cdots + [ G: C(x_k)]
-      </me>.
+      </md>.
       One of the consequences of the class equation is that the order of each conjugacy class must divide the order of <m>G</m>.
     </p>
         <!-- Reference repaired. TWJ 12/19/2011 -->
@@ -365,9 +365,9 @@
     <example xml:id="actions-example-conjugacy-class-s3">
       <p>
         It is easy to check that  the conjugacy classes in <m>S_3</m> are the following:
-        <me>
+        <md>
           \{ (1) \},  \quad \{ (1 \, 2 \, 3), (1 \, 3 \, 2) \}, \quad \{(1 \, 2), (1 \, 3), (2 \, 3) \}
-        </me>.
+        </md>.
         The class equation is <m>6 = 1+2+3</m>.
       </p>
     </example>
@@ -376,9 +376,9 @@
       <p>
         The center of <m>D_4</m> is <m>\{ (1), (1 \, 3)(2 \, 4) \}</m>,
         and the conjugacy classes are
-        <me>
+        <md>
           \{ (1 \, 3), (2 \, 4) \}, \quad \{ (1 \, 4 \, 3 \, 2), (1 \, 2 \, 3 \, 4) \}, \quad \{ (1 \, 2)(3 \, 4), (1 \, 4)(2 \, 3) \}
-        </me>.
+        </md>.
         Thus, the class equation for <m>D_4</m> is <m>8 = 2 + 2 + 2 + 2</m>.
       </p>
     </example>
@@ -391,9 +391,9 @@
         Suppose that <m>\sigma = ( a_1, \ldots,
         a_k)</m> is a cycle and let <m>\tau \in S_n</m>.
         By <xref ref="cosets-theorem-cycle-length-theorem"/>,
-        <me>
+        <md>
           \tau \sigma \tau^{-1} = ( \tau( a_1), \ldots, \tau(a_k))
-        </me>.
+        </md>.
         Consequently, any two cycles of the same length are conjugate.
         Now let <m>\sigma = \sigma_1 \sigma_2 \cdots \sigma_r</m> be a cycle decomposition,
         where the length of each cycle <m>\sigma_i</m> is <m>r_i</m>.
@@ -427,9 +427,9 @@
       <proof>
         <p>
           We apply the class equation
-          <me>
+          <md>
             |G| = |Z(G)| + n_1 + \cdots + n_k
-          </me>.
+          </md>.
           Since each <m>n_i \gt 1</m> and <m>n_i \mid |G|</m>,
           it follows that <m>p</m>  must divide each <m>n_i</m>.
           Also, <m>p \mid |G|</m>; hence,
@@ -464,9 +464,9 @@
           <m>h = a^n y</m> for some integer <m>n</m>.
           Since <m>x</m> and <m>y</m> are in the center of <m>G</m>,
           they commute with all other elements of <m>G</m>; therefore,
-          <me>
+          <md>
             gh = a^m x a^n y =  a^{m+n} x y = a^n y a^m x = hg
-          </me>,
+          </md>,
           and <m>G</m> must be abelian. Hence, <m>|Z(G)| = p^2</m>.
         </p>
       </proof>
@@ -521,23 +521,23 @@
             there exists a <m>g \in G</m> such that <m>g \cdot x=y</m>.
             Let <m>a \in G_x</m>.
             Since
-            <me>
+            <md>
               gag^{-1} \cdot y = ga \cdot g^{-1}y = ga \cdot x = g \cdot x = y
-            </me>,
+            </md>,
             we can define a map <m>\phi: G_x \rightarrow G_y</m> by <m>\phi(a) = gag^{-1}</m>.
             The map <m>\phi</m> is a homomorphism since
-            <me>
+            <md>
               \phi(ab) = gabg^{-1} = gag^{-1} gbg^{-1} = \phi(a) \phi(b)
-            </me>.
+            </md>.
             Suppose that <m>\phi(a) = \phi(b)</m>.
             Then <m>gag^{-1}= gbg^{-1}</m> or <m>a=b</m>;
             hence, the map is injective.
             To show that <m>\phi</m> is onto,
             let <m>b</m> be in <m>G_y</m>;
             then <m>g^{-1}bg</m> is in <m>G_x</m> since
-            <me>
+            <md>
               g^{-1}bg \cdot x = g^{-1}b \cdot gx = g^{-1}b \cdot y = g^{-1} \cdot y = x;
-            </me>
+            </md>
             and <m>\phi(g^{-1}bg ) = b</m>.
           </p>
         </proof>
@@ -553,9 +553,9 @@
           <p>
             Let <m>G</m> be a  finite group acting on a set <m>X</m> and let <m>k</m> denote the number of orbits of <m>X</m>.
             Then
-            <me>
+            <md>
               k = \frac{1}{|G|} \sum_{g \in G} |X_g|
-            </me>.
+            </md>.
           </p>
         </statement>
 
@@ -565,25 +565,25 @@
             that is, we look at all <m>g</m>'s and all <m>x</m>'s such that <m>gx =x</m>.
             If viewed in terms of fixed point sets,
             the number of all <m>g</m>'s fixing <m>x</m>'s is
-            <me>
+            <md>
               \sum_{g \in G} |X_g|
-            </me>.
+            </md>.
             However, if viewed in terms of the stabilizer subgroups,
             this number is
-            <me>
+            <md>
               \sum_{x \in X} |G_x|;
-            </me>
+            </md>
             hence, <m>\sum_{g \in G} |X_g| = \sum_{x \in X} |G_x|</m>.
             By <xref ref="actions-lemma-gset"/>,
-            <me>
+            <md>
               \sum_{y \in {\mathcal O}_x} |G_y|  =  | {\mathcal O}_x| \cdot |G_x|
-            </me>.
+            </md>.
             By <xref ref="actions-theorem-orbit"/> and Lagrange's Theorem,
             this expression is equal  to <m>|G|</m>.
             Summing over all of the <m>k</m> distinct orbits, we conclude that
-            <me>
+            <md>
               \sum_{g \in G} |X_g| = \sum_{x \in X} |G_x| = k \cdot |G|
-            </me>.
+            </md>.
           </p>
         </proof>
       </theorem>
@@ -601,9 +601,9 @@
             <mrow>X_{(2 \,  5)} &amp; =  \{1, 3, 4 \}</mrow>
           </md>.
           Burnside's Theorem says that
-          <me>
+          <md>
             k = \frac{1}{|G|} \sum_{g \in G} |X_g| = \frac{1}{4}(5 + 3 + 1 + 3) = 3
-          </me>.
+          </md>.
         </p>
       </example>
     </introduction>
@@ -709,9 +709,9 @@
         </ol>
 
         By Burnside's Theorem, we can conclude that there are exactly
-        <me>
+        <md>
           \frac{1}{8} ( 2^4 + 2^1 + 2^2 + 2^1  + 2^2 + 2^2 +2^3 + 2^3) = 6
-        </me>
+        </md>
         ways to color the vertices of the square.
       </p>
 
@@ -736,9 +736,9 @@
             Since <m>\sigma</m> permutes the elements of <m>X</m>, <m>f \circ \sigma</m> must also be in <m>\widetilde{X}</m>.
             Suppose that <m>g</m> is another function from <m>X</m> to <m>Y</m> such that <m>\widetilde{\sigma}(f) = \widetilde{\sigma}(g)</m>.
             Then for each <m>x \in X</m>,
-            <me>
+            <md>
               f( \sigma(x )) = \widetilde{\sigma}(f)(x) = \widetilde{\sigma}(g)(x) = g( \sigma(x ))
-            </me>.
+            </md>.
             Since <m>\sigma</m> is a permutation of <m>X</m>,
             every element <m>x'</m> in <m>X</m> is the image of some <m>x</m> in <m>X</m> under <m>\sigma</m>;
             hence, <m>f</m> and <m>g</m> agree on all elements of <m>X</m>.
@@ -771,9 +771,9 @@
         <p>
           Suppose that we wish to color the vertices of a square using four different colors.
           By <xref ref="actions-proposition-action-function"/>, we can immediately decide that there are
-          <me>
+          <md>
             \frac{1}{8} (4^4 + 4^1 + 4^2 + 4^1 + 4^2 + 4^ 2 + 4^3 + 4^3) = 55
-          </me>
+          </md>
           possible ways.
         </p>
       </example>
@@ -1064,9 +1064,9 @@
 
       <p>
         Hence, there are
-        <me>
+        <md>
           \frac{1}{8} (2^{16} + 2 \cdot 2^{12} + 2 \cdot 2^6 + 3 \cdot 2^{10}) = 9616
-        </me>
+        </md>
         possible switching functions of four variables under this group of permutations.
         This number will be even smaller if we consider the full symmetric group on four letters.
       </p>
@@ -1154,9 +1154,9 @@
         One such conjecture was that every group of odd order is solvable;
         that is, for a group <m>G</m> of odd order,
         there exists a sequence of subgroups
-        <me>
+        <md>
           G = H_n \supset H_{n-1} \supset \cdots \supset H_1 \supset H_0 = \{ e \}
-        </me>
+        </md>
         such that <m>H_i</m> is normal in <m>H_{i+1}</m> and <m>H_{i+1} / H_i</m> is abelian.
         This conjecture was finally proven by W. Feit<idx><h>Feit, W.</h></idx>
         and J. Thompson<idx><h>Thompson, J.</h></idx>
@@ -1670,7 +1670,7 @@
 <!-- was [2] -->
       Eidswick, J. A. <q>Cubelike Puzzles<mdash/>What Are They and How Do You Solve Them?</q>
       <title>American Mathematical Monthly</title>
-      <volume>93</volume>
+      <volumd>93</volumd>
       (1986), 157<ndash/>76.
     </biblio>
 

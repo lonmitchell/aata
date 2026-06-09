@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2025  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2025  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2026  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2026  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -79,9 +79,9 @@
           <li>
             <p>
               If <m>ax^2 + bx + c = 0</m> and <m>a \neq 0</m>, then
-              <me>
+              <md>
                 x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-              </me>.
+              </md>.
             </p>
           </li>
 
@@ -129,14 +129,14 @@
         and <m>q</m> is known as the <term>conclusion</term>.
         Consider the following statement: If
         <m>ax^2 + bx + c = 0</m> and <m>a \neq 0</m>, then
-        <me>
+        <md>
           x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-        </me>.
+        </md>.
         The hypothesis is <m>ax^2 + bx + c = 0</m> and <m>a \neq 0</m>;
         the conclusion is
-        <me>
+        <md>
           x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-        </me>.
+        </md>.
         Notice that the  statement says nothing about whether or not the hypothesis is true.
         However, if this entire statement is true and we can show that
         <m>ax^2 + bx + c = 0</m> with <m>a \neq 0</m> is true,
@@ -266,19 +266,19 @@
       <p>
         A set is usually specified either by listing all of its elements inside a pair of braces or by stating the property that determines whether or not an object <m>x</m> belongs to the set.
         We might write
-        <me>
+        <md>
           X = \{ x_1, x_2, \ldots, x_n \}
-        </me>
+        </md>
         for a set containing elements <m>x_1, x_2, \ldots, x_n</m> or
-        <me>
+        <md>
           X = \{ x :x \text{ satisfies }{\mathcal P}\}
-        </me>
+        </md>
         if each <m>x</m> in <m>X</m> satisfies a certain property <m>{\mathcal P}</m>.
         For example, if <m>E</m> is the set of even positive integers,
         we can describe <m>E</m> by writing either
-        <me>
+        <md>
           E = \{2, 4, 6, \ldots \} \quad \text{or} \quad E = \{ x : x \text{ is an even integer and } x \gt 0 \}
-        </me>.
+        </md>.
         We write <m>2 \in E</m> when we want to say that 2 is in the set <m>E</m>,
         and <m>-3 \notin E</m> to say that <m>-3</m> is not in the set <m>E</m>.
       </p>
@@ -332,13 +332,13 @@
         </notation>
 
         For example,
-        <me>
+        <md>
           \{4,5,8\} \subset \{2, 3, 4, 5, 6, 7, 8, 9 \}
-        </me>
+        </md>
         and
-        <me>
+        <md>
           {\mathbb N} \subset {\mathbb Z} \subset {\mathbb Q} \subset {\mathbb R} \subset {\mathbb C}
-        </me>.
+        </md>.
         Trivially, every set is a subset of itself.
         A set <m>B</m> is a <term>proper subset</term>
         of a set <m>A</m> if <m>B \subset A</m> but <m>B \neq A</m>.
@@ -366,13 +366,13 @@
         To construct new sets out of old sets,
         we can perform certain operations:
         the <term>union</term> <m>A \cup B</m> of two sets <m>A</m> and <m>B</m> is defined as
-        <me>
+        <md>
           A \cup B = \{x : x \in A \text{ or } x \in B \};
-        </me>
+        </md>
         the <term>intersection</term> of <m>A</m> and <m>B</m>  is defined by
-        <me>
+        <md>
           A \cap B = \{x :  x \in A \text{ and } x \in B \}
-        </me>.
+        </md>.
 
         <notation>
           <usage><m>A \cup B</m></usage>
@@ -385,18 +385,18 @@
         </notation>
 
         If <m>A = \{1, 3, 5\}</m> and <m>B = \{ 1, 2, 3, 9 \}</m>, then
-        <me>
+        <md>
           A \cup B = \{1, 2, 3, 5, 9 \} \quad \text{and} \quad A \cap B = \{ 1, 3 \}
-        </me>.
+        </md>.
         We can consider the union and the intersection of more than two sets.
         In this case we write
-        <me>
+        <md>
           \bigcup_{i = 1}^{n} A_{i} = A_{1} \cup \ldots \cup A_n
-        </me>
+        </md>
         and
-        <me>
+        <md>
           \bigcap_{i = 1}^{n} A_{i} = A_{1} \cap \ldots \cap A_n
-        </me>
+        </md>
         for the union and intersection, respectively,
         of the sets <m>A_1, \ldots, A_n</m>.
       </p>
@@ -422,9 +422,9 @@
           <description>complement of the set <m>A</m></description>
         </notation>
 
-        <me>
+        <md>
           A' = \{ x : x \in U \text{ and } x \notin A \}
-        </me>.
+        </md>.
       </p>
 
       <p>
@@ -436,17 +436,17 @@
           <description>difference between sets <m>A</m> and <m>B</m></description>
         </notation>
 
-        <me>
+        <md>
           A \setminus B = A \cap B'  = \{ x : x \in A \text{ and } x \notin B \}
-        </me>.
+        </md>.
       </p>
 
       <example xml:id="sets-example-operations">
         <p>
           Let <m>{\mathbb R}</m> be the universal set and suppose that
-          <me>
+          <md>
             A = \{ x \in {\mathbb R} : 0 \lt x \leq 3 \} \quad \text{and} \quad B = \{ x \in {\mathbb R} : 2 \leq x \lt 4 \}
-          </me>.
+          </md>.
           Then
           <md>
             <mrow>A \cap B &amp; =  \{ x \in {\mathbb R} : 2 \leq x \leq 3 \}</mrow>
@@ -599,9 +599,9 @@
         <p>
           Other relations between sets often hold true.
           For example,
-          <me>
+          <md>
             ( A \setminus B) \cap (B \setminus A) = \emptyset
-          </me>.
+          </md>.
           To see that this is true, observe that
           <md>
             <mrow>( A \setminus B) \cap (B \setminus A) &amp; = ( A \cap B') \cap (B \cap A')</mrow>
@@ -627,30 +627,30 @@
           <description>Cartesian product of sets <m>A</m> and <m>B</m></description>
         </notation>
 
-        <me>
+        <md>
           A \times B = \{ (a,b) : a \in A \text{ and } b \in B \}
-        </me>.
+        </md>.
       </p>
 
       <example xml:id="sets-example-cartesian-products">
         <p>
           If <m>A = \{ x, y \}</m>, <m>B = \{ 1, 2, 3 \}</m>,
           and <m>C = \emptyset</m>, then <m>A \times B</m> is the set
-          <me>
+          <md>
             \{ (x, 1), (x, 2), (x, 3), (y, 1), (y, 2), (y, 3) \}
-          </me>
+          </md>
           and
-          <me>
+          <md>
             A \times C = \emptyset
-          </me>.
+          </md>.
         </p>
       </example>
 
       <p>
         We define the <term>Cartesian product of <m>n</m> sets</term> to be
-        <me>
+        <md>
           A_1 \times \cdots \times A_n = \{ (a_1, \ldots, a_n): a_i \in A_i \text{ for } i = 1, \ldots, n \}
-        </me>.
+        </md>.
         If <m>A = A_1 = A_2 = \cdots = A_n</m>,
         we often write <m>A^n</m> for <m>A \times \cdots \times A</m>
         (where <m>A</m> would be written <m>n</m> times).
@@ -676,9 +676,9 @@
         we write <m>f(a) = b</m> or <m>f : a \mapsto b</m>.
         The set  <m>A</m> is called the
         <term>domain</term><idx><h>Function</h><h>domain of</h></idx> of <m>f</m> and
-        <me>
+        <md>
           f(A) = \{ f(a) : a \in A \} \subset B
-        </me>
+        </md>
         is called the <term>range</term><idx><h>Function</h><h>range of</h></idx>
         or <term>image</term> of <m>f</m>.
         We can think of the elements in the function's domain as input values and the elements in the function's range as output values.
@@ -791,13 +791,13 @@
         <p>
           Let <m>f(x) = x^2</m> and <m>g(x) = 2x + 5</m>.
           Then
-          <me>
+          <md>
             (f \circ g)(x) = f(g(x)) = (2x + 5)^2 = 4x^2 + 20x + 25
-          </me>
+          </md>
           and
-          <me>
+          <md>
             (g \circ f)(x) = g(f(x)) = 2x^2 + 5
-          </me>.
+          </md>.
           In general, order makes a difference;
           that is, in most cases <m>f \circ g \neq g \circ f</m>.
         </p>
@@ -808,33 +808,33 @@
           Sometimes it is the case that <m>f \circ g= g \circ f</m>.
           Let <m>f(x) = x^3</m> and <m>g(x) = \sqrt[3]{x}</m>.
           Then
-          <me>
+          <md>
             (f \circ g )(x) = f(g(x)) = f( \sqrt[3]{x}\, ) = (\sqrt[3]{x}\, )^3 = x
-          </me>
+          </md>
           and
-          <me>
+          <md>
             (g \circ f )(x) = g(f(x)) = g( x^3) = \sqrt[3]{ x^3} = x
-          </me>.
+          </md>.
         </p>
       </example>
 
       <example xml:id="sets-example-linear-map">
         <p>
           Given a <m>2 \times 2</m> matrix
-          <me>
+          <md>
             A =
             \begin{pmatrix}
             a &amp; b \\
             c &amp; d
             \end{pmatrix}
-          </me>,
+          </md>,
           we can define a map <m>T_A : {\mathbb R}^2 \rightarrow {\mathbb R}^2</m> by
-          <me>
+          <md>
             T_A (x,y) = (ax + by, cx +dy)
-          </me>
+          </md>
           for <m>(x,y)</m> in <m>{\mathbb R}^2</m>.
           This is actually matrix multiplication; that is,
-          <me>
+          <md>
             \begin{pmatrix}
             a &amp; b \\
             c &amp; d
@@ -847,7 +847,7 @@
             ax + by \\
             cx +dy
             \end{pmatrix}
-          </me>.
+          </md>.
           Maps from <m>{\mathbb R}^n</m> to
           <m>{\mathbb R}^m</m> given by matrices are called <term>linear maps</term>
           or <idx><h>Linear transformation</h><h>definition of</h></idx><term>linear transformations</term>.      
@@ -858,12 +858,12 @@
         <p>
           Suppose that <m>S = \{ 1,2,3  \}</m>.
           Define a map <m>\pi :S\rightarrow S</m> by
-          <me>
+          <md>
             \pi( 1 )  = 2, \qquad \pi( 2 )  = 1, \qquad \pi( 3 )  = 3
-          </me>.
+          </md>.
           This is a bijective map.
           An alternative way to  write <m>\pi</m> is
-          <me>
+          <md>
             \begin{pmatrix}
             1 &amp; 2 &amp; 3 \\
             \pi(1) &amp; \pi(2) &amp; \pi(3)
@@ -873,7 +873,7 @@
             1 &amp; 2 &amp; 3 \\
             2 &amp; 1 &amp; 3
             \end{pmatrix}
-          </me>.
+          </md>.
           For any set <m>S</m>,
           a one-to-one and onto mapping <m>\pi : S \rightarrow S</m> is called a
           <term>permutation</term><idx><h>Permutation</h><h>definition of</h></idx> of <m>S</m>.
@@ -928,9 +928,9 @@
 
           <p>
             (1) We must show that
-            <me>
+            <md>
               h \circ (g \circ f) = (h \circ g) \circ f
-            </me>.
+            </md>.
             For <m>a \in A</m> we have
             <md>
               <mrow>(h \circ (g \circ f))(a) &amp; = h((g \circ f)(a))</mrow>
@@ -948,9 +948,9 @@
             there is an element <m>b \in B</m> such that <m>g(b) = c</m>.
             Similarly, there is an <m>a \in A</m> such that <m>f(a) = b</m>.
             Accordingly,
-            <me>
+            <md>
               (g \circ f)(a) = g(f(a)) = g(b) = c
-            </me>.
+            </md>.
           </p>
         </proof>
       </theorem>
@@ -994,13 +994,13 @@
           <m>f(x) = \ln x</m> and <m>f^{-1}(x) = e^x</m>,
           are inverses of each other provided that we are careful about choosing domains.
           Observe that
-          <me>
+          <md>
             f(f^{-1}(x)) = f(e^x) = \ln e^x = x
-          </me>
+          </md>
           and
-          <me>
+          <md>
             f^{-1}(f(x)) = f^{-1}(\ln x) = e^{\ln x} = x
-          </me>
+          </md>
           whenever composition makes sense.
         </p>
       </example>
@@ -1008,57 +1008,57 @@
       <example xml:id="sets-example-inverse-matrix">
         <p>
           Suppose that
-          <me>
+          <md>
             A =
             \begin{pmatrix}
             3 &amp; 1 \\
             5 &amp; 2
             \end{pmatrix}
-          </me>.
+          </md>.
           Then <m>A</m> defines a map from
           <m>{\mathbb R}^2</m> to <m>{\mathbb R}^2</m> by
-          <me>
+          <md>
             T_A (x,y) = (3x +  y, 5x + 2y)
-          </me>.
+          </md>.
           We can find an inverse map of <m>T_A</m> by simply inverting the matrix <m>A</m>;
           that is, <m>T_A^{-1} = T_{A^{-1}}</m>.
           In this example,
-          <me>
+          <md>
             A^{-1} =
             \begin{pmatrix}
             2  &amp; -1 \\
             -5 &amp;  3
             \end{pmatrix};
-          </me>
+          </md>
           hence, the inverse map is given by
-          <me>
+          <md>
             T_A^{-1} (x,y) = (2x -  y, -5x + 3y)
-          </me>.
+          </md>.
           It is easy to check that
-          <me>
+          <md>
             T^{-1}_A \circ T_A (x,y) = T_A \circ T_A^{-1} (x,y) = (x,y)
-          </me>.
+          </md>.
           Not every map has an inverse.
           If we consider the map
-          <me>
+          <md>
             T_B (x,y) = (3x , 0 )
-          </me>
+          </md>
           given by the matrix
-          <me>
+          <md>
             B =
             \begin{pmatrix}
             3 &amp; 0 \\
             0 &amp; 0
             \end{pmatrix}
-          </me>,
+          </md>,
           then an inverse map would have to be of the form
-          <me>
+          <md>
             T_B^{-1} (x,y) = (ax + by, cx +dy)
-          </me>
+          </md>
           and
-          <me>
+          <md>
             (x,y) = T_B \circ T_B^{-1} (x,y) = (3ax + 3by, 0)
-          </me>
+          </md>
           for all <m>x</m> and <m>y</m>.
           Clearly this is  impossible because <m>y</m> might not be <m>0</m>.
         </p>
@@ -1067,21 +1067,21 @@
       <example xml:id="sets-example-inverse-permutation">
         <p>
           Given the permutation
-          <me>
+          <md>
             \pi =
             \begin{pmatrix}
             1 &amp; 2 &amp; 3 \\
             2 &amp; 3 &amp; 1
             \end{pmatrix}
-          </me>
+          </md>
           on <m>S = \{ 1,2,3 \}</m>, it is easy to see that the permutation defined by
-          <me>
+          <md>
             \pi^{-1} =
             \begin{pmatrix}
             1 &amp; 2 &amp; 3 \\
             3 &amp; 1 &amp; 2
             \end{pmatrix}
-          </me>
+          </md>
           is the inverse of <m>\pi</m>.
           In fact, any bijective mapping possesses an inverse,
           as we will see in the next theorem.
@@ -1171,9 +1171,9 @@
           <m>s</m>, and <m>u</m> all nonzero.
           Then <m>ps = qr</m> and <m>ru = st</m>.
           Therefore,
-          <me>
+          <md>
             psu = qru = qst
-          </me>.
+          </md>.
           Since <m>s \neq 0</m>, <m>pu = qt</m>.
           Consequently, <m>p/q \sim t/u</m>.
         </p>
@@ -1191,9 +1191,9 @@
           <m>f(x) - g(x) = c_1</m> and <m>g(x)- h(x) = c_2</m>,
           where <m>c_1</m> and <m>c_2</m> are both constants.
           Hence,
-          <me>
+          <md>
             f(x) - h(x) = ( f(x) - g(x)) + ( g(x)- h(x)) = c_1 + c_2
-          </me>
+          </md>
           and <m>f'(x) - h'(x) = 0</m>.
           Therefore, <m>f(x) \sim h(x)</m>.
         </p>
@@ -1215,7 +1215,7 @@
           We can define an equivalence relation on the set of <m>2 \times 2</m> matrices,
           by saying <m>A \sim B</m> if there exists an invertible matrix <m>P</m> such that <m>PAP^{-1} = B</m>.
           For example, if
-          <me>
+          <md>
             A =
             \begin{pmatrix}
             1 &amp; 2 \\
@@ -1227,38 +1227,38 @@
             -18 &amp; 33 \\
             -11 &amp; 20
             \end{pmatrix}
-          </me>,
+          </md>,
           then <m>A \sim B</m> since <m>PAP^{-1} = B</m> for
-          <me>
+          <md>
             P =
             \begin{pmatrix}
             2 &amp; 5 \\
             1 &amp; 3
             \end{pmatrix}
-          </me>.
+          </md>.
           Let <m>I</m> be the <m>2 \times 2</m> identity matrix; that is,
-          <me>
+          <md>
             I =
             \begin{pmatrix}
             1 &amp; 0 \\
             0 &amp; 1
             \end{pmatrix}
-          </me>.
+          </md>.
           Then <m>IAI^{-1} = IAI = A</m>;
           therefore, the relation is reflexive.
           To show symmetry, suppose that <m>A \sim B</m>.
           Then there exists an invertible matrix <m>P</m> such that <m>PAP^{-1} = B</m>.
           So
-          <me>
+          <md>
             A = P^{-1} B P = P^{-1} B (P^{-1})^{-1}
-          </me>.
+          </md>.
           Finally, suppose that <m>A \sim B</m> and <m>B \sim C</m>.
           Then there exist invertible matrices <m>P</m> and <m>Q</m> such that
           <m>PAP^{-1} = B</m> and  <m>QBQ^{-1} = C</m>.
           Since
-          <me>
+          <md>
             C = QBQ^{-1} = QPAP^{-1} Q^{-1} = (QP)A(QP)^{-1}
-          </me>,
+          </md>,
           the relation is transitive.
           Two matrices that are equivalent in this manner are said to be <idx><h>Matrix</h><h>similar</h></idx><term>similar</term>.
         </p>
@@ -1385,9 +1385,9 @@
           To show transitivity,
           it is necessary to prove that <m>r - t</m> is divisible by <m>n</m>.
           However,
-          <me>
+          <md>
             r - t = r - s + s - t = kn + ln = (k + l)n
-          </me>,
+          </md>,
           and so <m>r - t</m> is divisible by <m>n</m>.
         </p>
 
@@ -1883,9 +1883,9 @@
       <statement>
         <p>
           Define a function on the real numbers by
-          <me>
+          <md>
             f(x) = \frac{x + 1}{x - 1}
-          </me>.
+          </md>.
           What are the domain and range of <m>f</m>?
           What is the inverse of <m>f</m>?
           Compute <m>f \circ f^{-1}</m> and <m>f^{-1} \circ f</m>.
@@ -1921,9 +1921,9 @@
             <li>
               <p>
                 Prove <m>f^{-1}( B_1 \cup B_2 ) = f^{-1}( B_1) \cup f^{-1}(B_2 )</m>, where
-                <me>
+                <md>
                   f^{-1}(B) = \{ x \in X : f(x) \in B \}
-                </me>.
+                </md>.
               </p>
             </li>
 

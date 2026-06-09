@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2025  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2025  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2026  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2026  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -48,9 +48,9 @@
       however, different pairs of integers can represent the same rational number.
       For instance, <m>1/2 = 2/4 = 3/6</m>.
       We know that
-      <me>
+      <md>
         \frac{a}{b} = \frac{c}{d}
-      </me>
+      </md>
       if and only if <m>ad = bc</m>.
       A more formal way of considering this problem is to examine fractions in terms of equivalence relations.
       We can think of elements in
@@ -69,9 +69,9 @@
       If we use the approach of ordered pairs instead of fractions,
       then we can study integral domains in general.
       Let <m>D</m> be any integral domain and let
-      <me>
+      <md>
         S = \{ (a, b) : a, b \in D \text{ and } b \neq 0 \}
-      </me>.
+      </md>.
       Define a relation on <m>S</m> by <m>(a, b) \sim (c, d)</m> if <m>ad = bc</m>.
     </p>
 
@@ -93,9 +93,9 @@
           let <m>(a, b) \sim (c, d)</m> and <m>(c, d) \sim (e,f)</m>.
           In this case <m>ad = bc</m> and <m>cf = de</m>.
           Multiplying both sides of <m>ad = bc</m> by <m>f</m> yields
-          <me>
+          <md>
             a f d = a d f = b c f = b d e = bed
-          </me>.
+          </md>.
           Since <m>D</m> is an integral domain,
           we can deduce that <m>af = be</m> or <m>(a,b ) \sim (e, f)</m>.
         </p>
@@ -113,13 +113,13 @@
       It seems reasonable to define the operations of addition and multiplication on <m>F_D</m> in a similar manner.
       If we denote the equivalence class of <m>(a, b) \in S</m> by <m>[a, b]</m>,
       then we are led to define the operations of addition and multiplication on <m>F_D</m> by
-      <me>
+      <md>
         [a, b] + [c, d] = [ad + b c,b d]
-      </me>
+      </md>
       and
-      <me>
+      <md>
         [a, b] \cdot [c, d] = [ac, b d]
-      </me>,
+      </md>,
       respectively.
       The next lemma demonstrates that these operations are independent of the choice of representatives from each equivalence class.
     </p>
@@ -137,13 +137,13 @@
           The proof that multiplication is well-defined is left as an exercise.
           Let <m>[a_1, b_1] = [a_2, b_2]</m> and <m>[c_1, d_1] =[ c_2, d_2]</m>.
           We must show that
-          <me>
+          <md>
             [a_1 d_1 + b_1 c_1,b_1 d_1] = [a_2 d_2 + b_2 c_2,b_2 d_2]
-          </me>
+          </md>
           or, equivalently, that
-          <me>
+          <md>
             (a_1 d_1 + b_1 c_1)( b_2 d_2) = (b_1 d_1) (a_2 d_2 + b_2 c_2)
-          </me>.
+          </md>.
           Since  <m>[a_1, b_1] = [a_2, b_2]</m> and <m>[c_1, d_1] =[ c_2, d_2]</m>,
           we know that <m>a_1 b_2 = b_1 a_2</m> and <m>c_1 d_2 = d_1 c_2</m>.
           Therefore,
@@ -176,9 +176,9 @@
           The additive and multiplicative identities are <m>[0,1]</m> and <m>[1,1]</m>,
           respectively.
           To show that <m>[0,1]</m> is the additive identity, observe that
-          <me>
+          <md>
             [a, b] + [0, 1] =  [ a 1 + b 0, b 1] = [a,b]
-          </me>.
+          </md>.
           It is easy to show that <m>[1, 1]</m> is the multiplicative identity.
           Let <m>[a, b] \in F_D</m> such that <m>a \neq 0</m>.
           Then <m>[b, a]</m> is also in <m>F_D</m> and <m>[a,b] \cdot [b, a] = [1,1]</m>;
@@ -227,21 +227,21 @@
           We will first demonstrate that <m>D</m> can be embedded in the field  <m>F_D</m>.
           Define a map <m>\phi : D \rightarrow F_D</m> by <m>\phi(a)  = [a, 1]</m>.
           Then for <m>a</m> and <m>b</m> in <m>D</m>,
-          <me>
+          <md>
             \phi( a + b ) = [a+b, 1] = [a, 1] + [b, 1] = \phi(a ) + \phi(b)
-          </me>
+          </md>
           and
-          <me>
+          <md>
             \phi( a b ) = [a b, 1] = [a, 1]  [b, 1] = \phi(a ) \phi(b);
-          </me>
+          </md>
           hence, <m>\phi</m> is a homomorphism.
           To show that <m>\phi</m> is one-to-one,
           suppose that <m>\phi(a) = \phi( b)</m>.
           Then <m>[a, 1] = [b, 1]</m>, or <m>a = a1 = 1b = b</m>.
           Finally, any element of <m>F_D</m> can be expressed as the quotient of two elements in <m>D</m>, since
-          <me>
+          <md>
             \phi(a) [\phi(b)]^{-1} = [a, 1] [b, 1]^{-1} = [a, 1] \cdot [1, b] = [a, b]
-          </me>.
+          </md>.
         </p>
             <!-- Typo corrected.  Suggested by Nathan Lander. -->
             <!-- TWJ 2/13/2012 -->
@@ -423,9 +423,9 @@
 
         <p>
           We claim that <m>4</m> has two distinct factorizations into irreducible elements:
-          <me>
+          <md>
             4 = 2 \cdot 2 = (1 - \sqrt{3}\, i) (1 + \sqrt{3}\, i)
-          </me>.
+          </md>.
           We must show that each of these factors is an irreducible element in <m>{\mathbb Z}[ \sqrt{3}\, i ]</m>.
           If <m>2</m> is not irreducible,
           then <m>2 = z w</m> for elements
@@ -637,9 +637,9 @@
               By the same argument as before,
               <m>\langle a_1 \rangle \subset \langle a_2 \rangle</m>.
               We can continue with this construction to obtain an ascending chain of ideals
-              <me>
+              <md>
                 \langle a \rangle \subset \langle a_1 \rangle \subset \langle a_2 \rangle \subset \cdots
-              </me>.
+              </md>.
               By <xref ref="domains-lemma-acc"/>,
               there exists a positive integer <m>N</m> such that
               <m>\langle a_n \rangle = \langle a_N \rangle</m> for all <m>n \geq N</m>.
@@ -657,14 +657,14 @@
               Either <m>c_1</m> is irreducible or <m>c_1 = c_2 p_2</m>,
               where <m>p_2</m> is irreducible and <m>c_2</m> is not a unit.
               Continuing in this manner, we obtain another chain of ideals
-              <me>
+              <md>
                 \langle a \rangle \subset \langle c_1 \rangle \subset \langle c_2 \rangle \subset \cdots
-              </me>.
+              </md>.
               This chain must satisfy the ascending chain condition;
               therefore,
-              <me>
+              <md>
                 a = p_1 p_2 \cdots p_r
-              </me>
+              </md>
               for irreducible elements <m>p_1, \ldots, p_r</m>.
             </p>
           </case>
@@ -673,9 +673,9 @@
             <title>Uniqueness of the factorization</title>
             <p>
               To show uniqueness, let
-              <me>
+              <md>
                 a = p_1 p_2 \cdots p_r = q_1 q_2 \cdots q_s
-              </me>,
+              </md>,
               where each <m>p_i</m> and each <m>q_i</m> is irreducible.
               Without loss of generality, we can assume that <m>r \lt s</m>.
               Since <m>p_1</m> divides <m>q_1 q_2 \cdots q_s</m>,
@@ -683,20 +683,20 @@
               By rearranging the <m>q_i</m>'s, we can assume that <m>p_1 \mid q_1</m>;
               hence, <m>q_1 = u_1 p_1</m> for some unit <m>u_1</m> in <m>D</m>.
               Therefore,
-              <me>
+              <md>
                 a = p_1 p_2 \cdots p_r = u_1 p_1 q_2 \cdots q_s
-              </me>
+              </md>
               or
-              <me>
+              <md>
                 p_2 \cdots p_r = u_1 q_2 \cdots q_s
-              </me>.
+              </md>.
               Continuing in this manner,
               we can arrange the <m>q_i</m>'s such that <m>p_2 = q_2, p_3 = q_3, \ldots,
               p_r = q_r</m>,
               to obtain
-              <me>
+              <md>
                 u_1 u_2 \cdots u_r q_{r + 1} \cdots q_s = 1
-              </me>.
+              </md>.
               In this case <m>q_{r + 1} \cdots q_s</m> is a unit,
               which contradicts the fact that <m>q_{r + 1}, \ldots, q_s</m> are irreducibles.
               Therefore, <m>r = s</m> and the factorization of <m>a</m> is unique.
@@ -792,9 +792,9 @@
       <example xml:id="domains-example-gaussian-valuation">
         <p>
           Recall that the Gaussian integers in <xref ref="rings-example-gaussian-integers"/> of <xref ref="rings"/> are defined by
-          <me>
+          <md>
             {\mathbb Z}[i] = \{  a + b i : a, b \in {\mathbb Z} \}
-          </me>.
+          </md>.
           We usually measure the size of a complex number <m>a + bi</m> by its absolute value,.
           <m>|a + bi| = \sqrt{ a^2 + b^2}</m>;
           however, <m>\sqrt{a^2 + b^2}</m> may not be an integer.
@@ -839,17 +839,17 @@
           of <m>z w^{-1} = (m_1 + m_2 i) + (s + ti)</m>.
           We also know that <m>s^2 + t^2 \leq 1/4 + 1/4 = 1/2</m>.
           Multiplying by <m>w</m>, we have
-          <me>
+          <md>
             z = z w^{-1} w = w (m_1 + m_2 i) + w (s + ti)  = q w + r
-          </me>,
+          </md>,
           where <m>q = m_1 + m_2 i</m> and <m>r =  w (s + ti)</m>.
           Since <m>z</m> and <m>qw</m> are in <m>{\mathbb Z}[i]</m>,
           <m>r</m> must be in <m>{\mathbb Z}[i]</m>.
           Finally, we need to show that either <m>r = 0</m> or <m>\nu(r) \lt \nu(w)</m>.
           However,
-          <me>
+          <md>
             \nu(r) = \nu(w) \nu(s + ti) \leq \frac{1}{2} \nu(w) \lt \nu(w)
-          </me>.
+          </md>.
         </p>
       </example>
 
@@ -895,9 +895,9 @@
 
       <p>
         Let <m>D</m> be a unique factorization domain and suppose that
-        <me>
+        <md>
           p(x) = a_n x^n + \cdots + a_1 x + a_0
-        </me>
+        </md>
         in <m>D[x]</m>.
         Then the <term>content</term><idx><h>Polynomial</h><h>content of</h></idx> of <m>p(x)</m> is the greatest common divisor of <m>a_0, \ldots, a_n</m>.
         We say that <m>p(x)</m> is <term>primitive</term><idx><h>Primitive polynomial</h></idx><idx><h>Polynomial</h><h>primitive</h></idx>
@@ -932,9 +932,9 @@
             Let <m>r</m> be the smallest integer such that
             <m>p \notdivide a_r</m> and <m>s</m> be the smallest integer such that <m>p \notdivide b_s</m>.
             The coefficient of <m>x^{r+s}</m> in <m>f(x) g(x)</m> is
-            <me>
+            <md>
               c_{r + s} = a_0 b_{r + s} + a_1 b_{r + s - 1} + \cdots + a_{r + s - 1} b_1 + a_{r + s} b_0
-            </me>.
+            </md>.
             Since <m>p</m> divides <m>a_0, \ldots,
             a_{r-1}</m> and <m>b_0, \ldots, b_{s-1}</m>,
             <m>p</m> divides every term of <m>c_{r+s}</m> except for the term <m>a_r b_s</m>.
@@ -1045,9 +1045,9 @@
             where <m>g_i(x)</m> is a primitive polynomial in <m>D[x]</m>.
             By <xref ref="domains-corollary-irreducible-poly"/>, each <m>g_i(x)</m> is irreducible in <m>D[x]</m>.
             Consequently, we can write
-            <me>
+            <md>
               a_1 \cdots a_n p(x) = b_1 \cdots b_n g_1(x) \cdots g_n(x)
-            </me>.
+            </md>.
             Let <m>b = b_1 \cdots b_n</m>.
             Since <m>g_1(x) \cdots g_n(x)</m> is primitive,
             <m>a_1 \cdots a_n</m> divides <m>b</m>.
@@ -1060,9 +1060,9 @@
           <p>
             We will now show the uniqueness of this factorization.
             Let
-            <me>
+            <md>
               p(x) = a_1 \cdots a_m f_1(x) \cdots f_n(x) = b_1 \cdots b_r g_1(x) \cdots g_s(x)
-            </me>
+            </md>
             be two factorizations of <m>p(x)</m>,
             where all of the factors are irreducible in <m>D[x]</m>.
             By <xref ref="domains-corollary-irreducible-poly"/>,
@@ -1443,9 +1443,9 @@
         <p>
           Prove that the field of fractions of the Gaussian integers,
           <m>{\mathbb Z}[i]</m>, is
-          <me>
+          <md>
             {\mathbb Q}(i) = \{ p + q i : p, q \in {\mathbb Q}  \}
-          </me>.
+          </md>.
         </p>
       </statement>
       <hint>

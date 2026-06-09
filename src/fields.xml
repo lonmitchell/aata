@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2025  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2025  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2026  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2026  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -25,22 +25,22 @@
       More specifically if we are given a field <m>F</m> and a polynomial <m>p(x) \in F[x]</m>,
       we can ask whether or not we can find a field <m>E</m> containing <m>F</m> such that <m>p(x)</m> factors into linear factors over <m>E[x]</m>.
       For example, if we consider the polynomial
-      <me>
+      <md>
         p(x) = x^4 -5 x^2 + 6
-      </me>
+      </md>
       in <m>{\mathbb Q}[x]</m>,
       then <m>p(x)</m> factors as <m>(x^2 - 2)(x^2 - 3)</m>.
       However, both of these factors are irreducible in <m>{\mathbb Q}[x]</m>.
       If we wish to find a zero of <m>p(x)</m>,
       we must go to a larger field.
       Certainly the field of real numbers will work, since
-      <me>
+      <md>
         p(x) = (x - \sqrt{2} ) (x + \sqrt{2} )( x - \sqrt{3})(x + \sqrt{3})
-      </me>.
+      </md>.
       It is possible to find a smaller field in which <m>p(x)</m> has a zero, namely
-      <me>
+      <md>
         {\mathbb Q }( \sqrt{2} ) = \{ a + b \sqrt{2} : a, b \in {\mathbb Q} \}
-      </me>.
+      </md>.
       We wish to be able to compute and study such fields for arbitrary polynomials over a field <m>F</m>.
     </p>
   </introduction>
@@ -58,9 +58,9 @@
       <example xml:id="fields-example-q-sqrt2">
         <p>
           For example, let
-          <me>
+          <md>
             F = {\mathbb Q}( \sqrt{2}\,) = \{ a + b \sqrt{2} : a, b \in {\mathbb Q} \}
-          </me>
+          </md>
           and let <m>E =  {\mathbb Q }( \sqrt{2} + \sqrt{3}\,)</m> be the smallest field containing both
           <m>{\mathbb Q}</m> and <m>\sqrt{2} + \sqrt{3}</m>.
           Both <m>E</m> and <m>F</m> are extension fields of the rational numbers.
@@ -88,14 +88,14 @@
           hence, <m>{\mathbb Z}_2[x] / \langle p(x) \rangle</m> is a field.
           Let <m>f(x) + \langle p(x) \rangle</m> be an arbitrary element of <m>{\mathbb Z}_2[x] / \langle p(x) \rangle</m>.
           By the division algorithm,
-          <me>
+          <md>
             f(x) = (x^2 + x + 1) q(x) + r(x)
-          </me>,
+          </md>,
           where the degree of <m>r(x)</m> is less than the degree of <m>x^2 + x + 1</m>.
           Therefore,
-          <me>
+          <md>
             f(x) + \langle x^2 + x + 1 \rangle = r(x) + \langle x^2 + x + 1 \rangle
-          </me>.
+          </md>.
           The only possibilities for <m>r(x)</m> are then <m>0</m>,
           <m>1</m>, <m>x</m>, and <m>1 + x</m>.
           Consequently,
@@ -110,9 +110,9 @@
           </md>.
           Notice that <m>{\alpha}^2 + {\alpha} + 1 = 0</m>;
           hence, if we compute <m>(1 + \alpha)^2</m>,
-          <me>
+          <md>
             (1 + \alpha)(1 + \alpha)= 1 + \alpha + \alpha + (\alpha)^2 = \alpha
-          </me>.
+          </md>.
           Other calculations are accomplished in a similar manner.
           We summarize these computations in the following tables,
           which tell us how to add and multiply elements in <m>E</m>.
@@ -123,7 +123,7 @@
             <!-- math table -->
         <caption>Addition Table for <m>{\mathbb Z}_2(\alpha)</m></caption>
         <p>
-          <me>
+          <md>
             \begin{array}{c|cccc}
             + &amp; 0 &amp; 1 &amp; \alpha &amp; 1 + \alpha \\
             \hline
@@ -132,7 +132,7 @@
             \alpha &amp; \alpha &amp; 1 + \alpha &amp; 0 &amp; 1  \\
             1 + \alpha &amp; 1 + \alpha &amp; \alpha &amp; 1 &amp; 0
             \end{array}
-          </me>
+          </md>
         </p>
       </figure>
 
@@ -140,7 +140,7 @@
             <!-- math table -->
         <caption>Multiplication Table for <m>{\mathbb Z}_2(\alpha)</m></caption>
         <p>
-          <me>
+          <md>
             \begin{array}{c|cccc}
             \cdot &amp; 0 &amp; 1 &amp; \alpha &amp; 1 + \alpha \\
             \hline
@@ -149,7 +149,7 @@
             \alpha &amp; 0 &amp; \alpha &amp; 1 + \alpha &amp; 1  \\
             1 + \alpha &amp; 0 &amp; 1 + \alpha &amp; 1 &amp; \alpha
             \end{array}
-          </me>
+          </md>
         </p>
       </figure>
 
@@ -184,17 +184,17 @@
             where <m>\psi(a) = a + \langle p(x)\rangle</m> for <m>a \in F</m>.
             It is easy to check that <m>\psi</m> is indeed a ring homomorphism.
             Observe that
-            <me>
+            <md>
               \psi( a ) + \psi( b ) = (a + \langle p(x) \rangle) + (b + \langle p(x) \rangle) = (a + b) + \langle p(x) \rangle = \psi( a + b )
-            </me>
+            </md>
             and
-            <me>
+            <md>
               \psi( a ) \psi( b ) = (a + \langle p(x) \rangle)  (b + \langle p(x) \rangle) = ab + \langle p(x) \rangle = \psi( ab )
-            </me>.
+            </md>.
             To prove that <m>\psi</m> is one-to-one, assume that
-            <me>
+            <md>
               a + \langle p(x) \rangle = \psi(a) = \psi(b) = b + \langle p(x) \rangle
-            </me>.
+            </md>.
             Then <m>a - b</m> is a multiple of <m>p(x)</m>,
             since it lives in the ideal <m>\langle p(x) \rangle</m>.
             Since <m>p(x)</m> is a nonconstant polynomial,
@@ -418,9 +418,9 @@
             where <m>\alpha \in E</m> is algebraic over <m>F</m>.
             Suppose that the degree of <m>\alpha</m> over <m>F</m> is <m>n</m>.
             Then every element <m>\beta \in E</m> can be expressed uniquely in the form
-            <me>
+            <md>
               \beta = b_0 + b_1 \alpha + \cdots + b_{n-1} \alpha^{n - 1}
-            </me>
+            </md>
             for <m>b_i \in F</m>.
           </p>
         </statement>
@@ -431,14 +431,14 @@
             every element in <m>E = F( \alpha )</m> must be of the form <m>\phi_{\alpha} ( f(x) ) = f( \alpha )</m>,
             where <m>f(\alpha)</m> is a polynomial in <m>\alpha</m> with coefficients in <m>F</m>.
             Let
-            <me>
+            <md>
               p(x) = x^n + a_{n - 1} x^{n - 1} + \cdots + a_0
-            </me>
+            </md>
             be the minimal polynomial of <m>\alpha</m>.
             Then <m>p( \alpha ) = 0</m>; hence,
-            <me>
+            <md>
               {\alpha}^n = - a_{n - 1} {\alpha}^{n - 1} - \cdots - a_0
-            </me>.
+            </md>.
             Similarly,
             <md>
               <mrow>{\alpha}^{n + 1} &amp; = {\alpha} {\alpha}^n</mrow>
@@ -450,29 +450,29 @@
             as a linear combination of powers of
             <m>{\alpha}</m> that are less than <m>n</m>.
             Hence, any <m>\beta \in F( \alpha )</m> can be written as
-            <me>
+            <md>
               \beta = b_0 + b_1 \alpha + \cdots + b_{n - 1} \alpha^{n - 1}
-            </me>.
+            </md>.
           </p>
 
           <p>
             To show uniqueness, suppose that
-            <me>
+            <md>
               \beta = b_0 + b_1 \alpha + \cdots + b_{n-1} \alpha^{n-1} = c_0 + c_1 \alpha + \cdots + c_{n - 1} \alpha^{n - 1}
-            </me>
+            </md>
             for <m>b_i</m> and <m>c_i</m> in <m>F</m>.
             Then
-            <me>
+            <md>
               g(x) = (b_0 - c_0) + (b_1 - c_1) x + \cdots + (b_{n - 1} - c_{n - 1})x^{n - 1}
-            </me>
+            </md>
             is in <m>F[x]</m> and <m>g( \alpha ) = 0</m>.
             Since the degree of <m>g(x)</m> is less than the degree of <m>p( x )</m>,
             the irreducible polynomial of <m>\alpha</m>,
             <m>g(x)</m> must be the zero polynomial.
             Consequently,
-            <me>
+            <md>
               b_0 - c_0 = b_1 - c_1 = \cdots = b_{n - 1} - c_{n - 1} = 0
-            </me>,
+            </md>,
             or <m>b_i = c_i</m> for <m>i = 0, 1, \ldots, n-1</m>.
             Therefore, we have shown uniqueness.
           </p>
@@ -519,9 +519,9 @@
         then we say that <m>E</m> is a 
         <idx><h>Extension</h><h>finite</h></idx><term>finite extension of degree <m>n</m> over <m>F</m></term>. 
         We write
-        <me>
+        <md>
           [E:F]= n
-        </me>.
+        </md>.
         to indicate the dimension of <m>E</m> over <m>F</m>.
 
         <notation>
@@ -542,18 +542,18 @@
           <p>
             Let <m>\alpha \in E</m>.
             Since <m>[E:F] = n</m>, the elements
-            <me>
+            <md>
               1, \alpha, \ldots, {\alpha}^n
-            </me>
+            </md>
             cannot be linearly independent.
             Hence, there exist <m>a_i \in F</m>, not all zero, such that
-            <me>
+            <md>
               a_n {\alpha}^n + a_{n - 1} {\alpha}^{n - 1} + \cdots + a_1 \alpha + a_0 = 0
-            </me>.
+            </md>.
             Therefore,
-            <me>
+            <md>
               p(x) = a_n x^n + \cdots + a_0 \in F[x]
-            </me>
+            </md>
             is a nonzero polynomial with <m>p( \alpha ) = 0</m>.
           </p>
         </proof>
@@ -580,9 +580,9 @@
           <p>
             If <m>E</m> is a finite extension of <m>F</m> and <m>K</m> is a finite extension of <m>E</m>,
             then <m>K</m> is a finite extension of <m>F</m> and
-            <me>
+            <md>
               [K:F]= [K:E] [E:F]
-            </me>.
+            </md>.
           </p>
         </statement>
 
@@ -596,9 +596,9 @@
             Then <m>u = \sum_{j = 1}^{m} b_j \beta_j</m> and <m>b_j = \sum_{i = 1}^{n} a_{ij} \alpha_i</m>,
             where <m>b_j \in E</m> and <m>a_{ij} \in F</m>.
             Then
-            <me>
+            <md>
               u = \sum_{j = 1}^{m} \left( \sum_{i = 1}^{n} a_{ij} \alpha_i  \right) \beta_j = \sum_{i,j} a_{ij} ( \alpha_i \beta_j )
-            </me>.
+            </md>.
             So the <m>mn</m> vectors <m>\alpha_i \beta_j</m> must span <m>K</m> over <m>F</m>.
           </p>
 
@@ -607,29 +607,29 @@
             Recall that a set of vectors
             <m>v_1, v_2, \ldots,
             v_n</m> in a vector space <m>V</m> are linearly independent if
-            <me>
+            <md>
               c_1 v_1 + c_2 v_2 + \cdots + c_n v_n = 0
-            </me>
+            </md>
             implies that
-            <me>
+            <md>
               c_1 = c_2 = \cdots = c_n = 0
-            </me>.
+            </md>.
             Let
-            <me>
+            <md>
               u = \sum_{i,j} c_{ij} ( \alpha_i \beta_j ) = 0
-            </me>
+            </md>
             for <m>c_{ij} \in F</m>.
             We need to prove that all of the <m>c_{ij}</m>'s are zero.
             We can rewrite <m>u</m> as
-            <me>
+            <md>
               \sum_{j = 1}^{m} \left( \sum_{i = 1}^{n} c_{ij} \alpha_i \right) \beta_j = 0
-            </me>,
+            </md>,
             where <m>\sum_i c_{ij} \alpha_i \in E</m>.
             Since the <m>\beta_j</m>'s are linearly independent over <m>E</m>,
             it must be the case that
-            <me>
+            <md>
               \sum_{i = 1}^n c_{ij} \alpha_i = 0
-            </me>
+            </md>
             for all <m>j</m>.
             However, the <m>\alpha_j</m> are also linearly independent  over <m>F</m>.
             Therefore, <m>c_{ij} = 0</m> for all <m>i</m> and <m>j</m>,
@@ -649,9 +649,9 @@
             <m>i = 1, \dots,
             k</m> and <m>F_{i+1}</m> is a finite extension of <m>F_i</m>,
             then <m>F_k</m> is a finite extension of <m>F_1</m> and
-            <me>
+            <md>
               [F_k : F_1] = [F_k : F_{k-1} ] \cdots [F_2 : F_1 ]
-            </me>.
+            </md>.
           </p>
         </statement>
       </corollary>
@@ -670,9 +670,9 @@
           <p>
             We know that <m>\deg p(x) = [F( \alpha ) : F ]</m> and <m>\deg q(x) = [F( \beta ) : F ]</m>.
             Since <m>F \subset F( \beta ) \subset F( \alpha )</m>,
-            <me>
+            <md>
               [F( \alpha ) : F ]= [ F( \alpha ) : F( \beta ) ] [ F( \beta ) : F ]
-            </me>.
+            </md>.
           </p>
         </proof>
       </corollary>
@@ -684,9 +684,9 @@
           It is easy to determine that the minimal  polynomial of
           <m>\sqrt{3} + \sqrt{5}</m> is <m>x^4 - 16 x^2 + 4</m>.
           It follows that
-          <me>
+          <md>
             [{\mathbb Q}( \sqrt{3} + \sqrt{5}\, ) : {\mathbb Q} ] = 4
-          </me>.
+          </md>.
           We know that <m>\{ 1, \sqrt{3}\, \}</m> is a basis for 
           <m>{\mathbb Q}( \sqrt{3}\, )</m> over <m>{\mathbb Q}</m>.
           Hence, <m>\sqrt{3} + \sqrt{5}</m> cannot be in <m>{\mathbb Q}( \sqrt{3}\, )</m>.
@@ -705,25 +705,25 @@
           where <m>\sqrt{5}</m> is the positive square root of <m>5</m> and
           <m>\sqrt[3]{5}</m> is the real cube root of <m>5</m>.
           We know that <m>\sqrt{5} \, i \notin {\mathbb Q}(\sqrt[3]{5}\, )</m>, so
-          <me>
+          <md>
             [ {\mathbb Q}(\sqrt[3]{5}, \sqrt{5}\, i) : {\mathbb Q}(\sqrt[3]{5}\, )] = 2
-          </me>.
+          </md>.
           It is easy to determine that <m>\{ 1, \sqrt{5}i\, \}</m> is a basis for
           <m>{\mathbb Q}( \sqrt[3]{5}, \sqrt{5}\, i )</m> over <m>{\mathbb Q}( \sqrt[3]{5}\, )</m>.
           We also know that <m>\{ 1, \sqrt[3]{5}, (\sqrt[3]{5}\, )^2  \}</m> is a basis for
           <m>{\mathbb Q}(\sqrt[3]{5}\, )</m> over <m>{\mathbb Q}</m>.
           Hence, a basis for <m>{\mathbb Q}(\sqrt[3]{5}, \sqrt{5}\, i )</m> over <m>{\mathbb Q}</m> is
-          <me>
+          <md>
             \{ 1, \sqrt{5}\, i, \sqrt[3]{5}, (\sqrt[3]{5}\, )^2, (\sqrt[6]{5}\, )^5 i, (\sqrt[6]{5}\, )^7 i = 5 \sqrt[6]{5}\, i \text{ or } \sqrt[6]{5}\, i \}
-          </me>.
+          </md>.
           Notice that <m>\sqrt[6]{5}\, i</m> is a zero of <m>x^6 + 5</m>.
           We can show that this polynomial is irreducible over
           <m>{\mathbb Q}</m> using Eisenstein's Criterion,
           where we let <m>p = 5</m>.
           Consequently,
-          <me>
+          <md>
             {\mathbb Q} \subset {\mathbb Q}( \sqrt[6]{5}\, i) \subset {\mathbb Q}( \sqrt[3]{5}, \sqrt{5}\, i )
-          </me>.
+          </md>.
           But it must be the case that <m>{\mathbb Q}( \sqrt[6]{5}\, i) = {\mathbb Q}( \sqrt[3]{5}, \sqrt{5}\, i )</m>,
           since the degree of both of these extensions is <m>6</m>.
         </p>
@@ -752,9 +752,9 @@
               <li>
                 <p>
                   There exists a sequence of fields
-                  <me>
+                  <md>
                     E = F(\alpha_1, \ldots, \alpha_n) \supset F(\alpha_1, \ldots, \alpha_{n-1} ) \supset \cdots \supset F( \alpha_1 ) \supset F
-                  </me>,
+                  </md>,
                   where each field <m>F(\alpha_1, \ldots, \alpha_i)</m> is algebraic over <m>F(\alpha_1, \ldots, \alpha_{i-1})</m>.
                 </p>
               </li>
@@ -776,28 +776,28 @@
             Suppose that <m>E = F(\alpha_1, \ldots, \alpha_n)</m>,
             where every <m>\alpha_i</m> is algebraic over <m>F</m>.
             Then
-            <me>
+            <md>
               E = F(\alpha_1, \ldots, \alpha_n) \supset F(\alpha_1, \ldots, \alpha_{n - 1} ) \supset \cdots \supset F( \alpha_1 ) \supset F
-            </me>,
+            </md>,
             where each field <m>F(\alpha_1, \ldots, \alpha_i)</m> is algebraic over <m>F(\alpha_1, \ldots, \alpha_{i - 1})</m>.
           </p>
 
           <p>
             (3) <m>\Rightarrow</m> (1).
             Let
-            <me>
+            <md>
               E = F(\alpha_1, \ldots, \alpha_n) \supset F(\alpha_1, \ldots, \alpha_{n - 1} ) \supset \cdots \supset F( \alpha_1 ) \supset F
-            </me>,
+            </md>,
             where each field <m>F(\alpha_1, \ldots, \alpha_i)</m> is algebraic over <m>F(\alpha_1, \ldots, \alpha_{i - 1})</m>.
             Since
-            <me>
+            <md>
               F(\alpha_1, \ldots, \alpha_i) =  F(\alpha_1, \ldots, \alpha_{i - 1} )(\alpha_i)
-            </me>
+            </md>
             is simple extension and <m>\alpha_i</m> is algebraic over <m>F(\alpha_1, \ldots, \alpha_{i - 1})</m>,
             it follows that
-            <me>
+            <md>
               [ F(\alpha_1, \ldots, \alpha_i) : F(\alpha_1, \ldots, \alpha_{i - 1} )]
-            </me>
+            </md>
             is finite for each <m>i</m>.
             Therefore, <m>[E : F]</m> is finite.
           </p>
@@ -867,9 +867,9 @@
             Therefore, <m>x-\alpha</m> must be a factor of <m>p(x)</m> and so <m>p(x) = (x - \alpha) q_1(x)</m>,
             where <m>\deg q_1(x) = \deg p(x) - 1</m>.
             Continue this process with <m>q_1(x)</m> to find a factorization
-            <me>
+            <md>
               p(x) = (x - \alpha)(x - \beta)q_2(x)
-            </me>,
+            </md>,
             where <m>\deg q_2(x) = \deg p(x) -2</m>.
             The process must eventually stop since the degree of <m>p(x)</m> is finite.
           </p>
@@ -956,9 +956,9 @@
       <term>splitting field</term><idx><h>Splitting field</h></idx><idx><h>Field</h><h>splitting</h></idx>
       of <m>p(x)</m> if there exist elements
       <m>\alpha_1, \ldots, \alpha_n</m> in <m>E</m> such that <m>E = F( \alpha_1, \ldots, \alpha_n )</m> and
-      <me>
+      <md>
         p(x) = ( x - \alpha_1 )(x - \alpha_2) \cdots (x - \alpha_n)
-      </me>.
+      </md>.
       A polynomial <m>p(x) \in F[x]</m> <term>splits</term>
       in <m>E</m> if it is the product of linear factors in <m>E[x]</m>.
     </p>
@@ -976,9 +976,9 @@
         Let <m>p(x) = x^3 - 3</m> be in <m>{\mathbb Q}[x]</m>.
         Then <m>p(x)</m> has a root in the field <m>{\mathbb Q}( \sqrt[3]{3}\, )</m>.
         However, this field is not a splitting field for <m>p(x)</m> since the complex cube roots of 3,
-        <me>
+        <md>
           \frac{ -\sqrt[3]{3} \pm (\sqrt[6]{3}\, )^5 i }{2}
-        </me>,
+        </md>,
         are not in <m>{\mathbb Q}( \sqrt[3]{3}\, )</m>.
       </p>
     </example>
@@ -1009,9 +1009,9 @@
           <m>E \supset K</m> of <m>q(x)</m> that contains the zeros
           <m>\alpha_2, \ldots, \alpha_n</m> of <m>p(x)</m> by our induction hypothesis.
           Consequently,
-          <me>
+          <md>
             E = K(\alpha_2, \ldots, \alpha_n) = F(\alpha_1, \ldots, \alpha_n)
-          </me>
+          </md>
           is a splitting field of <m>p(x)</m>.
         </p>
       </proof>
@@ -1046,13 +1046,13 @@
           then by <xref ref="fields-theorem-simple_extension"/> we can write any element in
           <m>E( \alpha )</m> as a linear combination of <m>1, \alpha, \ldots, \alpha^{n - 1}</m>.
           Therefore, the isomorphism that we are seeking must be
-          <me>
+          <md>
             \overline{\phi}( a_0 + a_1 \alpha + \cdots + a_{n - 1} \alpha^{n - 1}) = \phi(a_0) + \phi(a_1) \beta + \cdots + \phi(a_{n - 1}) \beta^{n - 1}
-          </me>,
+          </md>,
           where
-          <me>
+          <md>
             a_0 + a_1 \alpha + \cdots + a_{n - 1} \alpha^{n - 1}
-          </me>
+          </md>
           is an element in <m>E(\alpha)</m>.
           The fact that <m>\overline{\phi}</m> is an isomorphism could be checked by direct computation;
           however, it is easier to observe that
@@ -1062,9 +1062,9 @@
         <p>
           We can extend <m>\phi</m> to be an isomorphism from <m>E[x]</m> to <m>F[x]</m>,
           which we will also denote by <m>\phi</m>, by letting
-          <me>
+          <md>
             \phi( a_0 + a_1 x + \cdots + a_n x^n ) =  \phi( a_0 ) + \phi(a_1) x + \cdots + \phi(a_n) x^n
-          </me>.
+          </md>.
           This extension agrees with the original isomorphism <m>\phi : E \rightarrow F</m>,
           since constant polynomials get mapped to constant polynomials.
           By assumption, <m>\phi(p(x)) = q(x)</m>;
@@ -1080,13 +1080,13 @@
 
         <figure xml:id="fields-figure-splitting-fields-1">
           <caption>Commutative diagram for <xref ref="fields-lemma-field-isomorphism"/></caption>
-          <p><me>\begin{CD}
+          <p><md>\begin{CD}
           E[x]/\langle p(x) \rangle    @>\psi>>  F[x]/\langle q(x) \rangle  \\
           @VV{\sigma}V        @VV{\tau}V\\
           E(\alpha)     @>\overline{\phi}>>  F(\beta) \\
           @VVV        @VVV\\
           E     @>\phi>>  F
-          \end{CD}</me></p>
+          \end{CD}</md></p>
         </figure>
 
         <p>
@@ -1128,13 +1128,13 @@
 
         <figure xml:id="fields-figure-splitting-fields-2">
           <caption>Commutative diagram for <xref ref="fields-theorem-isomorphism-extension"/></caption>
-          <p><me>\begin{CD}
+          <p><md>\begin{CD}
           K  @>\psi>>  L  \\
           @VV{\sigma}V        @VV{\tau}V\\
           E(\alpha)     @>\overline{\phi}>>  F(\beta) \\
           @VVV        @VVV\\
           E     @>\phi>>  F
-          \end{CD}</me></p>
+          \end{CD}</md></p>
         </figure>
 
         <p>
@@ -1333,9 +1333,9 @@
             which has the form <m>a x + by + c = 0</m>.
             If <m>x_1 \neq x_2</m>,
             then the equation of the line through the two points is given by
-            <me>
+            <md>
               y - y_1 = \left( \frac{y_2 - y_1}{x_2 - x_1} \right) (x - x_1)
-            </me>,
+            </md>,
             which can also be put into the proper form.
           </p>
 
@@ -1343,9 +1343,9 @@
             To prove the second part of the lemma,
             suppose that <m>(x_1, y_1)</m> is the center of a circle of radius <m>r</m>.
             Then the circle has the equation
-            <me>
+            <md>
               (x - x_1)^2 + (y - y_1)^2 - r^2 = 0
-            </me>.
+            </md>.
             This equation can easily be put into the appropriate form.
           </p>
         </proof>
@@ -1393,13 +1393,13 @@
         where <m>d_i</m>, <m>e_i</m>,
         and <m>f_i</m> are in <m>F</m> for <m>i = 1, 2</m>.
         These circles have the same intersection as the circle
-        <me>
+        <md>
           x^2 + y^2 + d_1 x +e_1 x + f_1 = 0
-        </me>
+        </md>
         and the line
-        <me>
+        <md>
           (d_1 - d_2) x + b(e_2 - e_1)y + (f_2 - f_1) = 0
-        </me>.
+        </md>.
         The last equation is that of the chord passing through the intersection points of the two circles.
         Hence, the intersection of two circles can be reduced to the case of an intersection of a line with a circle.
       </p>
@@ -1415,9 +1415,9 @@
         we obtain an equation of the form <m>Ax^2 + B x + C = 0</m>,
         where <m>A</m>, <m>B</m>, and <m>C</m> are in <m>F</m>.
         The <m>x</m> coordinate of the intersection points is given by
-        <me>
+        <md>
           x = \frac{- B \pm \sqrt{B^2 - 4 A C} }{2 A}
-        </me>
+        </md>
         and is in <m>F( \sqrt{\alpha}\, )</m>,
         where <m>\alpha = B^2 - 4 A C \gt 0</m>.
         We have proven the following lemma.
@@ -1437,9 +1437,9 @@
         <statement>
           <p>
             A real number <m>\alpha</m> is a constructible number if and only if there exists a  sequence of fields
-            <me>
+            <md>
               {\mathbb Q} = F_0 \subset F_1 \subset \cdots \subset F_k
-            </me>
+            </md>
             such that <m>F_i = F_{i-1}( \sqrt{ \alpha_i}\, )</m> with
             <m>\alpha_i \in F_{i-1}</m> and <m>\alpha \in F_k</m>.
             In particular,
@@ -1451,9 +1451,9 @@
           <p>
             The existence of the <m>F_i</m>'s and the
             <m>\alpha_i</m>'s is a direct consequence of <xref ref="fields-lemma-lines-and-circles"/> and of the fact that
-            <me>
+            <md>
               [F_k: {\mathbb Q}] = [F_k : F_{k - 1}][F_{k - 1} : F_{k - 2}] \cdots [F_1: {\mathbb Q} ] = 2^k
-            </me>.
+            </md>.
           </p>
         </proof>
       </theorem>
@@ -1493,9 +1493,9 @@
           If we could construct a cube having a volume of <m>2</m>,
           then this new cube would have an edge of length <m>\sqrt[3]{2}</m>.
           However, <m>\sqrt[3]{2}</m> is a zero of the irreducible polynomial <m>x^3 -2</m> over <m>{\mathbb Q}</m>; hence,
-          <me>
+          <md>
             [{\mathbb Q}(\sqrt[3]{2}\, ) : {\mathbb Q}] = 3
-          </me>
+          </md>
           This is impossible, since <m>3</m> is not a power of <m>2</m>.
         </p>
       </paragraphs>
@@ -1540,9 +1540,9 @@
         Let <m>\theta = 20^{\circ}</m>.
         Then <m>\cos 3 \theta = \cos 60^\circ = 1/2</m>.
         By the triple-angle formula for the cosine,
-        <me>
+        <md>
           4 \alpha^3 - 3 \alpha = \frac{1}{2}
-        </me>.
+        </md>.
         Therefore, <m>\alpha</m> is a zero of <m>8 x^3 - 6 x -1</m>.
         This polynomial has no factors in <m>{\mathbb Z}[x]</m>,
         and hence is irreducible over <m>{\mathbb Q}[x]</m>.
@@ -2137,9 +2137,9 @@
           <m>f(x) \in F[x]</m> such that <m>f(\beta) = 0</m>.
           Let <m>f(x) = a_0 + a_1 x + \cdots + a_n x^n</m>.
           Then
-          <me>
+          <md>
             0 = f(\beta) = f\left( \frac{p(\alpha)}{q(\alpha)} \right) = a_0 + a_1 \left( \frac{p(\alpha)}{q(\alpha)} \right) + \cdots + a_n \left( \frac{p(\alpha)}{q(\alpha)} \right)^n
-          </me>.
+          </md>.
           Now multiply both sides by
           <m>q(\alpha)^n</m> to show that there is a polynomial in <m>F[x]</m> that has <m>\alpha</m> as a zero.
         </p>

@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2025  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2025  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2026  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2026  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -34,9 +34,9 @@
         Let <m>x_1, \ldots,
         x_k</m> be representatives from each  of the distinct conjugacy classes of <m>G</m> that consist of more than one element.
         Then the class equation can be written as
-        <me>
+        <md>
           |G| = |Z(G)| + [G: C(x_1) ] + \cdots + [ G: C(x_k)]
-        </me>,
+        </md>,
         where <m>Z(G) = \{g \in G : gx = xg \text{ for all } x \in G\}</m> is the center of <m>G</m> and 
         <m>C(x_i) = \{ g \in G : g x_i = x_i g \}</m> is the centralizer subgroup of <m>x_i</m>.
       </p>
@@ -71,9 +71,9 @@
             has an element of order <m>p</m>.
             Assume that <m>|G|= n</m> and
             <m>p \mid n</m> and consider the class equation of <m>G</m>:
-            <me>
+            <md>
               |G| = |Z(G)| + [G: C(x_1) ] + \cdots + [ G: C(x_k)]
-            </me>.
+            </md>.
             We have two cases.
           </p>
           <case>
@@ -144,9 +144,9 @@
             Now suppose that the order of <m>G</m> is <m>n</m> with <m>n \gt p</m> and that the theorem is true for all groups of order less than <m>n</m>,
             where <m>p</m> divides <m>n</m>.
             We shall apply the class equation once again:
-            <me>
+            <md>
               |G| = |Z(G)| + [G: C(x_1) ] + \cdots + [ G: C(x_k)]
-            </me>.
+            </md>.
             First suppose that <m>p</m> does not divide <m>[G:C(x_i)]</m> for some <m>i</m>.
             Then <m>p^r \mid |C(x_i)|</m>,
             since <m>p^r</m> divides <m>|G| = |C(x_i)| \cdot [G:C(x_i)]</m>.
@@ -181,13 +181,13 @@
         For any subgroup <m>H</m>, <m>{\mathcal S}</m> is a <m>H</m>-set,
         where  <m>H</m> acts on <m>{\mathcal S}</m> by conjugation.
         That is, we have an action
-        <me>
+        <md>
           H \times {\mathcal S} \rightarrow {\mathcal S}
-        </me>
+        </md>
         defined by
-        <me>
+        <md>
           h \cdot K \mapsto hKh^{-1}
-        </me>
+        </md>
         for <m>K</m> in <m>{\mathcal S}</m>.
       </p>
 
@@ -199,9 +199,9 @@
           <description>normalizer of s subgroup <m>H</m></description>
         </notation>
 
-        <me>
+        <md>
           N(H) = \{  g \in G : g H g^{-1} = H\}
-        </me>
+        </md>
         is a subgroup of <m>G</m> called the the
         <term>normalizer</term><idx><h>Subgroup</h><h>normalizer of</h></idx><idx><h>Normalizer</h></idx>
         of <m>H</m> in <m>G</m>.
@@ -273,15 +273,15 @@
           <p>
             Let <m>P</m> be a Sylow <m>p</m>-subgroup of <m>G</m> and suppose that <m>|G|=p^r m</m> with <m>|P|=p^r</m>.
             Let
-            <me>
+            <md>
               {\mathcal S} = \{ P = P_1, P_2, \ldots, P_k \}
-            </me>
+            </md>
             consist of the distinct conjugates of <m>P</m> in <m>G</m>.
             By <xref ref="sylow-lemma-distinct-conjugates"/>, <m>k = [G: N(P)]</m>.
             Notice that
-            <me>
+            <md>
               |G|= p^r m = |N(P)| \cdot [G: N(P)]= |N(P)| \cdot k
-            </me>.
+            </md>.
             Since <m>p^r</m> divides <m>|N(P)|</m>,
             <m>p</m> cannot divide <m>k</m>.
           </p>
@@ -318,9 +318,9 @@
         <proof>
           <p>
             Let <m>P</m> be a Sylow <m>p</m>-subgroup acting on the set of Sylow <m>p</m>-subgroups,
-            <me>
+            <md>
               {\mathcal S} = \{ P = P_1, P_2, \ldots, P_k \}
-            </me>,
+            </md>,
             by conjugation.
             From the proof of the Second Sylow Theorem,
             the only <m>P</m>-conjugate of <m>P</m> is itself and the order of the other <m>P</m>-conjugacy classes is a power of <m>p</m>.
@@ -335,9 +335,9 @@
             Since all Sylow <m>p</m>-subgroups are conjugate,
             there can be only one orbit under this action.
             For <m>P \in {\mathcal S}</m>,
-            <me>
+            <md>
               |{\mathcal S}| = |\text{orbit of }P| = [G : N(P)]
-            </me>
+            </md>
             by <xref ref="sylow-lemma-distinct-conjugates"/>.
             But <m>[G : N(P)]</m> is a divisor of <m>|G|</m>;
             consequently,
@@ -590,25 +590,25 @@
           <p>
             Let <m>H</m> and <m>K</m> be finite subgroups of a group <m>G</m>.
             Then
-            <me>
+            <md>
               |HK| = \frac{|H| \cdot |K|}{|H \cap K|}
-            </me>.
+            </md>.
           </p>
         </statement>
 
         <proof>
           <p>
             Recall that
-            <me>
+            <md>
               HK = \{ hk : h \in H, k \in K \}
-            </me>.
+            </md>.
             Certainly, <m>|HK| \leq |H| \cdot |K|</m> since some element in <m>HK</m> could be written as the product of different elements in <m>H</m> and <m>K</m>.
             It is quite possible that <m>h_1 k_1 = h_2 k_2</m> for
             <m>h_1, h_2 \in H</m> and <m>k_1, k_2 \in K</m>.
             If this is the case, let
-            <me>
+            <md>
               a = (h_1)^{-1} h_2 = k_1 (k_2)^{-1}
-            </me>.
+            </md>.
             Notice that <m>a \in H \cap K</m>,
             since <m>(h_1)^{-1} h_2</m> is in <m>H</m> and
             <m>k_2 (k_1)^{-1}</m> is in <m>K</m>; consequently,
@@ -647,9 +647,9 @@
           We claim that  <m>|H \cap K| = 8</m>.
           If <m>|H \cap K| \leq 4</m>,
           then by <xref ref="sylow-lemma-hk-subgroup"/>,
-          <me>
+          <md>
             |HK| \geq \frac{16 \cdot 16}{4} =64
-          </me>,
+          </md>,
           which is impossible.
           Notice that <m>H \cap K</m> has index two in both of <m>H</m> and <m>K</m>,
           so is normal in both,
@@ -1053,9 +1053,9 @@
               <p>
                 Suppose <m>p</m> is prime and <m>p</m> does not divide <m>m</m>.
                 Show that
-                <me>
+                <md>
                   p \nmid \binom{p^k m}{p^k}
-                </me>.
+                </md>.
               </p>
             </li>
 
@@ -1352,7 +1352,7 @@
 <!-- was [1] -->
       Edwards, H. <q>A Short History of the Fields Medal,</q>
       <title>Mathematical Intelligencer</title>
-      <volume>1</volume>
+      <volumd>1</volumd>
       (1978), 127<ndash/>29.
     </biblio>
 
@@ -1360,7 +1360,7 @@
 <!-- was [2] -->
       Feit, W. and Thompson, J. G. <q>Solvability of Groups of Odd Order,</q>
       <title>Pacific Journal of Mathematics</title>
-      <volume>13</volume>
+      <volumd>13</volumd>
       (1963), 775<ndash/>1029.
     </biblio>
 
@@ -1368,7 +1368,7 @@
 <!-- was [3] -->
       Gallian, J. A. <q>The Search for Finite Simple Groups,</q>
       <title>Mathematics Magazine</title>
-      <volume>49</volume>
+      <volumd>49</volumd>
       (1976), 163<ndash/>79.
     </biblio>
 
@@ -1376,7 +1376,7 @@
 <!-- was [4] -->
       Gorenstein, D. <q>Classifying the Finite Simple Groups,</q>
       <title>Bulletin of the American Mathematical Society</title>
-      <volume>14</volume>
+      <volumd>14</volumd>
       (1986), 1<ndash/>98.
     </biblio>
 

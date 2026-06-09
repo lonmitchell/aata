@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2025  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2025  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2026  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2026  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -28,14 +28,14 @@
       Let <m>G</m> be a group and <m>H</m> a subgroup of <m>G</m>.
       Define a <term>left coset</term><idx><h>Coset</h><h>left</h></idx>
       of <m>H</m> with <term>representative</term><idx><h>Coset</h><h>representative</h></idx> <m>g \in G</m> to be the set
-      <me>
+      <md>
         gH = \{ gh : h \in H \}
-      </me>.
+      </md>.
       <term>Right cosets</term><idx><h>Coset</h><h>right</h></idx>
       can be defined similarly by
-      <me>
+      <md>
         Hg = \{ hg : h \in H \}
-      </me>.
+      </md>.
       If left and right cosets coincide or if it is clear from the context to which type of coset that we are referring,
       we will use the word <em>coset</em>
       without specifying left or right.
@@ -232,9 +232,9 @@
           that is, if <m>g_1 H = g_2 H</m>,
           then <m>H g_1^{-1} = H g_2^{-1}</m>.
           To show that <m>\phi</m> is one-to-one, suppose that
-          <me>
+          <md>
             H g_1^{-1} = \phi( g_1 H ) = \phi( g_2 H ) = H g_2^{-1}
-          </me>.
+          </md>.
           Again by <xref ref="cosets-lemma-theorem-1"/>, <m>g_1 H = g_2 H</m>.
           The map <m>\phi</m> is onto since <m>\phi(g^{-1} H ) = H g</m>.
         </p>
@@ -327,18 +327,18 @@
         <p>
           Let <m>H</m> and <m>K</m> be subgroups of a finite group <m>G</m> such that <m>G \supset H \supset K</m>.
           Then
-          <me>
+          <md>
             [G:K] = [G:H][H:K]
-          </me>.
+          </md>.
         </p>
       </statement>
 
       <proof>
         <p>
           Observe that
-          <me>
+          <md>
             [G:K] = \frac{|G|}{|K|} = \frac{|G|}{|H|} \cdot \frac{|H|}{|K|} = [G:H][H:K]
-          </me>.
+          </md>.
         </p>
       </proof>
     </corollary>
@@ -390,9 +390,9 @@
             <mrow>(2 \, 4 \, 3)(1 \, 2 \, 3)(2 \, 4 \, 3)^{-1} &amp; = (2 \, 4 \, 3)(1 \, 2 \, 3)(2 \, 3 \, 4)  = (1 \, 4 \, 2)</mrow>
           </md>
           we can conclude that <m>H</m> must have at least seven elements
-          <me>
+          <md>
             (1), (1 \, 2 \, 3), (1 \, 3 \, 2), (2 \, 4 \, 3), (2 \, 4 \, 3)^{-1} = (2 \, 3 \, 4), (1 \, 4 \, 2), (1 \, 4 \, 2)^{-1} = (1 \, 2 \, 4)
-          </me>.
+          </md>.
           Therefore, <m>A_4</m> has no subgroup of order <m>6</m>.
         </p>
       </proof>
@@ -433,9 +433,9 @@
           If <m>\sigma( a_i ) = b</m> and
           <m>\sigma( a_{(i \bmod k) + 1}) = b'</m>, then <m>\mu( b) = b'</m>.
           Hence,
-          <me>
+          <md>
             \mu = ( \sigma(a_1), \sigma(a_2), \ldots, \sigma(a_k) )
-          </me>.
+          </md>.
           Since <m>\sigma</m> is one-to-one and onto,
           <m>\mu</m> is a cycle of the same length as <m>\tau</m>.
         </p>
@@ -516,9 +516,9 @@
             </notation>
 
             Then
-            <me>
+            <md>
               a^{p-1} \equiv 1 \pmod{ p }
-            </me>.
+            </md>.
             Furthermore, for any integer <m>b</m>,
             <m>b^p \equiv b \pmod{ p}</m>.
           </p>
@@ -954,9 +954,9 @@
           Let <m>n = p_1^{e_1} p_2^{e_2} \cdots p_k^{e_k}</m>,
           where <m>p_1, p_2, \ldots, p_k</m> are distinct primes.
           Prove that
-          <me>
+          <md>
             \phi(n) =  n \left( 1 - \frac{1}{p_1} \right) \left( 1 - \frac{1}{p_2} \right)\cdots \left( 1 - \frac{1}{p_k} \right)
-          </me>.
+          </md>.
         </p>
       </statement>
       <hint>
@@ -971,9 +971,9 @@
       <statement>
         <p>
           Show that
-          <me>
+          <md>
             n = \sum_{d \mid n} \phi(d)
-          </me>
+          </md>
           for all positive integers <m>n</m>.
         </p>
       </statement>

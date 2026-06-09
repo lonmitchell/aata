@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2025  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2025  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2026  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2026  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -94,13 +94,13 @@
         u_n)</m> and <m>v = (v_1, \ldots,
         v_n)</m> in <m>{\mathbb R}^n</m> and <m>\alpha</m> in <m>{\mathbb R}</m>,
         we can define vector addition by
-        <me>
+        <md>
           u + v = (u_1, \ldots, u_n) + (v_1, \ldots, v_n) = (u_1 + v_1, \ldots, u_n + v_n)
-        </me>
+        </md>
         and scalar multiplication by
-        <me>
+        <md>
           \alpha u = \alpha(u_1, \ldots, u_n)= (\alpha u_1, \ldots, \alpha u_n)
-        </me>.
+        </md>.
       </p>
     </example>
 
@@ -183,9 +183,9 @@
       <proof>
         <p>
           To prove (1), observe that
-          <me>
+          <md>
             0 v = (0 + 0)v = 0v + 0v;
-          </me>
+          </md>
           consequently, <m>{\mathbf 0} + 0 v = 0v + 0v</m>.
           Since <m>V</m> is an abelian group, <m>{\mathbf 0} = 0v</m>.
         </p>
@@ -200,9 +200,9 @@
 
         <p>
           To show (4), observe that
-          <me>
+          <md>
             v + (-1)v = 1v + (-1)v = (1-1)v = 0v = {\mathbf 0}
-          </me>,
+          </md>,
           and so <m>-v = (-1)v</m>.
           We will leave the proof of (5) as an exercise.
         </p>
@@ -238,9 +238,9 @@
         let <m>u = (x_1, 2 x_1 + x_2, x_1 - x_2)</m> and
         <m>v = (y_1, 2 y_1 + y_2, y_1 - y_2)</m> be vectors in <m>W</m>.
         Then
-        <me>
+        <md>
           u + v = (x_1 + y_1, 2( x_1 + y_1) +( x_2 + y_2), (x_1 + y_1) - (x_2+ y_2))
-        </me>.
+        </md>.
       </p>
     </example>
 
@@ -260,9 +260,9 @@
       v_n</m> are vectors in <m>V</m> and
       <m>\alpha_1, \alpha_2, \ldots, \alpha_n</m> are scalars in <m>F</m>.
       Any vector <m>w</m> in <m>V</m> of the form
-      <me>
+      <md>
         w = \sum_{i=1}^n \alpha_i v_i = \alpha_1 v_1 + \alpha_2 v_2 + \cdots + \alpha_n v_n
-      </me>
+      </md>
       is called a <term>linear combination</term><idx><h>Linear combination</h></idx>
       of the vectors <m>v_1, v_2, \ldots, v_n</m>.
       The <term>spanning set</term><idx><h>Spanning set</h></idx>
@@ -291,14 +291,14 @@
             <mrow>v &amp; =  \beta_1 v_1 + \beta_2 v_2 + \cdots + \beta_n v_n</mrow>
           </md>.
           Then
-          <me>
+          <md>
             u + v =( \alpha_1 + \beta_1) v_1 + (\alpha_2+ \beta_2) v_2 + \cdots + (\alpha_n + \beta_n) v_n
-          </me>
+          </md>
           is a linear combination of the <m>v_i</m>'s.
           For <m>\alpha \in F</m>,
-          <me>
+          <md>
             \alpha u = (\alpha \alpha_1) v_1 + ( \alpha \alpha_2) v_2 + \cdots + (\alpha \alpha_n ) v_n
-          </me>
+          </md>
           is in the span of <m>S</m>.
         </p>
       </proof>
@@ -311,20 +311,20 @@
       Let <m>S = \{v_1, v_2, \ldots,
       v_n\}</m> be a set of vectors in a vector space <m>V</m>.
       If there exist scalars <m>\alpha_1, \alpha_2 \ldots \alpha_n \in F</m> such that not all of the <m>\alpha_i</m>'s are zero and
-      <me>
+      <md>
         \alpha_1 v_1 + \alpha_2 v_2 + \cdots + \alpha_n v_n = {\mathbf 0 }
-      </me>,
+      </md>,
       then <m>S</m> is said to be <idx><h>Linear dependence</h></idx><term>linearly dependent</term>.
       If the set <m>S</m> is not linearly dependent,
       then it is said to be <idx><h>Linear independence</h></idx><term>linearly independent</term>.
       More specifically, <m>S</m> is a linearly independent set if
-      <me>
+      <md>
         \alpha_1 v_1 + \alpha_2 v_2 + \cdots + \alpha_n v_n = {\mathbf 0 }
-      </me>
+      </md>
       implies that
-      <me>
+      <md>
         \alpha_1 = \alpha_2 = \cdots = \alpha_n = 0
-      </me>
+      </md>
       for any set of scalars <m>\{ \alpha_1, \alpha_2 \ldots \alpha_n \}</m>.
     </p>
 
@@ -334,9 +334,9 @@
           Let <m>\{ v_1, v_2, \ldots,
           v_n \}</m> be a set of linearly independent vectors in a vector space.
           Suppose that
-          <me>
+          <md>
             v = \alpha_1 v_1 + \alpha_2 v_2 + \cdots + \alpha_n v_n = \beta_1 v_1 + \beta_2 v_2 + \cdots + \beta_n v_n
-          </me>.
+          </md>.
           Then <m>\alpha_1 = \beta_1, \alpha_2 = \beta_2, \ldots, \alpha_n = \beta_n</m>.
         </p>
       </statement>
@@ -344,13 +344,13 @@
       <proof>
         <p>
           If
-          <me>
+          <md>
             v = \alpha_1 v_1 + \alpha_2 v_2 + \cdots + \alpha_n v_n = \beta_1 v_1 + \beta_2 v_2 + \cdots + \beta_n v_n
-          </me>,
+          </md>,
           then
-          <me>
+          <md>
             (\alpha_1 - \beta_1) v_1 + (\alpha_2 - \beta_2) v_2 + \cdots + (\alpha_n - \beta_n) v_n = {\mathbf 0}
-          </me>.
+          </md>.
           Since <m>v_1, \ldots, v_n</m> are linearly independent,
           <m>\alpha_i - \beta_i = 0</m> for <m>i = 1, \ldots, n</m>.
         </p>
@@ -374,26 +374,26 @@
           Suppose that <m>\{ v_1, v_2, \dots,
           v_n \}</m> is a set of linearly dependent vectors.
           Then there exist scalars <m>\alpha_1, \ldots, \alpha_n</m> such that
-          <me>
+          <md>
             \alpha_1 v_1 + \alpha_2 v_2 + \cdots + \alpha_n v_n = {\mathbf 0 }
-          </me>,
+          </md>,
           with at least one of the <m>\alpha_i</m>'s not equal to zero.
           Suppose that <m>\alpha_k \neq 0</m>.
           Then
-          <me>
+          <md>
             v_k = - \frac{\alpha_1}{\alpha_k} v_1 - \cdots - \frac{\alpha_{k - 1}}{\alpha_k} v_{k-1} - \frac{\alpha_{k + 1}}{\alpha_k} v_{k + 1} - \cdots - \frac{\alpha_n}{\alpha_k} v_n
-          </me>.
+          </md>.
         </p>
 
         <p>
           Conversely, suppose that
-          <me>
+          <md>
             v_k = \beta_1 v_1 + \cdots + \beta_{k - 1} v_{k - 1} + \beta_{k + 1} v_{k + 1} + \cdots + \beta_n v_n
-          </me>.
+          </md>.
           Then
-          <me>
+          <md>
             \beta_1 v_1 + \cdots + \beta_{k - 1} v_{k - 1} - v_k + \beta_{k + 1} v_{k + 1} + \cdots + \beta_n v_n = {\mathbf 0}
-          </me>.
+          </md>.
         </p>
       </proof>
     </proposition>
@@ -514,9 +514,9 @@
                 If <m>S = \{v_1, \ldots,
                 v_k \}</m> is a set of linearly independent vectors for <m>V</m> with <m>k \lt n</m>,
                 then there exist vectors <m>v_{k + 1}, \ldots, v_n</m> such that
-                <me>
+                <md>
                   \{v_1, \ldots, v_k, v_{k + 1}, \ldots, v_n \}
-                </me>
+                </md>
                 is a basis for <m>V</m>.
               </p>
             </li>
@@ -673,13 +673,13 @@
           Given vectors <m>u = (u_1, \ldots,
           u_n)</m> and <m>v = (v_1, \ldots,
           v_n)</m> in <m>F^n</m> and <m>\alpha</m> in <m>F</m>, define vector addition by
-          <me>
+          <md>
             u + v = (u_1, \ldots, u_n) + (v_1, \ldots, v_n) = (u_1 + v_1, \ldots, u_n + v_n)
-          </me>
+          </md>
           and scalar multiplication by
-          <me>
+          <md>
             \alpha u = \alpha(u_1, \ldots, u_n)= (\alpha u_1, \ldots, \alpha u_n)
-          </me>.
+          </md>.
           Prove that <m>F^n</m> is a vector space of dimension <m>n</m> under these operations.
         </p>
       </statement>
@@ -793,9 +793,9 @@
                 If <m>S = \{v_1, \ldots,
                 v_k \}</m> is a set of linearly independent vectors for <m>V</m> with <m>k \lt n</m>,
                 then there exist vectors <m>v_{k + 1}, \ldots, v_n</m> such that
-                <me>
+                <md>
                   \{v_1, \ldots, v_k, v_{k + 1}, \ldots, v_n \}
-                </me>
+                </md>
                 is a basis for <m>V</m>.
               </p>
             </li>
@@ -978,9 +978,9 @@
               <p>
                 If <m>U</m> and <m>V</m> are arbitrary subspaces of a vector space <m>W</m>,
                 show that
-                <me>
+                <md>
                   \dim( U + V) = \dim U + \dim V - \dim( U \cap V)
-                </me>.
+                </md>.
               </p>
             </li>
           </ol>

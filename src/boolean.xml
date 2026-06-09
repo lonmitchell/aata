@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2025  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2025  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2026  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2026  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -350,9 +350,9 @@
             Let <m>d =  a \vee b</m>.
             Then <m>c \preceq  d \vee c = (a \vee b) \vee c</m>.
             We also know that
-            <me>
+            <md>
               a \preceq a \vee b =d \preceq d \vee c = (a \vee b) \vee c
-            </me>.
+            </md>.
             A similar argument demonstrates that <m>b \preceq (a \vee b) \vee c</m>.
             Therefore, <m>(a \vee b) \vee c</m> is an upper bound of <m>\{ a, b, c \}</m>.
             We now need to show that <m>(a \vee b) \vee c</m> is the least upper bound of <m>\{ a, b, c\}</m>.
@@ -418,9 +418,9 @@
             Let <m>a \preceq b</m> and <m>b \preceq c</m>.
             Then <m>a \vee b = b</m> and <m>b \vee c = c</m>.
             Thus,
-            <me>
+            <md>
               a \vee c = a \vee (b \vee c ) = ( a \vee b) \vee c = b \vee c = c
-            </me>,
+            </md>,
             or <m>a \preceq c</m>.
           </p>
 
@@ -436,9 +436,9 @@
             Let <m>u</m> be any other upper bound of both <m>a</m> and <m>b</m>.
             Then <m>a \preceq u</m> and <m>b \preceq u</m>.
             But <m>a \vee b \preceq u</m> since
-            <me>
+            <md>
               (a \vee b) \vee u = a \vee (b \vee u) = a \vee u = u
-            </me>.
+            </md>.
             The proof that <m>a \wedge b</m> is the greatest lower bound of <m>a</m> and <m>b</m> is left as an exercise.
           </p>
         </proof>
@@ -481,9 +481,9 @@
       <p>
         Let <m>A</m> be in <m>{\mathcal P}(X)</m>.
         Recall that the complement of <m>A</m> is
-        <me>
+        <md>
           A' = X \setminus A = \{ x : x \in X \text{ and } x \notin A \}
-        </me>.
+        </md>.
         We know that <m>A \cup A' = X</m> and <m>A \cap A' = \emptyset</m>.
         We can generalize this example for lattices.
         A lattice <m>L</m> with a largest element <m>I</m> and a smallest element <m>O</m> is <term>complemented</term><idx><h>Lattice</h><h>completed</h></idx>
@@ -502,19 +502,19 @@
         In a lattice <m>L</m>,
         the binary operations <m>\vee</m> and <m>\wedge</m> satisfy commutative and associative laws;
         however, they need not satisfy the distributive law
-        <me>
+        <md>
           a \wedge ( b \vee c ) = (a \wedge b ) \vee ( a \wedge c );
-        </me>
+        </md>
         however, in <m>{\mathcal P}(X)</m> the distributive law is satisfied since
-        <me>
+        <md>
           A \cap ( B \cup C ) = (A \cap B ) \cup ( A \cap C )
-        </me>
+        </md>
         for <m>A, B, C \in {\mathcal P}(X)</m>.
         We will say that a lattice <m>L</m> is
         <term>distributive</term><idx><h>Lattice</h><h>distributive</h></idx> if the following distributive law holds:
-        <me>
+        <md>
           a \wedge ( b \vee c ) = (a \wedge b ) \vee ( a \wedge c )
-        </me>
+        </md>
         for all <m>a, b, c \in L</m>.
       </p>
 
@@ -522,9 +522,9 @@
         <statement>
           <p>
             A lattice <m>L</m> is distributive if and only if
-            <me>
+            <md>
               a \vee ( b \wedge c ) = ( a \vee b ) \wedge ( a \vee c )
-            </me>
+            </md>
             for all <m>a, b, c \in L</m>.
           </p>
         </statement>
@@ -613,9 +613,9 @@
               <mrow>&amp; = a \vee a</mrow>
             </md>.
             Observe that
-            <me>
+            <md>
               I \vee b = (b \vee b' ) \vee b = (b' \vee b ) \vee b = b' \vee (b \vee b) = b' \vee b = I
-            </me>.
+            </md>.
             Consequently, the first of the two absorption laws holds, since
             <md>
               <mrow>a \vee (a \wedge b) &amp; = (a \wedge I) \vee (a \wedge b)</mrow>
@@ -637,9 +637,9 @@
             we will first show that <m>a \vee b = b</m> is equivalent to <m>a \wedge b = a</m>.
             Since <m>a \vee I = a</m> for all <m>a \in B</m>,
             using the absorption laws we can determine that
-            <me>
+            <md>
               a \vee I =(a \wedge I) \vee I = I \vee ( I \wedge a) = I
-            </me>
+            </md>
             or <m>a \preceq I</m> for all <m>a</m> in <m>B</m>.
             Finally, since we know that <m>B</m> is complemented by (5),
             <m>B</m> must be a Boolean algebra.
@@ -783,9 +783,9 @@
             such that  <m>b_2 \preceq b_1</m>.
             Again, if <m>b_2</m> is an atom, let <m>a = b_2</m>.
             Continuing this process, we can obtain a chain
-            <me>
+            <md>
               O \preceq \cdots \preceq b_3 \preceq b_2 \preceq b_1 \preceq b
-            </me>.
+            </md>.
             Since <m>B</m> is a finite Boolean algebra,
             this chain must be finite.
             That is, for some <m>k</m>, <m>b_k</m> is an atom.
@@ -926,9 +926,9 @@
           <p>
             Now suppose that <m>b = a_1 \vee \cdots \vee a_n</m>.
             If <m>a</m> is an atom less than <m>b</m>,
-            <me>
+            <md>
               a = a \wedge b  = a \wedge( a_1 \vee \cdots \vee a_n ) = (a \wedge a_1) \vee \cdots \vee ( a \wedge a_n )
-            </me>.
+            </md>.
             But each term is <m>O</m> or <m>a</m> with
             <m>a \wedge a_i</m> occurring for only one <m>a_i</m>.
             Hence, by <xref ref="boolean-lemma-zero-vee"/>, <m>a = a_i</m> for some <m>i</m>.
@@ -955,9 +955,9 @@
             a_n \in X</m>.
             Consequently,
             we can define a  map <m>\phi : B \rightarrow {\mathcal P}(X)</m> by
-            <me>
+            <md>
               \phi(a) = \phi(  a_1 \vee \cdots \vee a_n ) = \{a_1, \ldots, a_n \}
-            </me>.
+            </md>.
             Clearly, <m>\phi</m> is onto.
           </p>
 
@@ -1805,7 +1805,7 @@
 <!-- was [2] -->
       Halmos, P. R. <q>The Basic Concepts of Algebraic Logic,</q>
       <title>American Mathematical Monthly</title>
-      <volume>53</volume>
+      <volumd>53</volumd>
       (1956), 363<ndash/>87.
     </biblio>
 
@@ -1813,7 +1813,7 @@
 <!-- was [3] -->
       Hohn, F. <q>Some Mathematical Aspects of Switching,</q>
       <title>American Mathematical Monthly</title>
-      <volume>62</volume>
+      <volumd>62</volumd>
       (1955), 75<ndash/>90.
     </biblio>
 

@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2025  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2025  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2026  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2026  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -51,7 +51,7 @@
         x_n)^\transpose</m> and <m>{\mathbf y} = (y_1, \ldots,
         y_n)^\transpose</m> in <m>{\mathbb R}^n</m> as column matrices,
         then an <m>m \times n</m> matrix
-        <me>
+        <md>
           A
           =
           \begin{pmatrix}
@@ -60,10 +60,10 @@
           \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
           a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn}
           \end{pmatrix}
-        </me>
+        </md>
         maps the vectors to <m>{\mathbb R}^m</m> linearly by matrix multiplication.
         Observe that if <m>\alpha</m> is a real number,
-        <me>
+        <md>
           A({\mathbf x} + {\mathbf y} ) 
           = 
           A {\mathbf x }+ A {\mathbf y} 
@@ -71,9 +71,9 @@
           \alpha A {\mathbf x} 
           = 
           A ( \alpha {\mathbf x})
-        </me>,
+        </md>,
         where
-        <me>
+        <md>
           {\mathbf x}
           =
           \begin{pmatrix}
@@ -82,7 +82,7 @@
           \vdots \\
           x_n
           \end{pmatrix}
-        </me>.
+        </md>.
         We will often abbreviate the matrix <m>A</m> by writing <m>(a_{ij})</m>.
 
         <notation>
@@ -103,9 +103,9 @@
         </md>.
         We can write any vector <m>{\mathbf x} = (x_1, \ldots,
         x_n)^\transpose</m> as
-        <me>
+        <md>
           x_1 {\mathbf e}_1 + x_2 {\mathbf e}_2 + \cdots + x_n {\mathbf e}_n
-        </me>.
+        </md>.
         Consequently, if
         <md>
           <mrow>T({\mathbf e}_1) &amp; = (a_{11}, a_{21}, \ldots, a_{m1})^\transpose,</mrow>
@@ -125,19 +125,19 @@
       <example xml:id="matrix-example-linear-transform">
         <p>
           If we let <m>T : {\mathbb R}^2 \rightarrow {\mathbb R}^2</m> be the map given by
-          <me>
+          <md>
             T(x_1, x_2) = (2 x_1 + 5 x_2, - 4 x_1 + 3 x_2)
-          </me>,
+          </md>,
           the axioms that <m>T</m> must satisfy to be a linear transformation are easily verified.
           The column vectors <m>T {\mathbf e}_1 = (2, -4)^\transpose</m> and
           <m>T {\mathbf e}_2 = (5,3)^\transpose</m> tell us that <m>T</m> is given by the matrix
-          <me>
+          <md>
             A =
             \begin{pmatrix}
             2 &amp; 5 \\
             -4 &amp; 3
             \end{pmatrix}
-          </me>.
+          </md>.
         </p>
       </example>
 
@@ -146,7 +146,7 @@
         we need to know which matrices have multiplicative inverses.
         Recall that an <m>n \times n</m> matrix <m>A</m> is <term>invertible</term><idx><h>Matrix</h><h>invertible</h></idx>
         exactly when there exists another matrix <m>A^{-1}</m> such that <m>A A^{-1} = A^{-1} A = I</m>, where
-        <me>
+        <md>
           I =
           \begin{pmatrix}
           1 &amp; 0 &amp; \cdots &amp; 0 \\
@@ -154,7 +154,7 @@
           \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
           0 &amp; 0 &amp; \cdots &amp; 1
           \end{pmatrix}
-        </me>
+        </md>
         is the <m>n \times n</m> identity matrix.
         From linear algebra we know that <m>A</m> is invertible if and only if the determinant of <m>A</m> is nonzero.
         Sometimes an invertible matrix is said to be <idx><h>Matrix</h><h>nonsingular</h></idx><term>nonsingular</term>.
@@ -163,20 +163,20 @@
       <example xml:id="matrix-inverse-matrix">
         <p>
           If <m>A</m> is the matrix
-          <me>
+          <md>
             \begin{pmatrix}
             2 &amp; 1 \\
             5 &amp; 3
             \end{pmatrix}
-          </me>,
+          </md>,
           then the inverse of <m>A</m> is
-          <me>
+          <md>
             A^{-1} =
             \begin{pmatrix}
             3 &amp; -1 \\
             -5 &amp; 2
             \end{pmatrix}
-          </me>.
+          </md>.
           We are guaranteed  that <m>A^{-1}</m> exists,
           since <m>\det(A) = 2 \cdot 3 - 5 \cdot 1 = 1</m> is nonzero.
         </p>
@@ -247,42 +247,42 @@
       <example xml:id="matrix-example-determinant">
         <p>
           Given a <m>2 \times 2</m> matrix
-          <me>
+          <md>
             A =
             \begin{pmatrix}
             a &amp; b \\
             c &amp; d
             \end{pmatrix}
-          </me>,
+          </md>,
           the determinant of <m>A</m> is <m>ad-bc</m>.
           The group <m>GL_2({\mathbb R})</m> consists of those matrices in which <m>ad-bc \neq 0</m>.
           The inverse of <m>A</m> is
-          <me>
+          <md>
             A^{-1} =
             \frac{1}{ad-bc}
             \begin{pmatrix}
             d &amp; -b \\
             -c &amp; a
             \end{pmatrix}
-          </me>.
+          </md>.
           If <m>A</m> is in <m>SL_2({\mathbb R})</m>, then
-          <me>
+          <md>
             A^{-1} =
             \begin{pmatrix}
             d &amp; -b \\
             -c &amp; a
             \end{pmatrix}
-          </me>.
+          </md>.
           Geometrically,
           <m>SL_2({\mathbb R})</m> is the group that preserves the areas of parallelograms.
           Let
-          <me>
+          <md>
             A =
             \begin{pmatrix}
             1 &amp; 1 \\
             0 &amp; 1
             \end{pmatrix}
-          </me>
+          </md>
           be in <m>SL_2({\mathbb R})</m>.
           In <xref ref="matrix-figure-sl2"/>,
           the unit square corresponding to the vectors <m>{\mathbf x} = (1,0)^\transpose</m> and
@@ -338,7 +338,7 @@
       <example xml:id="matrix-orthogonal">
         <p>
           The following matrices are orthogonal:
-          <me>
+          <md>
             \begin{pmatrix}
             3/5 &amp; -4/5 \\
             4/5 &amp; 3/5
@@ -354,7 +354,7 @@
             1/\sqrt{6} &amp; -2/\sqrt{6} &amp; 1/\sqrt{6} \\
             1/ \sqrt{3} &amp; 1/ \sqrt{3} &amp; 1/ \sqrt{3} 
             \end{pmatrix}
-          </me>.
+          </md>.
         </p>
       </example>
 
@@ -367,7 +367,7 @@
         The Euclidean inner product of two vectors
         <m>{\mathbf x}=(x_1, \ldots,
         x_n)^\transpose</m> and <m>{\mathbf y}=(y_1, \ldots, y_n)^\transpose</m> is
-        <me>
+        <md>
           \langle  {\mathbf x}, {\mathbf y} \rangle
           =
           {\mathbf x}^\transpose {\mathbf y}
@@ -378,7 +378,7 @@
           \end{pmatrix}
           =
           x_1 y_1 + \cdots + x_n y_n
-        </me>.
+        </md>.
         We define the length of a vector <m>{\mathbf x}=(x_1, \ldots,
         x_n)^\transpose</m> to be
 
@@ -387,9 +387,9 @@
           <description>length of a vector <m>\mathbf x</m></description>
         </notation>
 
-        <me>
+        <md>
           \| {\mathbf x} \| = \sqrt{\langle  {\mathbf x}, {\mathbf x} \rangle}  = \sqrt{x_1^2 + \cdots + x_n^2}
-        </me>.
+        </md>.
         Associated with the notion of the length of a vector is the idea of the distance between two vectors.
         We define the <term>distance</term>
         between two vectors <m>{\mathbf x}</m> and
@@ -446,13 +446,13 @@
         <p>
           The vector <m>{\mathbf x} =(3,4)^\transpose</m> has length <m>\sqrt{3^2 + 4^2} = 5</m>.
           We can also see that the orthogonal matrix
-          <me>
+          <md>
             A=
             \begin{pmatrix}
             3/5 &amp; -4/5 \\
             4/5 &amp; 3/5
             \end{pmatrix}
-          </me>
+          </md>
           preserves the length of this vector.
           The vector <m>A{\mathbf x} = (-7/5,24/5)^\transpose</m> also has length 5.
         </p>
@@ -462,23 +462,23 @@
         Since <m>\det(A A^\transpose) = \det(I) = 1</m> and <m>\det(A) = \det( A^\transpose )</m>,
         the determinant of any orthogonal matrix is either <m>1</m> or <m>-1</m>.
         Consider the column vectors
-        <me>
+        <md>
           {\mathbf a}_j =
           \begin{pmatrix}
           a_{1j} \\ a_{2j} \\ \vdots \\ a_{nj}
           \end{pmatrix}
-        </me>
+        </md>
         of the orthogonal matrix <m>A= (a_{ij})</m>.
         Since <m>AA^\transpose = I</m>,
         <m>\langle {\mathbf a}_r, {\mathbf a}_s \rangle = \delta_{rs}</m>, where
-        <me>
+        <md>
           \delta_{rs}
           =
           \begin{cases}
           1 &amp; r = s \\
           0 &amp; r \neq s
           \end{cases}
-        </me>
+        </md>
         is the <idx><h>Kronecker delta</h></idx>Kronecker delta.
         Accordingly,
         column vectors of an orthogonal matrix all have length 1;
@@ -564,7 +564,7 @@
             First, 
               <m>\langle A{\mathbf x}, A {\mathbf y} \rangle = (A{\mathbf x})^\transpose A{\mathbf y} = {\mathbf x}^\transpose A^\transpose A {\mathbf y} = {\mathbf x}^\transpose {\mathbf y}.</m>
             If <m>M</m> is any <m>n \times n</m> matrix, then <m>\mathbf e_i^\transpose M \mathbf e_j^\transpose = M_{ij}</m>, where <m>M_{ij}</m> is the <m>ij</m>th entry of the matrix <m>M</m>.  Noticing that <m>{\mathbf x}^\transpose A^\transpose A {\mathbf y} = {\mathbf x}^\transpose {\mathbf y}</m>, let <m>\mathbf x = \mathbf e_i</m> and <m>\mathbf y = \mathbf e_j</m>.  Then 
-              <me>\mathbf e_i^\transpose A^\transpose A \mathbf e_j = \mathbf e_i^\transpose \mathbf e_j.</me>
+              <md>\mathbf e_i^\transpose A^\transpose A \mathbf e_j = \mathbf e_i^\transpose \mathbf e_j.</md>
             Thus, the <m>ij</m>th component of <m>A^\transpose A</m>is <m>1</m> when <m>i = j</m> and <m>0</m> otherwise.  In other words <m>A^\transpose A = I</m>, and <m>A^{-1} = A^\transpose</m>.
 
             <!--Since
@@ -594,17 +594,17 @@
             If <m>A</m> is distance-preserving,
             then <m>A</m> is length-preserving.
             Letting <m>{\mathbf y} = 0</m>, we have
-            <me>
+            <md>
               \| A{\mathbf x}\| = \| A{\mathbf x}- A{\mathbf y} \| = \| {\mathbf x}- {\mathbf y} \| = \| {\mathbf x} \|
-            </me>.
+            </md>.
           </p>
 
           <p>
             <m>(5) \Rightarrow (3)</m>.
             We use the following identity to show that length-preserving implies inner product-preserving:
-            <me>
+            <md>
               \langle {\mathbf x}, {\mathbf y} \rangle = \frac{1}{2} \left[ \|{\mathbf x} +{\mathbf y}\|^2 - \|{\mathbf x}\|^2 - \|{\mathbf y}\|^2 \right]
-            </me>.
+            </md>.
             Observe that
             <md>
               <mrow>\langle A {\mathbf x}, A {\mathbf y} \rangle &amp; = \frac{1}{2} \left[ \|A {\mathbf x} + A {\mathbf y} \|^2 - \|A {\mathbf x} \|^2 -  \|A {\mathbf y} \|^2 \right]</mrow>
@@ -649,7 +649,7 @@
           If <m>A{\mathbf e}_1 = (a,b)^\transpose</m>,
           then <m>a^2 + b^2 = 1</m>, since the length of a vector must be preserved when it is multiplied by <m>A</m>. Since multiplication of an element of <m>O(2)</m> preserves length and orthogonality, <m>A{\mathbf e}_2 = \pm(-b, a)^\transpose</m>.
           If we choose <m>A{\mathbf e}_2 = (-b, a)^\transpose</m>, then
-          <me>
+          <md>
             A
             =
             \begin{pmatrix}
@@ -661,12 +661,12 @@
             \cos \theta &amp; - \sin \theta \\
             \sin \theta &amp; \cos \theta
             \end{pmatrix},
-          </me>
+          </md>
           where <m>0 \leq \theta \lt 2 \pi</m>.
           The matrix <m>A</m> rotates a vector in <m>\mathbb R^2</m> counterclockwise about the origin by an angle of <m>\theta</m> (<xref ref="matrix-figure-o2"/>).</p>
 
           <p>If we choose <m>A{\mathbf e}_2 = (b, -a)^\transpose</m>, then we obtain the matrix
-		  <me>
+		  <md>
             B
             =
             \begin{pmatrix}
@@ -678,25 +678,25 @@
             \cos \theta &amp; \sin \theta \\
             \sin \theta &amp; -\cos \theta
             \end{pmatrix}.
-          </me>
+          </md>
           Here, <m>\det B = -1</m> and 
-          <me>
+          <md>
             B^2
             =
             \begin{pmatrix}
             1 &amp; 0 \\
             0 &amp; 1
             \end{pmatrix}.
-          </me>
+          </md>
           A reflection about the horizontal axis is given by the matrix
-          <me>
+          <md>
             C
             =
             \begin{pmatrix}
             1 &amp; 0 \\
             0 &amp; -1
             \end{pmatrix},
-          </me>
+          </md>
           and <m>B = AC</m> (see <xref ref="matrix-figure-o2"/>). Thus,
           a reflection about a line <m>\ell</m> is simply a reflection about the horizontal axis followed by a rotation.
         </p>
@@ -726,9 +726,9 @@
           <description>Euclidean group</description>
         </notation>
 
-        <me>
+        <md>
           (A, {\mathbf x}) (B, {\mathbf y}) = (AB, A {\mathbf y} +{\mathbf x})
-        </me>.
+        </md>.
         The identity of the group is <m>(I,{\mathbf 0})</m>;
         the inverse of <m>(A, {\mathbf x})</m> is <m>(A^{-1}, -A^{-1} {\mathbf x})</m>.
         In <xref ref="matrix-exercise-en-group"/>,
@@ -779,9 +779,9 @@
         in <m>{\mathbb R}^n</m> is a distance-preserving function <m>f</m> from
         <m>{\mathbb R}^n</m> to <m>{\mathbb R}^n</m>.
         This means that <m>f</m> must satisfy
-        <me>
+        <md>
           \| f({\mathbf x}) - f({\mathbf y}) \| =\|{\mathbf x} - {\mathbf y} \|
-        </me>
+        </md>
         for all <m>{\mathbf x}, {\mathbf y} \in {\mathbb R}^n</m>.
         It is not difficult to show that <m>f</m> must be a one-to-one map.
         By <xref ref="matrix-theorem-orthnormal-matrix"/>,
@@ -858,20 +858,20 @@
               <mrow>&amp; = \| {\mathbf x} \|^2 - 2 \langle {\mathbf x}, {\mathbf y} \rangle + \| {\mathbf y} \|^2</mrow>
             </md>.
             Consequently,
-            <me>
+            <md>
               \langle f({\mathbf x}), f({\mathbf y}) \rangle = \langle {\mathbf x}, {\mathbf y} \rangle
-            </me>.
+            </md>.
             Now let <m>{\mathbf e}_1</m> and <m>{\mathbf e_2}</m> be
             <m>(1, 0)^\transpose</m> and <m>(0, 1)^\transpose</m>,
             respectively.
             If
-            <me>
+            <md>
               {\mathbf x} = (x_1, x_2) = x_1 {\mathbf e}_1 + x_2 {\mathbf e}_2
-            </me>,
+            </md>,
             then
-            <me>
+            <md>
               f({\mathbf x}) = \langle f({\mathbf x}), f({\mathbf e}_1) \rangle f({\mathbf e}_1) + \langle f({\mathbf x}), f({\mathbf e}_2) \rangle f({\mathbf e}_2) = x_1 f({\mathbf e}_1)+x_2 f({\mathbf e}_2)
-            </me>.
+            </md>.
             The linearity of <m>f</m> easily follows.
           </p>
         </proof>
@@ -890,9 +890,9 @@
           <mrow>g({\mathbf y}) &amp; = B {\mathbf y} + {\mathbf x}_2</mrow>
         </md>,
         their composition is
-        <me>
+        <md>
           f(g({\mathbf y})) = f(B {\mathbf y} + {\mathbf x}_2) = AB {\mathbf y} + A{\mathbf x}_2 + {\mathbf x}_1
-        </me>.
+        </md>.
         This last computation allows us to identify the group of isometries on <m>{\mathbb R}^2</m> with <m>E(2)</m>.
       </p>
 
@@ -932,16 +932,16 @@
             since translations and glide reflections have infinite order.
             By <xref ref="matrix-example-o2"/>,
             elements in <m>O(2)</m> are either rotations of the form
-            <me>
+            <md>
               R_{\theta}
               =
               \begin{pmatrix}
               \cos \theta &amp; - \sin \theta \\
               \sin \theta &amp; \cos \theta
               \end{pmatrix}
-            </me>
+            </md>
             or reflections of the form
-            <me>
+            <md>
               T_{\phi}
               =
               \begin{pmatrix}
@@ -957,7 +957,7 @@
               \cos \phi &amp;  \sin \phi \\
               \sin \phi &amp; - \cos \phi
               \end{pmatrix}
-            </me>.
+            </md>.
             Notice that <m>\det(R_{\theta})=1</m>,
             <m>\det(T_{\phi})=-1</m>, and <m>T_{\phi}^2=I</m>.
             We can divide the proof up into two cases.
@@ -992,13 +992,13 @@
               order <m>n</m>.
               Hence, <m>|G| = 2n</m>.
               The elements of <m>G</m> are
-              <me>
+              <md>
                 R_{\theta}, \ldots, R_{\theta}^{n-1},  TR_{\theta}, \ldots, TR_{\theta}^{n-1}
-              </me>.
+              </md>.
               These elements satisfy the relation
-              <me>
+              <md>
                 TR_{\theta}T = R_{\theta}^{-1}
-              </me>.
+              </md>.
               Consequently,
               <m>G</m> must be isomorphic to <m>D_n</m> in this case.
             </p>
@@ -1071,18 +1071,18 @@
         where <m>\alpha_1</m>, <m>\alpha_2</m>, <m>\beta_1</m>,
         and <m>\beta_2</m> are integers.
         The matrix corresponding to this transformation is
-        <me>
+        <md>
           U
           =
           \begin{pmatrix}
           \alpha_1 &amp; \alpha_2 \\
           \beta_1 &amp; \beta_2
           \end{pmatrix}
-        </me>.
+        </md>.
         If we wish to give <m>{\mathbf x}_1</m> and <m>{\mathbf x}_2</m> in terms of
         <m>{\mathbf y}_1</m> and <m>{\mathbf y}_2</m>,
         we need only calculate <m>U^{-1}</m>; that is,
-        <me>
+        <md>
           U^{-1}
           \begin{pmatrix}
           {\mathbf y}_1 \\ {\mathbf y}_2
@@ -1091,23 +1091,23 @@
           \begin{pmatrix}
           {\mathbf x}_1 \\ {\mathbf x}_2
           \end{pmatrix}
-        </me>.
+        </md>.
         Since <m>U</m> has integer entries,
         <m>U^{-1}</m> must also have integer entries;
         hence the determinants of both <m>U</m> and <m>U^{-1}</m> must be integers.
         Because <m>U U^{-1} = I</m>,
-        <me>
+        <md>
           \det(U U^{-1}) =\det(U) \det( U^{-1}) = 1;
-        </me>
+        </md>
         consequently, <m>\det(U) = \pm 1</m>.
         A matrix with determinant <m>\pm 1</m> and integer entries is called <idx><h>Matrix</h><h>unimodular</h></idx><term>unimodular</term>.
         For example, the matrix
-        <me>
+        <md>
           \begin{pmatrix}
           3 &amp; 1 \\
           5 &amp; 2
           \end{pmatrix}
-        </me>
+        </md>
         is unimodular.
         It should be clear that there is a minimum length for vectors in a lattice.
       </p>
@@ -1514,9 +1514,9 @@
       <statement>
         <p>
           Prove the identity
-          <me>
+          <md>
             \langle {\mathbf x}, {\mathbf y} \rangle = \frac{1}{2} \left[ \|{\mathbf x} + {\mathbf y}\|^2 - \|{\mathbf x}\|^2 - \| {\mathbf y}\|^2 \right]
-          </me>.
+          </md>.
         </p>
       </statement>
       <hint>
@@ -1547,47 +1547,47 @@
           <ol cols="2">
             <li>
               <p>
-                <me>
+                <md>
                   \begin{pmatrix}
                   1/\sqrt{2} &amp; -1/\sqrt{2} \\
                   1/\sqrt{2} &amp; 1/\sqrt{2}
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
 
             <li>
               <p>
-                <me>
+                <md>
                   \begin{pmatrix}
                   1 / \sqrt{5} &amp; 2 / \sqrt{5} \\
                   - 2 /\sqrt{5} &amp; 1/ \sqrt{5}
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
 
             <li>
               <p>
-                <me>
+                <md>
                   \begin{pmatrix}
                   4/5 &amp; 0 &amp; 3 /5 \\
                   -3 /5 &amp; 0 &amp; 4 /5 \\
                   0 &amp; -1 &amp; 0
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
 
             <li>
               <p>
-                <me>
+                <md>
                   \begin{pmatrix}
                   1/3 &amp; 2/3 &amp; - 2/3 \\
                   - 2/3 &amp; 2/3 &amp; 1/3 \\
                   2/3 &amp; 1/3 &amp; 2/3
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
           </ol>
@@ -1681,9 +1681,9 @@
       <statement>
         <p>
           Verify that
-          <me>
+          <md>
             E(n) = \{(A, {\mathbf x}) : A \in O(n) \text{ and } {\mathbf x} \in {\mathbb R}^n \}
-          </me>
+          </md>
           is a group.
         </p>
       </statement>
@@ -1701,12 +1701,12 @@
       <hint>
         <p>
           Use the unimodular matrix
-          <me>
+          <md>
             \begin{pmatrix}
             5 &amp; 2 \\
             2 &amp; 1
             \end{pmatrix}
-          </me>.
+          </md>.
         </p>
       </hint>
     </exercise>
@@ -1922,7 +1922,7 @@
 <!-- was [3] -->
       Hiller, H. <q>Crystallography and Cohomology of Groups,</q>
       <title>American Mathematical Monthly</title>
-      <volume>93</volume>
+      <volumd>93</volumd>
       (1986), 765<ndash/>79.
     </biblio>
 
@@ -1948,7 +1948,7 @@
 <!-- was [7] -->
       Milnor, J. <q>Hilbert's Problem 18: On Crystallographic Groups, Fundamental Domains, and Sphere Packing,</q>
       <title>t Proceedings of Symposia in Pure Mathematics</title>
-      <volume>18</volume>, American Mathematical Society, 1976.
+      <volumd>18</volumd>, American Mathematical Society, 1976.
     </biblio>
 
     <biblio type="raw">
@@ -1961,7 +1961,7 @@
 <!-- was [9] -->
       Rose, B. I. and Stafford, R. D. <q>An Elementary Course in Mathematical Symmetry,</q>
       <title>American Mathematical Monthly</title>
-      <volume>88</volume>
+      <volumd>88</volumd>
       (1980), 54<ndash/>64.
     </biblio>
 
@@ -1969,7 +1969,7 @@
 <!-- was [10] -->
       Schattschneider, D. <q>The Plane Symmetry Groups: Their Recognition and Their Notation,</q>
       <title>American Mathematical  Monthly</title>
-      <volume>85</volume>
+      <volumd>85</volumd>
       (1978), 439<ndash/>50.
     </biblio>
 
@@ -1977,7 +1977,7 @@
 <!-- was [11] -->
       Schwarzenberger, R. L. <q>The 17 Plane Symmetry Groups,</q>
       <title>Mathematical Gazette</title>
-      <volume>58</volume>
+      <volumd>58</volumd>
       (1974), 123<ndash/>31.
     </biblio>
 

@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2025  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2025  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2026  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2026  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -30,9 +30,9 @@
         <m>(H, \circ)</m> are <term>isomorphic</term><idx><h>Group</h><h>isomorphic</h></idx>
         if there exists a one-to-one and onto map
         <m>\phi : G \rightarrow H</m> such that the group operation is preserved;  that is,
-        <me>
+        <md>
           \phi( a \cdot b) = \phi( a) \circ \phi( b)
-        </me>
+        </md>
         for all <m>a</m> and <m>b</m> in <m>G</m>.
         If <m>G</m> is isomorphic to <m>H</m>,
         we write <m>G \cong H</m>.
@@ -56,9 +56,9 @@
             <mrow>\phi(3) &amp; = -i</mrow>
           </md>.
           Since
-          <me>
+          <md>
             \phi(m + n) = i^{m+n} = i^m i^n = \phi(m) \phi( n)
-          </me>,
+          </md>,
           the group operation is preserved.
         </p>
       </example>
@@ -68,9 +68,9 @@
           We can define an isomorphism <m>\phi</m> from the additive group of real numbers
           <m>( {\mathbb R}, + )</m> to the multiplicative group of positive real numbers 
           <m>( {\mathbb R^+}, \cdot )</m> with the exponential map; that is,
-          <me>
+          <md>
             \phi( x + y) = e^{x + y} = e^x e^y = \phi( x ) \phi( y)
-          </me>.
+          </md>.
           Of course, we must still show that <m>\phi</m> is one-to-one and onto,
           but this can be determined using calculus.
         </p>
@@ -82,9 +82,9 @@
           <m>{\mathbb Q}^\ast</m> consisting of elements of the form <m>2^n</m>.
           Define a map <m>\phi: {\mathbb Z} \rightarrow {\mathbb Q}^\ast</m> by <m>\phi( n ) = 2^n</m>.
           Then
-          <me>
+          <md>
             \phi( m + n ) = 2^{m + n} = 2^m 2^n = \phi( m ) \phi( n )
-          </me>.
+          </md>.
           By definition the map <m>\phi</m> is onto the subset
           <m>\{2^n :n \in {\mathbb Z} \}</m> of  <m>{\mathbb Q}^\ast</m>.
           To show that the map is injective,
@@ -132,13 +132,13 @@
           Let <m>a , b \in S_3</m> be two elements such that <m>ab \neq ba</m>.
           Since <m>\phi</m> is an isomorphism,
           there exist elements <m>m</m> and <m>n</m> in <m>{\mathbb Z}_6</m> such that
-          <me>
+          <md>
             \phi( m ) = a \quad \text{and} \quad \phi( n ) = b
-          </me>.
+          </md>.
           However,
-          <me>
+          <md>
             ab = \phi(m ) \phi(n) = \phi(m + n) = \phi(n + m) = \phi(n ) \phi(m) = ba
-          </me>,
+          </md>,
           which contradicts the fact that <m>a</m> and <m>b</m> do not commute.
         </p>
       </example>
@@ -196,9 +196,9 @@
             there exist elements <m>g_1, g_2 \in G</m> such that
             <m>\phi(g_1) = h_1</m> and <m>\phi(g_2) = h_2</m>.
             Therefore,
-            <me>
+            <md>
               h_1 h_2 = \phi(g_1) \phi(g_2) =  \phi(g_1 g_2) = \phi(g_2 g_1) = \phi(g_2) \phi(g_1) = h_2 h_1
-            </me>.
+            </md>.
           </p>
         </proof>
       </theorem>
@@ -219,9 +219,9 @@
             Let <m>G</m> be a cyclic group with infinite order and suppose that <m>a</m> is a generator of <m>G</m>.
             Define a map <m>\phi : {\mathbb Z} \rightarrow  G</m> by <m>\phi : n \mapsto a^n</m>.
             Then
-            <me>
+            <md>
               \phi( m+n ) = a^{m+n} = a^m a^n = \phi( m ) \phi( n )
-            </me>.
+            </md>.
             To show that <m>\phi</m> is injective,
             suppose that <m>m</m> and <m>n</m> are two elements in
             <m>{\mathbb Z}</m>, where <m>m \neq n</m>.
@@ -311,14 +311,14 @@
         </p>
 
         <p>
-          <me>
+          <md>
             \begin{array}{c|ccc}
             + &amp; 0 &amp; 1 &amp; 2 \\ \hline
             0       &amp; 0 &amp; 1 &amp; 2 \\
             1       &amp; 1 &amp; 2 &amp; 0 \\
             2       &amp; 2 &amp; 0 &amp; 1 
             \end{array}
-          </me>
+          </md>
         </p>
 
         <p>
@@ -366,9 +366,9 @@
             To show that <m>\lambda_g</m> is one-to-one,
             suppose that <m>\lambda_g(a) = \lambda_g(b)</m>.
             Then
-            <me>
+            <md>
               ga =\lambda_g(a) = \lambda_g(b) = gb
-            </me>.
+            </md>.
             Hence, <m>a = b</m>.
             To show that <m>\lambda_g</m> is onto,
             we must prove that for each <m>a \in G</m>,
@@ -379,35 +379,35 @@
           <p>
             Now we are ready to define our group <m>\overline{G}</m>.
             Let
-            <me>
+            <md>
               \overline{G} = \{ \lambda_g : g \in G \}
-            </me>.
+            </md>.
             We must show that <m>\overline{G}</m> is a group under composition of functions and find an isomorphism between <m>G</m> and <m>\overline{G}</m>.
             We have closure under composition of functions since
-            <me>
+            <md>
               (\lambda_g \circ \lambda_h )(a) = \lambda_g(ha) = gha = \lambda_{gh} (a)
-            </me>.
+            </md>.
             Also,
-            <me>
+            <md>
               \lambda_e (a) = ea = a
-            </me>
+            </md>
             and
-            <me>
+            <md>
               (\lambda_{g^{-1}} \circ \lambda_g) (a) = \lambda_{g^{-1}} (ga) = g^{-1} g a = a = \lambda_e (a)
-            </me>.
+            </md>.
           </p>
 
           <p>
             We can define an isomorphism from <m>G</m> to
             <m>\overline{G}</m> by <m>\phi : g \mapsto \lambda_g</m>.
             The group operation is preserved since
-            <me>
+            <md>
               \phi(gh) = \lambda_{gh} = \lambda_g \lambda_h = \phi(g) \phi(h)
-            </me>.
+            </md>.
             It is also one-to-one, because if <m>\phi(g)(a) = \phi(h)(a)</m>, then
-            <me>
+            <md>
               ga = \lambda_g a = \lambda_h a=  ha
-            </me>.
+            </md>.
             Hence, <m>g = h</m>.
             That <m>\phi</m> is onto follows from the fact that
             <m>\phi( g ) = \lambda_g</m> for any <m>\lambda_g \in \overline{G}</m>.
@@ -468,9 +468,9 @@
         As a set, our group is just the ordered pairs
         <m>(g, h) \in G \times H</m> where <m>g \in G</m> and <m>h \in H</m>.
         We can define a binary operation on <m>G \times H</m> by
-        <me>
+        <md>
           (g_1, h_1)(g_2, h_2) = (g_1 \cdot g_2, h_1 \circ h_2);
-        </me>
+        </md>
         that is, we just multiply elements in the first coordinate as we do in <m>G</m> and elements in the second coordinate as we do in <m>H</m>.
         We have specified the particular operations <m>\cdot</m> and <m>\circ</m> in each group here for the sake of clarity;
         we usually just write <m>(g_1, h_1)(g_2, h_2) = (g_1  g_2, h_1 h_2)</m>.
@@ -511,9 +511,9 @@
       <example xml:id="isomorph-example-z2xz2">
         <p>
           Consider
-          <me>
+          <md>
             {\mathbb Z}_2 \times {\mathbb Z}_2 = \{ (0, 0), (0, 1), (1, 0),(1, 1) \}
-          </me>.
+          </md>.
           Although <m>{\mathbb Z}_2 \times {\mathbb Z}_2</m> and
           <m>{\mathbb Z}_4</m> both contain four elements, they are not isomorphic.
           Every element <m>(a,b)</m> in <m>{\mathbb Z}_2 \times {\mathbb Z}_2</m> other than the identity has order <m>2</m>,
@@ -528,9 +528,9 @@
         of  <m>G</m> and <m>H</m>.
         Notice that there is nothing special about the fact that we have used only two groups to build a new group.
         The direct product
-        <me>
+        <md>
           \prod_{i = 1}^n G_i = G_1 \times G_2 \times \cdots \times G_n
-        </me>
+        </md>
         of the groups <m>G_1, G_2, \ldots, G_n</m> is defined in exactly the same manner.
         If <m>G = G_1 = G_2 = \cdots = G_n</m>,
         we often write <m>G^n</m> instead of <m>G_1 \times G_2 \times \cdots \times G_n</m>.
@@ -543,9 +543,9 @@
           The group operation is the <q>exclusive or</q>
           of two binary <m>n</m>-tuples.
           For example,
-          <me>
+          <md>
             (01011101) + (01001011) = (00010110)
-          </me>.
+          </md>.
           This group is important in coding theory,
           in cryptography, and in many areas of computer science.
         </p>
@@ -637,9 +637,9 @@
             then <m>{\mathbb Z}_m \times {\mathbb Z}_n</m> cannot be cyclic.
             Notice that <m>mn/d</m> is divisible by both <m>m</m> and <m>n</m>;
             hence, for any element <m>(a,b) \in {\mathbb Z}_m \times {\mathbb Z}_n</m>,
-            <me>
+            <md>
               \underbrace{(a,b) + (a,b)+ \cdots + (a,b)}_{mn/d \; \text{times}} = (0, 0)
-            </me>.
+            </md>.
             Therefore, no <m>(a, b)</m> can generate all of <m>{\mathbb Z}_m \times {\mathbb Z}_n</m>.
           </p>
 
@@ -655,9 +655,9 @@
           <p>
             Let <m>n_1, \ldots, n_k</m> be positive integers.
             Then
-            <me>
+            <md>
               \prod_{i=1}^k {\mathbb Z}_{n_i} \cong {\mathbb Z}_{n_1 \cdots n_k}
-            </me>
+            </md>
             if and only if <m>\gcd( n_i, n_j) =1</m> for <m>i \neq j</m>.
           </p>
         </statement>
@@ -667,13 +667,13 @@
         <statement>
           <p>
             If
-            <me>
+            <md>
               m = p_1^{e_1} \cdots  p_k^{e_k}
-            </me>,
+            </md>,
             where the <m>p_i</m>s are distinct primes, then
-            <me>
+            <md>
               {\mathbb Z}_m \cong {\mathbb Z}_{p_1^{e_1}} \times \cdots \times {\mathbb Z}_{p_k^{e_k}}
-            </me>.
+            </md>.
           </p>
         </statement>
 
@@ -689,9 +689,9 @@
       <p>
         In <xref ref="struct"/>,
         we will prove that all finite abelian groups are isomorphic to direct products of the form
-        <me>
+        <md>
           {\mathbb Z}_{p_1^{e_1}} \times \cdots \times {\mathbb Z}_{p_k^{e_k}}
-        </me>
+        </md>
         where <m>p_1, \ldots, p_k</m> are
         (not necessarily distinct)
         primes.
@@ -736,18 +736,18 @@
       <example xml:id="isomorph-example-u8">
         <p>
           The group <m>U(8)</m> is the internal direct product of
-          <me>
+          <md>
             H = \{1, 3 \} \quad \text{and} \quad K  = \{1, 5 \}
-          </me>.
+          </md>.
         </p>
       </example>
 
       <example xml:id="isomorph-example-d6-product">
         <p>
           The dihedral group <m>D_6</m> is an internal direct product of its two subgroups
-          <me>
+          <md>
             H = \{\identity, r^3  \} \quad \text{and} \quad K  = \{\identity, r^2, r^4, s, r^2s, r^4 s \}
-          </me>.
+          </md>.
           It can easily be shown that <m>K \cong S_3</m>;
           consequently, <m>D_6 \cong {\mathbb Z}_2 \times S_3</m>.
         </p>
@@ -936,24 +936,24 @@
         <p>
           Prove that <m>{\mathbb C}^\ast</m> is isomorphic to the subgroup of
           <m>GL_2( {\mathbb R} )</m> consisting of matrices of the form
-          <me>
+          <md>
             \begin{pmatrix}
             a &amp; b \\
             -b &amp; a
             \end{pmatrix}
-          </me>.
+          </md>.
         </p>
       </statement>
       <hint>
         <p>
           Define <m>\phi: {\mathbb C}^* \rightarrow GL_2( {\mathbb R})</m> by
-          <me>
+          <md>
             \phi(a + bi) = 
             \begin{pmatrix}
             a &amp; b \\
             -b &amp; a
             \end{pmatrix}
-          </me>.
+          </md>.
         </p>
       </hint>
     </exercise>
@@ -975,7 +975,7 @@
       <statement>
         <p>
           Prove that <m>U(8)</m> is isomorphic to the group of matrices
-          <me>
+          <md>
             \begin{pmatrix}
             1 &amp; 0 \\
             0 &amp; 1
@@ -992,7 +992,7 @@
             -1 &amp; 0 \\
             0 &amp; -1
             \end{pmatrix}
-          </me>.
+          </md>.
         </p>
       </statement>
     </exercise>
@@ -1043,9 +1043,9 @@
       <statement>
         <p>
           Let <m>G = {\mathbb R} \setminus \{ -1 \}</m> and define a binary operation on <m>G</m> by
-          <me>
+          <md>
             a \ast b = a + b + ab
-          </me>.
+          </md>.
           Prove that <m>G</m> is a group under this operation.
           Show that <m>(G, *)</m> is isomorphic to the multiplicative group of nonzero real numbers.
         </p>
@@ -1124,7 +1124,7 @@
         <p>
           Let <m>\omega = \cis(2 \pi /n)</m> be a primitive <m>n</m>th root of unity.
           Prove that the matrices
-          <me>
+          <md>
             A =
             \begin{pmatrix}
             \omega &amp; 0 \\
@@ -1136,7 +1136,7 @@
             0 &amp; 1 \\
             1 &amp; 0
             \end{pmatrix}
-          </me>
+          </md>
           generate a multiplicative group isomorphic to <m>D_n</m>.
         </p>
       </statement>
@@ -1146,12 +1146,12 @@
       <statement>
         <p>
           Show that the set of all matrices of the form
-          <me>
+          <md>
             \begin{pmatrix}
             \pm 1 &amp; k \\
             0 &amp; 1
             \end{pmatrix}
-          </me>,
+          </md>,
           is a group isomorphic to <m>D_n</m>,
           where all entries in the matrix are in <m>{\mathbb Z}_n</m>.
         </p>
@@ -1566,9 +1566,9 @@
         <p>
           Let <m>n_1, \ldots, n_k</m> be positive integers.
           Show that
-          <me>
+          <md>
             \prod_{i=1}^k {\mathbb Z}_{n_i} \cong {\mathbb Z}_{n_1 \cdots n_k}
-          </me>
+          </md>
           if and only if <m>\gcd( n_i, n_j) =1</m> for <m>i \neq j</m>.
         </p>
       </statement>

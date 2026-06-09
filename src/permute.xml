@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2025  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2025  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2026  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2026  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -59,12 +59,12 @@
 
     <p>
       We have used the array
-      <me>
+      <md>
         \begin{pmatrix}
         A &amp; B &amp; C \\
         B &amp; C &amp; A
         \end{pmatrix}
-      </me>
+      </md>
       to denote the permutation that sends <m>A</m> to <m>B</m>,
       <m>B</m> to <m>C</m>, and <m>C</m> to <m>A</m>.
       That is,
@@ -151,7 +151,7 @@
         </p>
 
         <p>
-          <me>
+          <md>
             \begin{array}{c|cccc}
             \circ &amp; \identity &amp; \sigma &amp; \tau &amp; \mu \\ \hline
             \identity &amp; \identity &amp; \sigma &amp; \tau &amp; \mu \\
@@ -159,7 +159,7 @@
             \tau &amp; \tau &amp; \mu &amp; \identity &amp; \sigma \\
             \mu &amp; \mu &amp; \tau &amp; \sigma &amp; \identity
             \end{array}
-          </me>
+          </md>
         </p>
       </example>
 
@@ -203,23 +203,23 @@
             \end{pmatrix}</mrow>
           </md>.
           Then
-          <me>
+          <md>
             \sigma \tau
             =
             \begin{pmatrix}
             1 &amp; 2 &amp; 3 &amp; 4 \\
             1 &amp; 4 &amp; 3 &amp; 2
             \end{pmatrix}
-          </me>,
+          </md>,
           but
-          <me>
+          <md>
             \tau \sigma
             =
             \begin{pmatrix}
             1 &amp; 2 &amp; 3 &amp; 4 \\
             3 &amp; 2 &amp; 1 &amp; 4
             \end{pmatrix}
-          </me>.
+          </md>.
         </p>
       </example>
     </introduction>
@@ -258,7 +258,7 @@
       <example xml:id="permute-example-cycle-notation">
         <p>
           The permutation
-          <me>
+          <md>
             \sigma =
             \begin{pmatrix}
             1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 &amp; 7\\
@@ -266,9 +266,9 @@
             \end{pmatrix}
             =
             (1\, 6\, 2\, 3\, 5\, 4 )
-          </me>
+          </md>
           is a cycle of length <m>6</m>, whereas
-          <me>
+          <md>
             \tau =
             \begin{pmatrix}
             1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\
@@ -276,20 +276,20 @@
             \end{pmatrix}
             =
             (2\, 4\, 3)
-          </me>
+          </md>
           is a cycle of length <m>3</m>.
         </p>
 
         <p>
           Not every permutation is a cycle.
           Consider the permutation
-          <me>
+          <md>
             \begin{pmatrix}
             1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 \\
             2 &amp; 4 &amp; 1 &amp; 3 &amp; 6 &amp; 5
             \end{pmatrix}
             = (1\, 2\, 4\, 3)(5\, 6)
-          </me>.
+          </md>.
           This permutation actually contains a cycle of length 2 and a cycle of length <m>4</m>.
         </p>
       </example>
@@ -298,30 +298,30 @@
         <p>
           It is very easy to compute products of cycles.
           Suppose that
-          <me>
+          <md>
             \sigma = (1\, 3\, 5\, 2 ) \quad \text{and} \quad \tau = (2\, 5\, 6)
-          </me>.
+          </md>.
           If we think of <m>\sigma</m> as
-          <me>
+          <md>
             1 \mapsto 3, \qquad
             3 \mapsto 5, \qquad
             5 \mapsto 2, \qquad
             2 \mapsto 1
-          </me>,
+          </md>,
           and <m>\tau</m> as
-          <me>
+          <md>
             2 \mapsto 5, \qquad
             5 \mapsto 6, \qquad
             6 \mapsto 2
-          </me>,
+          </md>,
           then for <m>\sigma \tau</m> remembering that we apply <m>\tau</m> first and then <m>\sigma</m>,
           it must be the case that
-          <me>
+          <md>
             1 \mapsto 3, \qquad
             3 \mapsto 5, \qquad
             5 \mapsto 6, \qquad
             6 \mapsto 2 \mapsto 1
-          </me>,
+          </md>,
           or <m>\sigma \tau =  (1 \, 3 \, 5 \, 6 )</m>.
           If <m>\mu = (1 \, 6 \, 3 \, 4)</m>, then <m>\sigma \mu = (1\, 6\, 5\, 2)(3\, 4)</m>.
         </p>
@@ -366,9 +366,9 @@
             then both <m>\sigma</m> and <m>\tau</m> fix <m>x</m>.
             That is, <m>\sigma(x)=x</m> and <m>\tau(x)=x</m>.
             Hence,
-            <me>
+            <md>
               \sigma \tau(x) = \sigma( \tau(x)) = \sigma(x) = x = \tau(x) = \tau( \sigma(x)) =  \tau \sigma(x)
-            </me>.
+            </md>.
             <em>Do not forget that we are multiplying permutations right to left,
             which is the opposite of the order in which we usually multiply group elements.</em>
             Now suppose that <m>x \in \{ a_1, a_2, \ldots, a_k \}</m>.
@@ -416,13 +416,13 @@
             we are guaranteed that this process will end and there will be only a finite number of these sets,
             say <m>r</m>.
             If <m>\sigma_i</m> is the cycle defined by
-            <me>
+            <md>
               \sigma_i( x ) = 
               \begin{cases}
               \sigma( x ) &amp; x \in X_i \\
               x   &amp; x \notin X_i
               \end{cases}
-            </me>,
+            </md>,
             then <m>\sigma = \sigma_1 \sigma_2 \cdots \sigma_r</m>.
             Since the sets <m>X_1, X_2, \ldots, X_r</m> are disjoint,
             the cycles <m>\sigma_1, \sigma_2, \ldots, \sigma_r</m> must also be disjoint.
@@ -470,9 +470,9 @@
         The simplest permutation is a cycle of length <m>2</m>.
         Such cycles are called <idx><h>Transposition</h></idx><term>transpositions</term>.
         Since
-        <me>
+        <md>
           (a_1, a_2, \ldots, a_n ) = (a_1, a_n ) (a_1, a_{n-1} ) \cdots ( a_1, a_3 ) (a_1, a_2 )
-        </me>,
+        </md>,
         any cycle can be written as the product of transpositions,
         leading to the following proposition.
       </p>
@@ -488,9 +488,9 @@
       <example xml:id="permute-example-transpositions">
         <p>
           Consider the permutation
-          <me>
+          <md>
             ( 1 \, 6 ) (2 \,  5\,  3) = (1 \, 6 )( 2 \, 3 )( 2 \, 5 ) = (1 \, 6 )( 4 \, 5 )(2 \, 3 )( 4 \, 5 )(2 \, 5 )
-          </me>.
+          </md>.
           As we can see,
           there is no unique way to represent permutation as the product of transpositions.
           For instance,
@@ -499,13 +499,13 @@
           However, as it turns out,
           no permutation can be written as the product of both an even number of transpositions and an odd number of transpositions.
           For instance, we could represent the permutation <m>(1 \, 6)</m> by
-          <me>
+          <md>
             (2 \,  3 )(1 \,  6)( 2 \,  3)
-          </me>
+          </md>
           or by
-          <me>
+          <md>
             (3 \, 5) (1 \, 6) (1 \, 3) (1 \, 6) (1 \, 3) (3 \, 5) (5 \, 6)
-          </me>,
+          </md>,
           but <m>(1 \, 6)</m> will always be the product of an odd number of transpositions.
         </p>
       </example>
@@ -514,9 +514,9 @@
         <statement>
           <p>
             If the identity is written as the product of <m>r</m> transpositions,
-            <me>
+            <md>
               \identity = \tau_1 \tau_2 \cdots \tau_r
-            </me>,
+            </md>,
             then <m>r</m> is an even number.
           </p>
         </statement>
@@ -544,9 +544,9 @@
             The first equation simply says that a transposition is its own inverse.
             If this case occurs, delete
             <m>\tau_{r-1} \tau_r</m> from the product to obtain
-            <me>
+            <md>
               \identity = \tau_1 \tau_2 \cdots \tau_{r - 3} \tau_{r - 2}
-            </me>.
+            </md>.
             By induction <m>r - 2</m> is even;
             hence, <m>r</m> must be even.
           </p>
@@ -586,16 +586,16 @@
         <proof>
           <p>
             Suppose that
-            <me>
+            <md>
               \sigma = \sigma_1 \sigma_2 \cdots \sigma_m = \tau_1 \tau_2 \cdots \tau_n
-            </me>,
+            </md>,
             where <m>m</m> is even.
             We must show that <m>n</m> is also an even number.
             The inverse of <m>\sigma</m> is <m>\sigma_m \cdots \sigma_1</m>.
             Since
-            <me>
+            <md>
               \identity = \sigma \sigma_m \cdots \sigma_1 = \tau_1  \cdots \tau_n \sigma_m \cdots \sigma_1
-            </me>,
+            </md>,
             <m>n</m> must be even by <xref ref="permute-lemma-identity-even-trans"/>.
             The proof for the case in which <m>\sigma</m> can be expressed as an odd number of transpositions is left as an exercise.
           </p>
@@ -637,14 +637,14 @@
             <m>A_n</m> is closed.
             The identity is an even permutation and therefore is in <m>A_n</m>.
             If <m>\sigma</m> is an even permutation, then
-            <me>
+            <md>
               \sigma = \sigma_1 \sigma_2 \cdots \sigma_r
-            </me>,
+            </md>,
             where <m>\sigma_i</m> is a transposition and <m>r</m> is even.
             Since the inverse of any transposition is itself,
-            <me>
+            <md>
               \sigma^{-1} = \sigma_r \sigma_{r-1} \cdots \sigma_1
-            </me>
+            </md>
             is also in <m>A_n</m>.
           </p>
         </proof>
@@ -667,18 +667,18 @@
             Fix a transposition <m>\sigma</m> in <m>S_n</m>.
             Since <m>n \geq 2</m>, such a <m>\sigma</m> exists.
             Define
-            <me>
+            <md>
               \lambda_{\sigma} : A_n \rightarrow B_n
-            </me>
+            </md>
             by
-            <me>
+            <md>
               \lambda_{\sigma} ( \tau ) = \sigma  \tau 
-            </me>.
+            </md>.
             Suppose that <m>\lambda_{\sigma} ( \tau ) = \lambda_{\sigma} ( \mu )</m>.
             Then <m>\sigma  \tau = \sigma  \mu</m> and so
-            <me>
+            <md>
               \tau = \sigma^{-1} \sigma \tau = \sigma^{-1} \sigma \mu = \mu
-            </me>.
+            </md>.
             Therefore, <m>\lambda_{\sigma}</m> is one-to-one.
             We will leave the proof that
             <m>\lambda_{\sigma}</m> is surjective to the reader.
@@ -785,15 +785,15 @@
           <p>
             The possible motions of a regular <m>n</m>-gon are either reflections or rotations (<xref ref="permute-figure-rotations"/>).
             There are exactly <m>n</m> possible rotations:
-            <me>
+            <md>
               \identity, \frac{360^{\circ} }{n}, 2 \cdot \frac{360^{\circ} }{n}, \ldots, (n-1) \cdot \frac{360^{\circ} }{n}
-            </me>.
+            </md>.
             We will denote the rotation <m>360^{\circ} /n</m> by <m>r</m>.
             The rotation <m>r</m> generates all  of the other rotations.
             That is,
-            <me>
+            <md>
               r^k = k \cdot \frac{360^{\circ} }{n}
-            </me>.
+            </md>.
           </p>
 
           <figure xml:id="permute-figure-rotations">
@@ -829,9 +829,9 @@
             If the second vertex is replaced by <m>k-1</m>, then <m>t = r^k s</m>.<fn>Since we are in an abstract group, we will adopt the convention that group elements are multiplied left to right.</fn>
             Hence, <m>r</m> and <m>s</m> generate <m>D_n</m>.
             That is, <m>D_n</m> consists of all finite products of <m>r</m> and <m>s</m>,
-            <me>
+            <md>
               D_n = \{1, r, r^2, \ldots, r^{n-1}, s, rs, r^2 s, \ldots, r^{n-1} s\}
-            </me>.
+            </md>.
             We will leave the proof that <m>srs = r^{-1}</m> as an exercise.
           </p>
 
@@ -1062,45 +1062,45 @@
           <ol cols="2">
             <li>
               <p>
-                <me>
+                <md>
                   \begin{pmatrix}
                   1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
                   2 &amp; 4 &amp; 1 &amp; 5 &amp; 3
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
 
             <li>
               <p>
-                <me>
+                <md>
                   \begin{pmatrix}
                   1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
                   4 &amp; 2 &amp; 5 &amp; 1 &amp; 3
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
 
             <li>
               <p>
-                <me>
+                <md>
                   \begin{pmatrix}
                   1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
                   3 &amp; 5 &amp; 1 &amp; 4 &amp; 2
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
 
             <li>
               <p>
-                <me>
+                <md>
                   \begin{pmatrix}
                   1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
                   1 &amp; 4 &amp; 3 &amp; 2 &amp; 5
                   \end{pmatrix}
-                </me>
+                </md>
               </p>
             </li>
           </ol>
@@ -1374,9 +1374,9 @@
       <hint>
         <p>
           Permutations of the form
-          <me>
+          <md>
             (1), (a_1, a_2)(a_3, a_4), (a_1, a_2, a_3), (a_1, a_2, a_3, a_4, a_5)
-          </me>
+          </md>
           are possible for <m>A_5</m>.
         </p>
       </hint>
@@ -1568,9 +1568,9 @@
       <statement>
         <p>
           Recall that the <term>center</term> of a group <m>G</m> is
-          <me>
+          <md>
             Z(G) = \{ g \in G : gx = xg \text{ for all } x \in G \}
-          </me>.
+          </md>.
           Find the center of <m>D_8</m>.
           What about the center of <m>D_{10}</m>?
           What is the center of <m>D_n</m>?
@@ -1591,9 +1591,9 @@
             <li>
               <p>
                 Prove that if <m>\sigma</m> is any permutation, then
-                <me>
+                <md>
                   \sigma \tau \sigma^{-1 } = ( \sigma(a_1), \sigma(a_2), \ldots, \sigma(a_k))
-                </me>
+                </md>
                 is a cycle of length <m>k</m>.
               </p>
             </li>
@@ -1641,9 +1641,9 @@
             <li>
               <p>
                 Define the <term>orbit</term> of <m>x \in X</m> under <m>\sigma \in S_X</m> to be the set
-                <me>
+                <md>
                   {\mathcal O}_{x, \sigma} = \{ y : x \sim y  \}
-                </me>.
+                </md>.
                 Compute the orbits of each element in <m>\{1, 2, 3, 4, 5\}</m> under each of the following elements in <m>S_5</m>:
                 <md>
                   <mrow>\alpha &amp; = (1 \, 2 \, 5 \, 4)</mrow>

@@ -3,8 +3,8 @@
 <!--                                                  -->
 <!-- Abstract Algebra: Theory and Applications        -->
 <!--                                                  -->
-<!-- Text: Copyright (C) 1997-2025  Thomas W. Judson  -->
-<!-- Sage: Copyright (C) 2010-2025  Robert A. Beezer  -->
+<!-- Text: Copyright (C) 1997-2026  Thomas W. Judson  -->
+<!-- Sage: Copyright (C) 2010-2026  Robert A. Beezer  -->
 <!-- See the file COPYING for copying conditions.     -->
 <!-- This file is part of the book                    -->
 <!--                                                  -->
@@ -74,9 +74,9 @@
           Suppose that <m>[F : K] = n</m> is the dimension of <m>F</m>,
           where <m>F</m> is a <m>K</m> vector space.
           There must exist elements <m>\alpha_1, \ldots, \alpha_n \in F</m> such that any element <m>\alpha</m> in <m>F</m> can be written uniquely in the form
-          <me>
+          <md>
             \alpha = a_1 \alpha_1 + \cdots + a_n \alpha_n
-          </me>,
+          </md>,
           where the <m>a_i</m>'s are in <m>K</m>.
           Since there are <m>p</m> elements in <m>K</m>,
           there are <m>p^n</m> possible linear combinations of the <m>\alpha_i</m>'s.
@@ -94,9 +94,9 @@
         <p>
           Let <m>p</m> be prime and <m>D</m> be an integral domain of characteristic <m>p</m>.
           Then
-          <me>
+          <md>
             a^{p^n} + b^{p^n} = (a + b)^{p^n}
-          </me>
+          </md>
           for all positive integers <m>n</m>.
         </p>
       </statement>
@@ -107,13 +107,13 @@
           We can use the binomial formula
           (see <xref ref="integers"/>, <xref ref="integers-example-binomial-theorem"/>)
           to verify the case for <m>n = 1</m>; that is,
-          <me>
+          <md>
             (a + b)^p = \sum_{k = 0}^{p} \binom{p}{k} a^k b^{p - k}
-          </me>.
+          </md>.
           If <m>0 \lt k \lt p</m>, then
-          <me>
+          <md>
             \binom{p}{k} = \frac{p!}{k!(p - k)!}
-          </me>
+          </md>
           must be divisible by <m>p</m>,
           since <m>p</m> cannot divide <m>k!(p - k)!</m>.
           Note that <m>D</m> is an integral domain of characteristic <m>p</m>,
@@ -125,9 +125,9 @@
           Now suppose that the result holds for all <m>k</m>,
           where <m>1 \leq k \leq n</m>.
           By the induction hypothesis,
-          <me>
+          <md>
             (a + b)^{p^{n + 1}} = ((a + b)^p)^{p^{n}} = (a^p + b^p)^{p^{n}} = (a^p)^{p^{n}} + (b^p)^{p^{n}} = a^{p^{n + 1}} + b^{p^{n + 1}}
-          </me>.
+          </md>.
           Therefore, the lemma is true for <m>n + 1</m> and the proof is complete.
         </p>
       </proof>
@@ -151,9 +151,9 @@
         If <m>b = 0</m>, then <m>\alpha</m> is a root of <m>x - a</m>.
         If <m>b \neq 0</m>,
         then <m>\alpha</m> is the root  of the separable polynomial
-        <me>
+        <md>
           x^2 - 2 a x + a^2 - 2 b^2 = (x - (a + b \sqrt{2}\, ))(x - (a - b \sqrt{2}\, ))
-        </me>.
+        </md>.
       </p>
     </example>
         <!-- Notation error corrected.  Suggested by C. Wall.  TWJ 5/15/2012 -->
@@ -161,15 +161,15 @@
       Fortunately,
       we have an easy test to  determine the separability of any polynomial.
       Let
-      <me>
+      <md>
         f(x) = a_0 + a_1 x + \cdots + a_n x^n
-      </me>
+      </md>
       be any polynomial in <m>F[x]</m>.
       Define the <term>derivative</term><idx><h>Derivative</h></idx>
       of <m>f(x)</m> to be
-      <me>
+      <md>
         f'(x) = a_1 + 2 a_2 x + \cdots + n a_n x^{n - 1}
-      </me>.
+      </md>.
     </p>
 
     <lemma xml:id="finite-lemma-separable-derivative">
@@ -199,9 +199,9 @@
           we will show that the contrapositive of the statement is true.
           Suppose that <m>f(x) = (x - \alpha)^k g(x)</m>, where <m>k \gt 1</m>.
           Differentiating, we have
-          <me>
+          <md>
             f'(x) = k ( x - \alpha)^{k-1} g(x) + (x- \alpha)^k g'(x)
-          </me>.
+          </md>.
           Therefore, <m>f(x)</m> and <m>f'(x)</m> have a common factor.
         </p>
       </proof>
@@ -234,14 +234,14 @@
           We also need to show that the additive inverse and the multiplicative inverse of each root of <m>f(x)</m> are roots of <m>f(x)</m>.
           For any zero <m>\alpha</m> of <m>f(x)</m>,
           we know that <m>-\alpha</m> is also a zero of <m>f(x)</m>, since
-          <me>
+          <md>
             f(-\alpha) = (-\alpha)^{p^n} - (-\alpha) = -\alpha^{p^n} + \alpha = -(\alpha^{p^n} - \alpha) = 0
-          </me>,
+          </md>,
           provided <m>p</m> is odd.
           If <m>p = 2</m>, then
-          <me>
+          <md>
             f(-\alpha) =  (-\alpha)^{2^n} - (-\alpha) = \alpha + \alpha = 0
-          </me>.
+          </md>.
           If <m>\alpha \neq 0</m>,
           then <m>(\alpha^{-1})^{p^n} = (\alpha^{p^n})^{-1} = \alpha^{-1}</m>.
           Since the zeros of <m>f(x)</m> form a subfield of <m>F</m> and <m>f(x)</m> splits in this subfield,
@@ -355,9 +355,9 @@
         <p>
           Let <m>G</m> be a finite subgroup of <m>F^\ast</m> of order <m>n</m>.
           By the Fundamental Theorem of Finite Abelian Groups (<xref ref="struct-theorem-finite-abelian-groups"/>),
-          <me>
+          <md>
             G \cong {\mathbb Z}_{p_1^{e_1}} \times \cdots \times {\mathbb Z}_{p_k^{e_k}}
-          </me>,
+          </md>,
           where <m>n = p_1^{e_1} \cdots p_k^{e_k}</m> and the  <m>p_1, \ldots,
           p_k</m> are
           (not necessarily distinct)
@@ -405,9 +405,9 @@
       <p>
         The finite field <m>\gf(2^4)</m> is isomorphic to the field <m>{\mathbb Z}_2[x]/ \langle 1 + x + x^4 \rangle</m>.
         Therefore, the elements of  <m>\gf(2^4)</m> can be taken to be
-        <me>
+        <md>
           \{ a_0 + a_1 \alpha + a_2 \alpha^2 + a_3 \alpha^3 : a_i \in {\mathbb Z}_2 \text{ and } 1 + \alpha + \alpha^4 = 0 \}
-        </me>.
+        </md>.
         Remembering that <m>1 + \alpha +\alpha^4 = 0</m>,
         we add and multiply elements of
         <m>\gf(2^4)</m> exactly as we add and multiply polynomials.
@@ -451,7 +451,7 @@
       <example xml:id="finite-example-6-3-linear-code">
         <p>
           Consider the <m>(6,3)</m>-linear codes generated by the two matrices
-          <me>
+          <md>
             G_1 
             = 
             \begin{pmatrix}
@@ -474,26 +474,26 @@
             0 &amp; 1 &amp; 1 \\
             0 &amp; 0 &amp; 1
             \end{pmatrix}
-          </me>.
+          </md>.
           Messages in the first code are encoded as follows:
-          <me>
+          <md>
             \begin{array}{rclccrcl}
             (000) &amp; \mapsto &amp; (000000) &amp; &amp; &amp; (100) &amp; \mapsto &amp; (100100) \\
             (001) &amp; \mapsto &amp; (001001) &amp; &amp; &amp; (101) &amp; \mapsto &amp; (101101) \\
             (010) &amp; \mapsto &amp; (010010) &amp; &amp; &amp; (110) &amp; \mapsto &amp; (110110) \\
             (011) &amp; \mapsto &amp; (011011) &amp; &amp; &amp; (111) &amp; \mapsto &amp; (111111).
             \end{array}
-          </me>
+          </md>
           It is easy to see that the codewords form a cyclic code.
           In the second code, 3-tuples are encoded in the following manner:
-          <me>
+          <md>
             \begin{array}{rclccrcl}
             (000) &amp; \mapsto &amp; (000000) &amp; &amp; &amp; (100) &amp; \mapsto &amp; (111100) \\
             (001) &amp; \mapsto &amp; (001111) &amp; &amp; &amp; (101) &amp; \mapsto &amp; (110011) \\
             (010) &amp; \mapsto &amp; (011110) &amp; &amp; &amp; (110) &amp; \mapsto &amp; (100010) \\
             (011) &amp; \mapsto &amp; (010001) &amp; &amp; &amp; (111) &amp; \mapsto &amp; (101101).
             \end{array}
-          </me>
+          </md>
           This code cannot be cyclic,
           since <m>(101101)</m> is a codeword but <m>(011011)</m> is not a codeword.
         </p>
@@ -510,15 +510,15 @@
         Stated another way, the <m>n</m>-tuple
         <m>(a_0, a_1, \ldots,
         a_{n - 1} )</m> corresponds to the polynomial
-        <me>
+        <md>
           f(x) = a_0 + a_1 x + \cdots + a_{n-1} x^{n - 1}
-        </me>,
+        </md>,
         where the degree of <m>f(x)</m> is at most <m>n - 1</m>.
         For example,
         the polynomial corresponding to the <m>5</m>-tuple <m>(10011)</m> is
-        <me>
+        <md>
           1 + 0 x + 0 x^2 + 1 x^3 + 1 x^4 = 1 + x^3 + x^4
-        </me>.
+        </md>.
         Conversely, with any polynomial <m>f(x) \in {\mathbb Z}_2[x]</m> with
         <m>\deg f(x) \lt n</m> we can associate a binary <m>n</m>-tuple.
         The polynomial <m>x + x^2 + x^4</m> corresponds to the <m>5</m>-tuple <m>(01101)</m>.
@@ -571,7 +571,7 @@
           </md>.
           We obtain the code corresponding to the generator matrix <m>G_1</m> in <xref ref="finite-example-6-3-linear-code"/>.
           The parity-check matrix for this code is
-          <me>
+          <md>
             H
             = 
             \begin{pmatrix}
@@ -579,7 +579,7 @@
             0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
             0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 
             \end{pmatrix}
-          </me>.
+          </md>.
           Since the smallest weight of any nonzero codeword is <m>2</m>,
           this code has the ability to detect all single errors.
         </p>
@@ -590,13 +590,13 @@
         therefore, our immediate goal is to establish a link between polynomial codes and ring theory.
         Recall that <m>x^n - 1 = (x - 1)( x^{n - 1} + \cdots + x + 1)</m>.
         The factor ring
-        <me>
+        <md>
           R_n = {\mathbb Z}_2[x]/ \langle x^n - 1 \rangle
-        </me>
+        </md>
         can be considered to be the ring of polynomials of the form
-        <me>
+        <md>
           f(t) = a_0 + a_1 t + \cdots + a_{n - 1} t^{n - 1}
-        </me>
+        </md>
         that satisfy the condition <m>t^n = 1</m>.
         It is an easy exercise to show that
         <m>{\mathbb Z}_2^n</m> and <m>R_n</m> are isomorphic as vector spaces.
@@ -609,9 +609,9 @@
         The additional ring structure on polynomial codes is very powerful in describing cyclic codes.
         A cyclic shift of an <m>n</m>-tuple can be described by polynomial multiplication.
         If <m>f(t) = a_0 + a_1 t + \cdots + a_{n - 1} t^{n - 1}</m> is a code polynomial in <m>R_n</m>, then
-        <me>
+        <md>
           tf(t) = a_{n - 1} + a_0 t + \cdots + a_{n - 2} t^{n - 1}
-        </me>
+        </md>
         is the cyclically shifted word obtained from multiplying <m>f(t)</m> by <m>t</m>.
         The following theorem gives a beautiful classification of cyclic codes in terms of the ideals of <m>R_n</m>.
       </p>
@@ -664,9 +664,9 @@
         Since <m>\langle x^n - 1 \rangle</m> is contained in <m>I</m>,
         it must be the case that <m>g(x)</m> divides <m>x^n - 1</m>.
         Consequently, every ideal <m>C</m> in <m>R_n</m> is of the form
-        <me>
+        <md>
           C = \langle g(t) \rangle = \{ f(t)g(t) : f(t) \in R_n \text{ and } g(x) \mid (x^n - 1) \text{ in } {\mathbb Z}_2[x] \}
-        </me>.
+        </md>.
         The unique monic polynomial of the smallest degree that generates <m>C</m> is called the
         <term>minimal generator polynomial</term><idx><h>Minimal generator polynomial</h></idx><idx><h>Polynomial</h><h>minimal generator</h></idx> of <m>C</m>.
       </p>
@@ -674,16 +674,16 @@
       <example xml:id="finite-example-factor-x7-1">
         <p>
           If we factor <m>x^7 - 1</m> into irreducible components, we have
-          <me>
+          <md>
             x^7 - 1 = (1 + x)(1 + x + x^3)(1+ x^2 + x^3)
-          </me>.
+          </md>.
           We see that <m>g(t) = (1 + t + t^3)</m> generates an ideal <m>C</m> in <m>R_7</m>.
           This code is a <m>(7, 4)</m>-block code.
           As in <xref ref="finite-example-generator-63-code"/>,
           it is easy to calculate a generator matrix by examining what <m>g(t)</m> does to the polynomials 1, <m>t</m>,
           <m>t^2</m>, and <m>t^3</m>.
           A generator matrix for <m>C</m> is
-          <me>
+          <md>
             G =
             \begin{pmatrix}
             1 &amp; 0 &amp; 0 &amp; 0 \\
@@ -694,7 +694,7 @@
             0 &amp; 0 &amp; 1 &amp; 0 \\
             0 &amp; 0 &amp; 0 &amp; 1
             \end{pmatrix}
-          </me>.
+          </md>.
         </p>
       </example>
 
@@ -703,7 +703,7 @@
         Let <m>x^n - 1 = g(x) h(x)</m> in <m>{\mathbb Z}_2[x]</m>.
         If <m>g(x) = g_0 + g_1 x + \cdots + g_{n-k} x^{n-k}</m> and <m>h(x) = h_0 + h_1 x + \cdots + h_k x^k</m>,
         then the <m>n \times k</m> matrix
-        <me>
+        <md>
           G = 
           \begin{pmatrix}
           g_0 &amp; 0   &amp; \cdots &amp; 0 \\
@@ -714,10 +714,10 @@
           \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
           0   &amp; 0 &amp; \cdots &amp; g_{n-k}
           \end{pmatrix}
-        </me>
+        </md>
         is a generator matrix for the code <m>C</m> with generator polynomial <m>g(t)</m>.
         The parity-check matrix for <m>C</m> is the <m>(n - k) \times n</m> matrix
-        <me>
+        <md>
           H =
           \begin{pmatrix}
           0   &amp; \cdots &amp; 0   &amp; 0      &amp; h_k    &amp; \cdots &amp; h_0 \\
@@ -725,7 +725,7 @@
           \cdots  &amp; \cdots &amp; \cdots  &amp; \cdots &amp;  \cdots &amp;  \cdots &amp; \cdots \\
           h_k &amp; \cdots &amp; h_0 &amp; 0      &amp; 0      &amp; \cdots &amp; 0 
           \end{pmatrix}
-        </me>.
+        </md>.
         We will leave the details of the proof of the following proposition as an exercise.
       </p>
 
@@ -743,18 +743,18 @@
       <example xml:id="finite-example-parity-check-x7-1">
         <p>
           In <xref ref="finite-example-factor-x7-1"/>,
-          <me>
+          <md>
             x^7 - 1 = g(x) h(x) = (1 + x + x^3)(1 + x + x^2 + x^4)
-          </me>.
+          </md>.
           Therefore, a parity-check matrix for this code is
-          <me>
+          <md>
             H =
             \begin{pmatrix}
             0 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 1 &amp; 1 \\
             0 &amp; 1 &amp; 0 &amp; 1 &amp; 1 &amp; 1 &amp; 0 \\
             1 &amp; 0 &amp; 1 &amp; 1 &amp; 1 &amp; 0 &amp; 0
             \end{pmatrix}
-          </me>.
+          </md>.
         </p>
       </example>
 
@@ -763,7 +763,7 @@
         we need to know something about determinants.
         If <m>\alpha_1, \ldots, \alpha_n</m> are elements in a field <m>F</m>,
         then the <m>n \times n</m> matrix
-        <me>
+        <md>
           \begin{pmatrix}
           1          &amp; 1          &amp; \cdots &amp; 1 \\
           \alpha_1   &amp; \alpha_2   &amp; \cdots &amp; \alpha_n \\
@@ -771,7 +771,7 @@
           \vdots     &amp; \vdots     &amp; \ddots &amp; \vdots \\
           \alpha_1^{n-1} &amp; \alpha_2^{n-1} &amp; \cdots &amp; \alpha_n^{n-1} 
           \end{pmatrix}
-        </me>
+        </md>
         is called the <idx><h>Vandermonde matrix</h></idx><idx><h>Matrix, Vandermonde</h></idx><term>Vandermonde matrix</term>.
         The determinant of this matrix is called the
         <idx><h>Vandermonde determinant</h></idx><idx><h>Determinant, Vandermonde</h></idx><term>Vandermonde determinant</term>.
@@ -783,7 +783,7 @@
           <p>
             Let <m>\alpha_1, \ldots, \alpha_n</m> be elements in a field <m>F</m> with <m>n \geq 2</m>.
             Then
-            <me>
+            <md>
               \det
               \begin{pmatrix}
               1              &amp; 1              &amp; \cdots &amp; 1 \\
@@ -793,7 +793,7 @@
               \alpha_1^{n-1} &amp; \alpha_2^{n-1} &amp; \cdots &amp; \alpha_n^{n-1} 
               \end{pmatrix}
               = \prod_{1 \leq j \lt i \leq n} (\alpha_i - \alpha_j)
-            </me>.
+            </md>.
             In particular, if the <m>\alpha_i</m>'s are distinct,
             then the determinant is nonzero.
           </p>
@@ -805,7 +805,7 @@
             If <m>n = 2</m>,
             then the determinant is <m>\alpha_2 - \alpha_1</m>.
             Let us assume the result for <m>n - 1</m> and consider the polynomial <m>p(x)</m> defined by
-            <me>
+            <md>
               p(x) = \det
               \begin{pmatrix}
               1              &amp; 1              &amp; \cdots &amp; 1              &amp; 1 \\
@@ -814,18 +814,18 @@
               \vdots         &amp; \vdots         &amp; \ddots &amp; \vdots         &amp; \vdots \\
               \alpha_1^{n-1} &amp; \alpha_2^{n-1} &amp; \cdots &amp; \alpha_{n-1}^{n-1} &amp; x^{n-1}
               \end{pmatrix}
-            </me>.
+            </md>.
             Expanding this determinant by cofactors on the last column,
             we see that <m>p(x)</m> is a polynomial of at most degree <m>n-1</m>.
             Moreover, the roots of <m>p(x)</m> are <m>\alpha_1, \ldots, \alpha_{n-1}</m>,
             since the substitution of any one of these elements in the last column will produce a column identical to the last column in the matrix.
             Remember that the determinant of a matrix is zero if it has two identical columns.
             Therefore,
-            <me>
+            <md>
               p(x) = (x - \alpha_1)(x - \alpha_2) \cdots (x - \alpha_{n-1}) \beta
-            </me>,
+            </md>,
             where
-            <me>
+            <md>
               \beta = (-1)^{n + n} \det
               \begin{pmatrix}
               1              &amp; 1              &amp; \cdots &amp; 1 \\
@@ -834,11 +834,11 @@
               \vdots         &amp; \vdots         &amp; \ddots &amp; \vdots \\
               \alpha_1^{n-2} &amp; \alpha_2^{n-2} &amp; \cdots &amp; \alpha_{n-1}^{n-2} 
               \end{pmatrix}
-            </me>.
+            </md>.
             By our induction hypothesis,
-            <me>
+            <md>
               \beta = (-1)^{n+n} \prod_{1 \leq j \lt i \leq n - 1} (\alpha_i - \alpha_j)
-            </me>.
+            </md>.
             If we let <m>x = \alpha_n</m>,
             the result now follows immediately.
           </p>
@@ -861,24 +861,24 @@
         <proof>
           <p>
             Suppose that
-            <me>
+            <md>
               g( \omega^r) = g(\omega^{r + 1}) = \cdots = g( \omega^{r + s - 1}) = 0
-            </me>.
+            </md>.
             Let <m>f(x)</m> be some polynomial in <m>C</m> with <m>s</m> or fewer nonzero coefficients.
             We can assume that
-            <me>
+            <md>
               f(x) = a_{i_0} x^{i_0} + a_{i_1} x^{i_1} + \cdots + a_{i_{s - 1}} x^{i_{s - 1}}
-            </me>
+            </md>
             be some polynomial in <m>C</m>.
             It will suffice to show that all of the <m>a_i</m>'s must be 0.
             Since
-            <me>
+            <md>
               g( \omega^r) = g(\omega^{r + 1}) = \cdots = g( \omega^{r + s - 1}) = 0
-            </me>
+            </md>
             and <m>g(x)</m> divides <m>f(x)</m>,
-            <me>
+            <md>
               f( \omega^r) = f(\omega^{r + 1}) = \cdots = f( \omega^{r + s - 1}) = 0
-            </me>.
+            </md>.
             Equivalently, we have the following system of equations:
             <md>
               <mrow>a_{i_0} (\omega^r)^{i_0} + a_{i_1} (\omega^r)^{i_1} + \cdots + a_{i_{s - 1}} (\omega^r)^{i_{s - 1}} &amp; = 0</mrow>
@@ -896,7 +896,7 @@
             </md>.
             However, this system has a unique solution,
             since the determinant of the matrix
-            <me>
+            <md>
               \begin{pmatrix}
               (\omega^{i_0})^r &amp; (\omega^{i_1})^r &amp; \cdots &amp; (\omega^{i_{s-1}})^r \\
               (\omega^{i_0})^{r+1} &amp; (\omega^{i_1})^{r+1} &amp; \cdots &amp;
@@ -905,7 +905,7 @@
               (\omega^{i_0})^{r+s-1} &amp; (\omega^{i_1})^{r+s-1} &amp; \cdots &amp;
               (\omega^{i_{s-1}})^{r+s-1} 
               \end{pmatrix}
-            </me>
+            </md>
             can be shown to be nonzero using <xref ref="finite-lemma-vandermode-det"/> and the basic properties of determinants (Exercise).
             Therefore, this solution must be <m>a_{i_0} = a_{i_1} = \cdots = a_{i_{s - 1}} = 0</m>.
           </p>
@@ -933,9 +933,9 @@
         Suppose that <m>\omega</m> is a primitive <m>n</m>th root of unity over <m>{\mathbb Z}_2</m>,
         and let <m>m_i(x)</m> be the minimal polynomial over <m>{\mathbb Z}_2</m> of <m>\omega^i</m>.
         If
-        <me>
+        <md>
           g(x) = \lcm[ m_1(x), m_{2}(x), \ldots, m_{2r}(x)]
-        </me>,
+        </md>,
         then the cyclic code <m>\langle g(t) \rangle</m> in <m>R_n</m> is called the
         <term><acro>BCH</acro> code of length</term><idx><h>Code</h><h><acro>BCH</acro></h></idx> <m>n</m>
         <term>and distance</term> <m>d</m>.
@@ -966,7 +966,7 @@
               <li>
                 <p>
                   The matrix
-                  <me>
+                  <md>
                     H =
                     \begin{pmatrix}
                     1      &amp; \omega      &amp; \omega^2    &amp; \cdots &amp; \omega^{n-1}\\
@@ -975,7 +975,7 @@
                     \vdots &amp; \vdots      &amp; \vdots      &amp; \ddots &amp; \vdots \\
                     1      &amp; \omega^{2r} &amp; \omega^{4r} &amp; \cdots &amp; \omega^{(n-1)(2r)} 
                     \end{pmatrix}
-                  </me>
+                  </md>
                   is a parity-check matrix for <m>C</m>.
                 </p>
               </li>
@@ -1003,7 +1003,7 @@
             The corresponding <m>n</m>-tuple in
             <m>{\mathbb Z}_2^n</m> is <m>{\mathbf x} = (a_0 a_1 \cdots a_{n - 1})^\transpose</m>.
             By (2),
-            <me>
+            <md>
               H {\mathbf x} =
               \begin{pmatrix}
               a_0 + a_1 \omega + \cdots + a_{n-1} \omega^{n-1} \\
@@ -1019,7 +1019,7 @@
               f(\omega^{2r})
               \end{pmatrix}
               = 0
-            </me>
+            </md>
             exactly when <m>f(t)</m> is in <m>C</m>.
             Thus, <m>H</m> is a parity-check matrix for <m>C</m>.
           </p>
@@ -1038,15 +1038,15 @@
       <example xml:id="finite-example-x15-1">
         <p>
           It is easy to verify that <m>x^{15} - 1 \in {\mathbb Z}_2[x]</m> has a factorization
-          <me>
+          <md>
             x^{15} - 1 = (x + 1)(x^2 + x + 1)(x^4 + x + 1)(x^4 + x^3 + 1)(x^4 + x^3 + x^2 + x + 1)
-          </me>,
+          </md>,
           where each of the factors is an irreducible polynomial.
           Let <m>\omega</m> be a root of <m>1 + x + x^4</m>.
           The Galois field <m>\gf(2^4)</m> is
-          <me>
+          <md>
             \{ a_0 + a_1 \omega + a_2 \omega^2 + a_3 \omega^3 : a_i \in {\mathbb Z}_2 \text{ and } 1 + \omega + \omega^4 = 0 \}
-          </me>.
+          </md>.
           By <xref ref="finite-example-gf-p24"/>,
           <m>\omega</m> is a primitive <m>15</m>th root of unity.
           The minimal polynomial of <m>\omega</m> is <m>m_1(x) = 1 + x + x^4</m>.
@@ -1054,9 +1054,9 @@
           <m>\omega^4</m> are also roots of <m>m_1(x)</m>.
           The minimal polynomial of <m>\omega^3</m> is <m>m_2(x) = 1 + x + x^2 + x^3 + x^4</m>.
           Therefore,
-          <me>
+          <md>
             g(x) = m_1(x) m_2(x) = 1 + x^4 + x^6 + x^7 + x^8
-          </me>
+          </md>
           has roots <m>\omega</m>, <m>\omega^2</m>,
           <m>\omega^3</m>, <m>\omega^4</m>.
           Since both <m>m_1(x)</m> and <m>m_2(x)</m> divide <m>x^{15} - 1</m>,
@@ -1064,7 +1064,7 @@
           If <m>x^{15} -1 = g(x)h(x)</m>,
           then <m>h(x) = 1 + x^4 + x^6 + x^7</m>;
           therefore, a parity-check matrix for this code is
-          <me>
+          <md>
             \left(<!-- This matrix is too large for pmatrix - TWJ 8/19/2010 -->
             \begin{array}{ccccccccccccccc}
             0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
@@ -1077,7 +1077,7 @@
             1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
             \end{array}
             \right)
-          </me>.
+          </md>.
         </p>
       </example>
 
@@ -1573,7 +1573,7 @@
           Let <m>C = \langle g(t) \rangle</m> be a cyclic code in <m>R_n</m> and suppose that <m>x^n - 1 = g(x) h(x)</m>,
           where <m>g(x) = g_0 + g_1 x + \cdots + g_{n - k} x^{n - k}</m> and <m>h(x) = h_0 + h_1 x +  \cdots + h_k x^k</m>.
           Define <m>G</m> to be the <m>n \times k</m> matrix
-          <me>
+          <md>
             G = 
             \begin{pmatrix}
             g_0 &amp; 0   &amp; \cdots &amp; 0 \\
@@ -1584,9 +1584,9 @@
             \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
             0   &amp; 0 &amp; \cdots &amp; g_{n-k}
             \end{pmatrix}
-          </me>
+          </md>
           and <m>H</m> to be the <m>(n-k) \times n</m> matrix
-          <me>
+          <md>
             H =
             \begin{pmatrix}
             0   &amp; \cdots &amp; 0   &amp; 0      &amp; h_k    &amp; \cdots &amp; h_0 \\
@@ -1594,7 +1594,7 @@
             \cdots &amp; \cdots &amp; \cdots  &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots  \\
             h_k &amp; \cdots &amp; h_0 &amp; 0      &amp; 0      &amp; \cdots &amp; 0 
             \end{pmatrix}
-          </me>.
+          </md>.
           <ol>
             <li>
               <p>
@@ -1652,14 +1652,14 @@
       <statement>
         <p>
           Show that
-          <me>
+          <md>
             s_i = w( \omega^i) = e( \omega^i) = \omega^{i a_1} + \omega^{i a_2} + \cdots + \omega^{i a_k}
-          </me>
+          </md>
           for <m>i = 1, \ldots, 2r</m>.
           The <term>error-locator polynomial</term><idx><h>Polynomial</h><h>error-locator</h></idx> is defined to be
-          <me>
+          <md>
             s(x) = (x + \omega^{a_1})(x + \omega^{a_2}) \cdots  (x + \omega^{a_k})
-          </me>.
+          </md>.
         </p>
       </statement>
     </exercise>
@@ -1672,9 +1672,9 @@
           Suppose that these errors occur in bits <m>a_1</m> and <m>a_2</m>.
           The error-locator polynomial is <m>s(x) = (x + \omega^{a_1})(x + \omega^{a_2})</m>.
           Show that
-          <me>
+          <md>
             s(x) = x^2 + s_1 x + \left( s_1^2 + \frac{s_3}{s_1} \right)
-          </me>.
+          </md>.
         </p>
       </statement>
     </exercise>
