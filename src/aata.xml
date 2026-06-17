@@ -15,7 +15,11 @@
 <!--    Important: Always process all of the source   -->
 <!--    to preserve numbering and cross-references!   -->
 <!--    So it is never advisable to edit this file    -->
-<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<pretext component="production" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+  <!--
+<pretext component="french" xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="fr-FR">  
+-->
+
   <xi:include href="./bookinfo.xml" /> <!-- ISBN, website, other metadata -->
   <book xml:id="aata-toc">
     <title>Abstract Algebra</title>

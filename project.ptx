@@ -12,6 +12,12 @@
       <publication>publication/publication.ptx</publication>
       <output-dir>output/web</output-dir>
     </target>
+    <target name="french">
+      <format>html</format>
+      <source>src/aata.xml</source>
+      <publication>publication/publication-french.ptx</publication>
+      <output-dir>output/web</output-dir>
+    </target>
     <target name="runestone">
       <format>html</format>
       <source>src/aata.xml</source>
