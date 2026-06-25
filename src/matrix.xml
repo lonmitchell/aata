@@ -213,9 +213,9 @@
           <li>
             <p>
               Let <m>T</m> be the linear transformation associated with an <m>n \times n</m> matrix <m>A</m>.
-              Then <m>T</m> multiplies volumes by a factor of <m>|\det A|</m>.
+              Then <m>T</m> multiplies volumes by a factor of <m>\mathopen{|}\det A|</m>.
               In the case of <m>{\mathbb R}^2</m>,
-              this means that <m>T</m> multiplies areas by <m>|\det A|</m>.
+              this means that <m>T</m> multiplies areas by <m>\mathopen{|}\det A|</m>.
             </p>
           </li>
         </ul>

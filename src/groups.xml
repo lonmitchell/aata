@@ -299,8 +299,8 @@
       <p>
         A natural question to ask is what happens if one motion of the triangle
         <m>\bigtriangleup ABC</m> is followed by another.
-        Which symmetry is <m>\mu_1 \rho_1</m>;
-        that is, what happens when we do the permutation <m>\rho_1</m> and then the permutation <m>\mu_1</m>? 
+        Which symmetry is <m>\mu_1 \rho_1</m>?
+        That is, what happens when we do the permutation <m>\rho_1</m> and then the permutation <m>\mu_1</m>? 
         <em>Remember that we are composing functions here.
         Although we usually multiply left to right,
         we compose functions right to left.</em> We have

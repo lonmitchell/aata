@@ -213,7 +213,7 @@
 
     <example xml:id="crypt-example-help">
       <p>
-        Suppose that we wish to encode the word HELP. The corresponding digit string is <m>7, 4, 11, 15</m>.
+        Suppose that we wish to encode the word <c>HELP</c>. The corresponding digit string is <m>7, 4, 11, 15</m>.
         If
         <md>
           A =
@@ -232,7 +232,7 @@
           \end{pmatrix}
         </md>.
         If <m>{\mathbf b} = ( 2, 2)^\transpose</m>,
-        then our message is encrypted as RRGR. The encrypted letter R represents more than one plaintext letter.
+        then our message is encrypted as <c>RRGR</c>. The encrypted letter R represents more than one plaintext letter.
       </p>
     </example>
 

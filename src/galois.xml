@@ -360,7 +360,7 @@
             f(x) = x^4 + x^3 + x^2 + x + 1
           </md>
           over <m>{\mathbb Q}</m>.
-          We know that <m>f(x)</m> is irreducible by <xref ref="poly-exercise-cyclotomic-polynomials"/> in <xref ref="poly"/>.
+          We know that <m>f(x)</m> is irreducible by <xref ref="poly-exercise-cyclotomic-polynomials"/>.
           Furthermore, since <m>(x -1)f(x) = x^5 - 1</m>,
           we can use DeMoivre's Theorem to determine that the roots of <m>f(x)</m> are <m>\omega^i</m>,
           where  <m>i = 1, \ldots, 4</m> and

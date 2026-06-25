@@ -105,7 +105,7 @@
         <p>
           We will prove this lemma using mathematical induction on <m>n</m>.
           We can use the binomial formula
-          (see <xref ref="integers"/>, <xref ref="integers-example-binomial-theorem"/>)
+          (see <xref ref="integers-example-binomial-theorem"/>)
           to verify the case for <m>n = 1</m>; that is,
           <md>
             (a + b)^p = \sum_{k = 0}^{p} \binom{p}{k} a^k b^{p - k}
@@ -548,7 +548,7 @@
           It is easy to check that this map is a group homomorphism.
           In fact, if we regard <m>{\mathbb Z}_2^n</m> as a vector space over <m>{\mathbb Z}_2</m>,
           <m>\phi</m> is a linear transformation of vector spaces
-          (see <xref ref="vect-exercise-linear-transformation"/>, <xref ref="vect"/>).
+          (see <xref ref="vect-exercise-linear-transformation"/>).
           Let us compute the kernel of <m>\phi</m>.
           Observe that <m>\phi ( a_0, a_1, a_2 ) = (000000)</m> exactly when
           <md>
