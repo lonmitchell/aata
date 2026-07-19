@@ -428,7 +428,7 @@
         we will use that operation.
         That is, if we are adding two integers,
         we still write <m>m + n</m>,
-        <m>-n</m> for the inverse, and 0 for the identity as usual.
+        <m>-n</m> for the inverse, and <m>0</m> for the identity as usual.
         We also write <m>m - n</m> instead of <m>m + (-n)</m>.
       </p>
 
@@ -447,7 +447,7 @@
           We define the group operation on <m>{\mathbb Z}_5</m> by modular addition.
           We write the binary operation on the group additively;
           that is, we write <m>m + n</m>.
-          The element 0 is the identity of the group and each element in <m>{\mathbb Z}_5</m> has an inverse.
+          The element <m>0</m> is the identity of the group and each element in <m>{\mathbb Z}_5</m> has an inverse.
           For instance, <m>2 + 3 = 3 + 2 = 0</m>.
           <xref ref="groups-table-z5-cayley"/> is a Cayley table for <m>{\mathbb Z}_5</m>.
           By <xref ref="groups-proposition-zn-equiv-classes"/>,
@@ -487,7 +487,7 @@
           Even if we consider the set <m>{\mathbb Z}_n \setminus \{0 \}</m>,
           we still may not have a group.
           For instance, let <m>2 \in {\mathbb Z}_6</m>.
-          Then 2 has no multiplicative inverse since
+          Then <m>2</m> has no multiplicative inverse since
           <md>
             <mrow>0 \cdot 2 &amp; = 0 \qquad 1 \cdot 2 = 2</mrow>
             <mrow>2 \cdot 2 &amp; = 4 \qquad 3 \cdot 2 = 0</mrow>
@@ -1626,7 +1626,7 @@
           be in <m>S_n</m>.
           All of the <m>a_i</m>s must be distinct.
           There are <m>n</m> ways to choose <m>a_1</m>,
-          <m>n - 1</m> ways to choose <m>a_2, \ldots</m>, 2 ways to choose <m>a_{n - 1}</m>,
+          <m>n - 1</m> ways to choose <m>a_2, \ldots</m>, two ways to choose <m>a_{n - 1}</m>,
           and only one way to choose <m>a_n</m>.
           Therefore, we can form <m>\sigma</m> in <m>n(n - 1) \cdots 2 \cdot 1 = n!</m> ways.
         </p>

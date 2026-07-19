@@ -680,7 +680,7 @@
           We see that <m>g(t) = (1 + t + t^3)</m> generates an ideal <m>C</m> in <m>R_7</m>.
           This code is a <m>(7, 4)</m>-block code.
           As in <xref ref="finite-example-generator-63-code"/>,
-          it is easy to calculate a generator matrix by examining what <m>g(t)</m> does to the polynomials 1, <m>t</m>,
+          it is easy to calculate a generator matrix by examining what <m>g(t)</m> does to the polynomials <m>1</m>, <m>t</m>,
           <m>t^2</m>, and <m>t^3</m>.
           A generator matrix for <m>C</m> is
           <md>

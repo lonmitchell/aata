@@ -290,7 +290,7 @@
             \end{pmatrix}
             = (1\, 2\, 4\, 3)(5\, 6)
           </md>.
-          This permutation actually contains a cycle of length 2 and a cycle of length <m>4</m>.
+          This permutation actually contains a cycle of length <m>2</m> and a cycle of length <m>4</m>.
         </p>
       </example>
 

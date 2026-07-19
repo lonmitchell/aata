@@ -2369,7 +2369,7 @@
           An element <m>x</m> in a ring is called an
           <term>idempotent</term> if <m>x^2 = x</m>.
           Prove that the only idempotents in an integral domain are <m>0</m> and <m>1</m>.
-          Find a ring with a idempotent <m>x</m> not equal to 0 or 1.
+          Find a ring with a idempotent <m>x</m> not equal to <m>0</m> or <m>1</m>.
         </p>
       </statement>
       <hint>

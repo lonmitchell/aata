@@ -109,7 +109,7 @@
             <mrow>\text{B} &amp; = 66_{10} = 01000010_{2},</mrow>
             <mrow>\text{C} &amp; = 67_{10} = 01000011_{2}</mrow>
           </md>.
-          Notice that the leftmost bit is always set to 0;
+          Notice that the leftmost bit is always set to <m>0</m>;
           that is, the <m>128</m> <acro>ASCII</acro> characters have codes
           <md>
             <mrow>00000000_{2} &amp; = 0_{10},</mrow>
@@ -244,14 +244,14 @@
       <p>
         The coding scheme presented in <xref ref="algcodes-example-nearest"/> is not a complete solution to the problem because it does not account for the possibility of multiple errors.
         For example,
-        either a (000) or a (111) could be sent and a (001) received.
+        either a <m>(000)</m> or a <m>(111)</m> could be sent and a <m>(001)</m> received.
         We have no means of deciding from the received word whether there was a single error in the third bit or two errors,
         one in the first bit and one in the second.
         No matter what coding scheme is used,
         an incorrect message could be received.
-        We could transmit a (000),
+        We could transmit a <m>(000)</m>,
         have errors in all three bits,
-        and receive the codeword (111).
+        and receive the codeword <m>(111)</m>.
         It is important to make explicit assumptions about the likelihood and distribution of transmission errors so that,
         in a particular application,
         it will be known whether a given error detection scheme is appropriate.
@@ -434,7 +434,7 @@
           <md>
             d({\mathbf x},{\mathbf y}) = 4, \qquad d({\mathbf x},{\mathbf z}) = 3, \qquad d({\mathbf y},{\mathbf z}) = 3
           </md>.
-          The minimum distance  for this code is 3.
+          The minimum distance for this code is <m>3</m>.
           We also have the following weights:
           <md>
             w({\mathbf x}) = 3, \qquad w({\mathbf y}) = 3, \qquad w({\mathbf z}) = 2
@@ -499,7 +499,7 @@
         Suppose that <m>{\mathbf x} = (1101)</m> and
         <m>{\mathbf y} = (1100)</m> are codewords in some code.
         If we transmit <m>(1101)</m> and an error occurs in the rightmost bit,
-        then (1100) will be received.
+        then <m>(1100)</m> will be received.
         Since <m>(1100)</m> is a codeword,
         the decoder will decode <m>(1100)</m> as the transmitted message.
         This code is clearly not very appropriate for error detection.
@@ -1488,7 +1488,7 @@
 
       <proof>
         <p>
-          The <m>n</m>-tuple <m>{\mathbf e}_{i} +{\mathbf e}_{j}</m> has <m>1</m>s in the <m>i</m>th and <m>j</m>th entries and 0s elsewhere,
+          The <m>n</m>-tuple <m>{\mathbf e}_{i} +{\mathbf e}_{j}</m> has <m>1</m>s in the <m>i</m>th and <m>j</m>th entries and <m>0</m>s elsewhere,
           and <m>w( {\mathbf e}_{i} +{\mathbf e}_{j}) = 2</m> for <m>i \neq j</m>.
           Since
           <md>
@@ -2631,9 +2631,9 @@
     <exercise number="21" xml:id="algcodes-exercise-ascii-characters">
       <statement>
         <p>
-          If we are to use an error-correcting linear code to transmit the 128 <acro>ASCII</acro> characters,
+          If we are to use an error-correcting linear code to transmit the <m>128</m> <acro>ASCII</acro> characters,
           what size matrix must be used?
-          What size matrix must be used to transmit the extended <acro>ASCII</acro> character set of 256 characters?
+          What size matrix must be used to transmit the extended <acro>ASCII</acro> character set of <m>256</m> characters?
           What if we require only error detection in both cases?
         </p>
       </statement>
@@ -2652,14 +2652,14 @@
     <exercise number="23" xml:id="algcodes-exercise-20-information-positions">
       <statement>
         <p>
-          How many check positions are needed for a single error-correcting code with 20 information positions?
-          With 32 information positions?
+          How many check positions are needed for a single error-correcting code with <m>20</m> information positions?
+          With <m>32</m> information positions?
         </p>
       </statement>
       <hint>
         <p>
           For <m>20</m> information positions,
-          at least 6 check bits are needed to ensure an error-correcting code.
+          at least <m>6</m> check bits are needed to ensure an error-correcting code.
         </p>
       </hint>
     </exercise>
