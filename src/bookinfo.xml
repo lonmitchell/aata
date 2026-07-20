@@ -28,7 +28,9 @@
     <!-- Added operator \inn - TWJ 4/6/2013  -->
     <!-- Added operator \aut - TWJ 4/6/2013  -->
     <!-- Added operator \Hom - TWJ 8/19/2010 -->
+    <!-- Added \codeword for published edition; no effect otherwise -->
     <macros>
+      \newcommand{\codeword}{}
       \newcommand{\identity}{\mathrm{id}}
       \newcommand{\notdivide}{\nmid}
       \newcommand{\notsubset}{\not\subset}

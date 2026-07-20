@@ -544,7 +544,7 @@
           of two binary <m>n</m>-tuples.
           For example,
           <md>
-            (01011101) + (01001011) = (00010110)
+            (\codeword{01011101}) + (\codeword{01001011}) = (\codeword{00010110})
           </md>.
           This group is important in coding theory,
           in cryptography, and in many areas of computer science.
