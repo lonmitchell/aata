@@ -63,7 +63,7 @@
         <md>
           <mrow>{[0]} &amp; = \{ \ldots, -12, 0, 12, 24, \ldots \},</mrow>
           <mrow>{[1]} &amp; = \{ \ldots, -11, 1, 13, 25, \ldots \},</mrow>
-          <mrow>&amp; \vdots</mrow>
+          <mrow>&amp; \aatavdots{=}</mrow>
           <mrow>{[11]} &amp; = \{ \ldots, -1, 11, 23, 35, \ldots \}</mrow>
         </md>.
         When no confusion can arise,
@@ -1626,7 +1626,7 @@
           be in <m>S_n</m>.
           All of the <m>a_i</m>s must be distinct.
           There are <m>n</m> ways to choose <m>a_1</m>,
-          <m>n - 1</m> ways to choose <m>a_2, \ldots</m>, two ways to choose <m>a_{n - 1}</m>,
+          <m>n - 1</m> ways to choose <m>a_2</m>, <ellipsis/>, two ways to choose <m>a_{n - 1}</m>,
           and only one way to choose <m>a_n</m>.
           Therefore, we can form <m>\sigma</m> in <m>n(n - 1) \cdots 2 \cdot 1 = n!</m> ways.
         </p>

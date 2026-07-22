@@ -1365,7 +1365,7 @@
           <md>
             <mrow>x &amp; \equiv  a_1 \pmod{n_1}</mrow>
             <mrow>x &amp; \equiv  a_2 \pmod{n_2}</mrow>
-            <mrow>&amp;  \vdots</mrow>
+            <mrow>&amp;  \aatavdots{\equiv}</mrow>
             <mrow>x &amp; \equiv  a_k \pmod{n_k}</mrow>
           </md>
           has a solution.
@@ -1383,7 +1383,7 @@
           <md>
             <mrow>x &amp; \equiv  a_1 \pmod{n_1}</mrow>
             <mrow>x &amp; \equiv  a_2 \pmod{n_2}</mrow>
-            <mrow>&amp; \vdots</mrow>
+            <mrow>&amp; \aatavdots{\equiv}</mrow>
             <mrow>x &amp; \equiv  a_{k+1} \pmod{n_{k+1}}</mrow>
           </md>.
           Considering the first <m>k</m> equations,

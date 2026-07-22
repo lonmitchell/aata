@@ -421,7 +421,7 @@
           <md>
             <mrow>\sigma( a_1 ) &amp; = b_1</mrow>
             <mrow>\sigma( a_2 ) &amp; = b_2</mrow>
-            <mrow>&amp; \vdots</mrow>
+            <mrow>&amp; \aatavdots{=}</mrow>
             <mrow>\sigma( a_k ) &amp; = b_k</mrow>
           </md>.
           Then <m>\mu = \sigma \tau \sigma^{-1}</m>.

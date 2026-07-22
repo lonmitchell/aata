@@ -98,7 +98,7 @@
         <md>
           <mrow>{\mathbf e}_1 &amp; = (1, 0, \ldots, 0)^\transpose</mrow>
           <mrow>{\mathbf e}_2 &amp; = (0, 1, \ldots, 0)^\transpose</mrow>
-          <mrow>&amp;  \vdots &amp;</mrow>
+          <mrow>&amp;  \aatavdots{=} &amp;</mrow>
           <mrow>{\mathbf e}_n &amp; = (0, 0, \ldots, 1)^\transpose</mrow>
         </md>.
         We can write any vector <m>{\mathbf x} = (x_1, \ldots,
@@ -110,7 +110,7 @@
         <md>
           <mrow>T({\mathbf e}_1) &amp; = (a_{11}, a_{21}, \ldots, a_{m1})^\transpose,</mrow>
           <mrow>T({\mathbf e}_2) &amp; = (a_{12}, a_{22}, \ldots, a_{m2})^\transpose,</mrow>
-          <mrow>&amp;  \vdots &amp;</mrow>
+          <mrow>&amp;  \aatavdots{=} &amp;</mrow>
           <mrow>T({\mathbf e}_n) &amp; = (a_{1n}, a_{2n}, \ldots, a_{mn})^\transpose</mrow>
         </md>,
         then

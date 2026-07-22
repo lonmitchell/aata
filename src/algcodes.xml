@@ -113,7 +113,7 @@
           that is, the <m>128</m> <acro>ASCII</acro> characters have codes
           <md>
             <mrow>\codeword{00000000}_{2} &amp; = \codeword{0}_{10},</mrow>
-            <mrow>&amp; \vdots</mrow>
+            <mrow>&amp; \aatavdots{=}</mrow>
             <mrow>\codeword{01111111}_{2} &amp; = \codeword{127}_{10}</mrow>
           </md>.
           The bit can be used for error checking on the other seven bits.
@@ -1333,7 +1333,7 @@
           <md>
             <mrow>a_{11} y_1 + a_{12} y_2 + \cdots + a_{1, n-m} y_{n-m} + y_{n-m+1} &amp; = 0</mrow>
             <mrow>a_{21} y_1 + a_{22} y_2 + \cdots + a_{2, n-m} y_{n-m} + y_{n-m+2} &amp; = 0</mrow>
-            <mrow>&amp; \vdots</mrow>
+            <mrow>&amp; \aatavdots{=}</mrow>
             <mrow>a_{m1} y_1 + a_{m2} y_2 + \cdots + a_{m, n-m} y_{n-m} + y_{n-m+m} &amp; = 0</mrow>
           </md>.
           Equivalently, <m>y_{n-m+1}, \ldots,
@@ -1341,7 +1341,7 @@
           <md>
             <mrow>y_{n-m+1} &amp; = a_{11} y_1 + a_{12} y_2 + \cdots + a_{1, n-m} y_{n-m}</mrow>
             <mrow>y_{n-m+2} &amp; = a_{21} y_1 + a_{22} y_2 + \cdots + a_{2, n-m} y_{n-m}</mrow>
-            <mrow>&amp; \vdots</mrow>
+            <mrow>&amp; \aatavdots{=}</mrow>
             <mrow>y_{n} &amp; = a_{m1} y_1 + a_{m2} y_2 + \cdots + a_{m, n-m} y_{n-m}</mrow>
           </md>.
           Consequently,
@@ -1356,7 +1356,7 @@
       <md>
         <mrow>{\mathbf e}_1 &amp; = (\codeword{100 \cdots 00})^\transpose</mrow>
         <mrow>{\mathbf e}_2 &amp; = (\codeword{010 \cdots 00})^\transpose</mrow>
-        <mrow>&amp; \vdots</mrow>
+        <mrow>&amp; \aatavdots{=}</mrow>
         <mrow>{\mathbf e}_n &amp; = (\codeword{000 \cdots 01})^\transpose</mrow>
       </md>
       are the <m>n</m>-tuples in <m>{\mathbb Z}_2^n</m> of weight <m>1</m>.

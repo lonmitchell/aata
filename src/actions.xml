@@ -1036,7 +1036,7 @@
           <mrow>(0, 0, 0) &amp; \mapsto  (0, 0, 0)</mrow>
           <mrow>(0, 0, 1) &amp; \mapsto  (0, 1, 0)</mrow>
           <mrow>(0, 1, 0) &amp; \mapsto  (1, 0, 0)</mrow>
-          <mrow>&amp; \vdots</mrow>
+          <mrow>&amp; \aatavdots{\mapsto}</mrow>
           <mrow>(1, 1, 0) &amp; \mapsto  (1, 0, 1)</mrow>
           <mrow>(1, 1, 1) &amp; \mapsto  (1, 1, 1)</mrow>
         </md>.
@@ -1050,7 +1050,7 @@
           <mrow>(0, \ldots, 0, 1) &amp; \mapsto  0</mrow>
           <mrow>(0, \ldots, 1, 0) &amp; \mapsto  1</mrow>
           <mrow>(0, \ldots, 1, 1) &amp; \mapsto  2</mrow>
-          <mrow>&amp; \vdots</mrow>
+          <mrow>&amp; \aatavdots{\mapsto}</mrow>
           <mrow>(1, \ldots, 1, 1) &amp; \mapsto  2^n-1</mrow>
         </md>.
         Now let us consider a circuit with four input variables and a single output.

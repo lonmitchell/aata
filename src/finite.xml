@@ -883,7 +883,7 @@
             <md>
               <mrow>a_{i_0} (\omega^r)^{i_0} + a_{i_1} (\omega^r)^{i_1} + \cdots + a_{i_{s - 1}} (\omega^r)^{i_{s - 1}} &amp; = 0</mrow>
               <mrow>a_{i_0} (\omega^{r + 1})^{i_0} + a_{i_1} (\omega^{r + 1})^{i_2} + \cdots + a_{i_{s-1}} (\omega^{r+1})^{i_{s-1}} &amp; = 0</mrow>
-              <mrow>&amp; \vdots</mrow>
+              <mrow>&amp; \aatavdots{=}</mrow>
               <mrow>a_{i_0} (\omega^{r + s - 1})^{i_0} + a_{i_1} (\omega^{r + s - 1})^{i_1} + \cdots + a_{i_{s - 1}} (\omega^{r + s - 1})^{i_{s - 1}} &amp; = 0</mrow>
             </md>.
             Therefore, <m>(a_{i_0}, a_{i_1}, \ldots,
@@ -891,7 +891,7 @@
             <md>
               <mrow>(\omega^{i_0})^r x_0 + (\omega^{i_1})^r x_1 + \cdots + (\omega^{i_{s - 1}})^r x_{n - 1} &amp; = 0</mrow>
               <mrow>(\omega^{i_0})^{r + 1} x_0 + (\omega^{i_1})^{r + 1} x_1 + \cdots + (\omega^{i_{s - 1}})^{r + 1} x_{n - 1} &amp; = 0</mrow>
-              <mrow>&amp; \vdots</mrow>
+              <mrow>&amp; \aatavdots{=}</mrow>
               <mrow>(\omega^{i_0})^{r + s - 1} x_0 + (\omega^{i_1})^{r + s - 1} x_1 + \cdots + (\omega^{i_{s - 1}})^{r + s - 1} x_{n - 1} &amp; = 0</mrow>
             </md>.
             However, this system has a unique solution,

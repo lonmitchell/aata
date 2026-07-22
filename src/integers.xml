@@ -508,7 +508,7 @@
           <mrow>b &amp; = a q_1 + r_1</mrow>
           <mrow>a &amp; = r_1 q_2 + r_2</mrow>
           <mrow>r_1 &amp; = r_2 q_3 + r_3</mrow>
-          <mrow>&amp; \vdots</mrow>
+          <mrow>&amp; \aatavdots{=}</mrow>
           <mrow>r_{n - 2} &amp; = r_{n - 1} q_{n} + r_{n}</mrow>
           <mrow>r_{n - 1} &amp; = r_n q_{n + 1}</mrow>
         </md>.
@@ -519,7 +519,7 @@
           <mrow>&amp; = r_{n - 2} - r_{n - 1} q_n</mrow>
           <mrow>&amp; = r_{n - 2} - q_n( r_{n - 3} - q_{n - 1} r_{n - 2} )</mrow>
           <mrow>&amp; = -q_n r_{n - 3} + ( 1+ q_n q_{n-1} ) r_{n - 2}</mrow>
-          <mrow>&amp; \vdots</mrow>
+          <mrow>&amp; \aatavdots{=}</mrow>
           <mrow>&amp; = ra + sb</mrow>
         </md>.
         The algorithm that we have just used to find the greatest common divisor <m>d</m> of two integers <m>a</m> and <m>b</m> and to write <m>d</m> as the linear combination of <m>a</m> and <m>b</m> is known as the
